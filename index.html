@@ -4,7 +4,17 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MCToolKit - Minecraft 物品贴图浏览器</title>
+    <title>MCToolKit - Minecraft 资源工具集</title>
+    <script>
+      // GitHub Pages SPA: restore path from 404.html redirect query param
+      (function() {
+        var p = location.search;
+        if (p && p[1]) {
+          var seg = decodeURIComponent(p.slice(1));
+          history.replaceState(null, null, '/MCToolKit/' + seg);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -1,25 +1,29 @@
 import { useState, useMemo, useCallback } from 'react'
-import itemsData from '../data/items.json'
 import type { Item } from '../types'
 import { useLang } from '../components/LangContext'
 import { t } from '../i18n'
-
-const ITEMS: Item[] = itemsData as Item[]
 
 export default function Items() {
   const { lang } = useLang()
   const s = t(lang)
   const [search, setSearch] = useState('')
   const [selected, setSelected] = useState<Item | null>(null)
+  const [items, setItems] = useState<Item[]>([])
+
+  // lazy load data
+  useMemo(() => {
+    import('../data/items.json').then(m => setItems(m.default as Item[]))
+  }, [])
 
   const filtered = useMemo(() => {
-    if (!search.trim()) return ITEMS
+    if (!items.length) return []
+    if (!search.trim()) return items
     const q = search.toLowerCase().trim()
-    return ITEMS.filter(item =>
+    return items.filter(item =>
       item.id.includes(q) ||
       Object.values(item.name).some(n => n.toLowerCase().includes(q))
     )
-  }, [search])
+  }, [search, items])
 
   const dl = useCallback((item: Item) => {
     const a = document.createElement('a')
@@ -45,9 +49,9 @@ export default function Items() {
           />
         </div>
         <span className='text-xs text-gray-300 tabular-nums'>
-          {s.itemCount.replace('{count}', String(filtered.length)).replace('{total}', String(ITEMS.length))}
+          {s.itemCount.replace('{count}', String(filtered.length)).replace('{total}', String(items.length || 703))}
         </span>
-        {search && (
+        {search && filtered.length > 0 && (
           <button
             onClick={() => filtered.forEach((item, i) => setTimeout(() => dl(item), i * 80))}
             className='px-3 py-1.5 text-xs font-medium bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-colors'
@@ -58,27 +62,31 @@ export default function Items() {
       </div>
 
       {/* Grid */}
-      <div className='grid grid-cols-[repeat(auto-fill,minmax(72px,1fr))] gap-1.5'>
-        {filtered.map(item => (
-          <button
-            key={item.id}
-            onClick={() => setSelected(selected?.id === item.id ? null : item)}
-            className={`flex flex-col items-center gap-0.5 p-1.5 rounded-lg transition-colors hover:bg-gray-100 ${
-              selected?.id === item.id ? 'bg-gray-100 ring-1 ring-blue-400' : ''
-            }`}
-          >
-            <img
-              src={`/MCToolKit/textures/${item.texture}`}
-              alt={item.name[lang]}
-              className='item-icon w-8 h-8'
-              loading='lazy'
-            />
-            <span className='text-[9px] text-gray-400 leading-tight text-center line-clamp-2 w-full'>
-              {item.name[lang]}
-            </span>
-          </button>
-        ))}
-      </div>
+      {!items.length ? (
+        <div className='text-center py-20 text-sm text-gray-300'>...</div>
+      ) : (
+        <div className='grid grid-cols-[repeat(auto-fill,minmax(72px,1fr))] gap-1.5'>
+          {filtered.map(item => (
+            <button
+              key={item.id}
+              onClick={() => setSelected(selected?.id === item.id ? null : item)}
+              className={`flex flex-col items-center gap-0.5 p-1.5 rounded-lg transition-colors hover:bg-gray-100 ${
+                selected?.id === item.id ? 'bg-gray-100 ring-1 ring-blue-400' : ''
+              }`}
+            >
+              <img
+                src={`/MCToolKit/textures/${item.texture}`}
+                alt={item.name[lang]}
+                className='item-icon w-8 h-8'
+                loading='lazy'
+              />
+              <span className='text-[9px] text-gray-400 leading-tight text-center line-clamp-2 w-full'>
+                {item.name[lang]}
+              </span>
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* Detail */}
       {selected && (

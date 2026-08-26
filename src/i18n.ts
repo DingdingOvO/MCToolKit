@@ -21,6 +21,15 @@ export interface UIStrings {
   soundDesc: string
   comingSoon: string
   footer: string
+  blockCount: string
+  soundCount: string
+  play: string
+  pause: string
+  stop: string
+  category: string
+  allCategories: string
+  soundDesc2: string
+  download: string
 }
 
 const strings: Record<LangCode, UIStrings> = {
@@ -45,6 +54,15 @@ const strings: Record<LangCode, UIStrings> = {
     soundDesc: '4871 个游戏音效文件，在线试听与下载',
     comingSoon: '即将上线',
     footer: 'Minecraft 26.2 · 数据来源 Mojang Public API',
+    blockCount: '{count} / {total}',
+    soundCount: '{count} / {total}',
+    play: '播放',
+    pause: '暂停',
+    stop: '停止',
+    category: '分类',
+    allCategories: '全部分类',
+    soundDesc2: '按分类浏览 {total} 个游戏音效，点击试听',
+    download: '下载',
   },
   en_us: {
     siteName: 'MCToolKit',
@@ -67,6 +85,15 @@ const strings: Record<LangCode, UIStrings> = {
     soundDesc: '4871 game sounds, preview and download',
     comingSoon: 'Coming Soon',
     footer: 'Minecraft 26.2 · Data from Mojang Public API',
+    blockCount: '{count} / {total}',
+    soundCount: '{count} / {total}',
+    play: 'Play',
+    pause: 'Pause',
+    stop: 'Stop',
+    category: 'Category',
+    allCategories: 'All',
+    soundDesc2: 'Browse {total} game sounds by category',
+    download: 'Download',
   },
   zh_tw: {
     siteName: 'MCToolKit',
@@ -89,6 +116,15 @@ const strings: Record<LangCode, UIStrings> = {
     soundDesc: '4871 個遊戲音效，線上試聽與下載',
     comingSoon: '即將上線',
     footer: 'Minecraft 26.2 · 資料來源 Mojang Public API',
+    blockCount: '{count} / {total}',
+    soundCount: '{count} / {total}',
+    play: '播放',
+    pause: '暫停',
+    stop: '停止',
+    category: '分類',
+    allCategories: '全部分類',
+    soundDesc2: '按分類瀏覽 {total} 個遊戲音效，點擊試聽',
+    download: '下載',
   },
   ja_jp: {
     siteName: 'MCToolKit',
@@ -111,6 +147,15 @@ const strings: Record<LangCode, UIStrings> = {
     soundDesc: '4871のゲームサウンド、試聴・ダウンロード',
     comingSoon: '近日公開',
     footer: 'Minecraft 26.2 · Mojang Public API',
+    blockCount: '{count} / {total}',
+    soundCount: '{count} / {total}',
+    play: '再生',
+    pause: '一時停止',
+    stop: '停止',
+    category: 'カテゴリ',
+    allCategories: '全て',
+    soundDesc2: '{total}個のゲームサウンドをカテゴリ別に閲覧',
+    download: 'ダウンロード',
   },
   ko_kr: {
     siteName: 'MCToolKit',
@@ -133,6 +178,15 @@ const strings: Record<LangCode, UIStrings> = {
     soundDesc: '4871개 게임 사운드, 미리듣기 및 다운로드',
     comingSoon: '출시 예정',
     footer: 'Minecraft 26.2 · Mojang Public API',
+    blockCount: '{count} / {total}',
+    soundCount: '{count} / {total}',
+    play: '재생',
+    pause: '일시정지',
+    stop: '중지',
+    category: '분류',
+    allCategories: '전체 분류',
+    soundDesc2: '분류별로 {total}개 게임 사운드 탐색',
+    download: '다운로드',
   },
   de_de: {
     siteName: 'MCToolKit',
@@ -155,6 +209,15 @@ const strings: Record<LangCode, UIStrings> = {
     soundDesc: '4871 Game-Sounds, anhören und herunterladen',
     comingSoon: 'Demnächst',
     footer: 'Minecraft 26.2 · Mojang Public API',
+    blockCount: '{count} / {total}',
+    soundCount: '{count} / {total}',
+    play: 'Abspielen',
+    pause: 'Pause',
+    stop: 'Stopp',
+    category: 'Kategorie',
+    allCategories: 'Alle',
+    soundDesc2: '{total} Game-Sounds nach Kategorie',
+    download: 'Herunterladen',
   },
   fr_fr: {
     siteName: 'MCToolKit',
@@ -177,6 +240,15 @@ const strings: Record<LangCode, UIStrings> = {
     soundDesc: '4871 sons, écoute et téléchargement',
     comingSoon: 'Bientôt',
     footer: 'Minecraft 26.2 · Mojang Public API',
+    blockCount: '{count} / {total}',
+    soundCount: '{count} / {total}',
+    play: 'Lecture',
+    pause: 'Pause',
+    stop: 'Stop',
+    category: 'Catégorie',
+    allCategories: 'Toutes',
+    soundDesc2: 'Parcourir {total} sons par catégorie',
+    download: 'Télécharger',
   },
 }
 
