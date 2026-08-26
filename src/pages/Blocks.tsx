@@ -2,6 +2,7 @@ import { useState, useMemo, useCallback } from 'react'
 import type { Block } from '../types'
 import { useLang } from '../components/LangContext'
 import { t } from '../i18n'
+import BlockIcon from '../components/BlockIcon'
 
 export default function Blocks() {
   const { lang } = useLang()
@@ -10,7 +11,6 @@ export default function Blocks() {
   const [selected, setSelected] = useState<Block | null>(null)
   const [blocks, setBlocks] = useState<Block[]>([])
 
-  // lazy load data
   useMemo(() => {
     import('../data/blocks.json').then(m => setBlocks(m.default as Block[]))
   }, [])
@@ -23,8 +23,11 @@ export default function Blocks() {
   }, [search, blocks])
 
   const dl = useCallback((block: Block) => {
+    // Download the primary texture (north or up)
+    const tex = block.north || block.up
+    if (!tex) return
     const a = document.createElement('a')
-    a.href = `/MCToolKit/textures/${block.texture}`
+    a.href = `/MCToolKit/textures/${tex}.png`
     a.download = `${block.id}.png`
     a.click()
   }, [])
@@ -46,7 +49,7 @@ export default function Blocks() {
           />
         </div>
         <span className='text-xs text-gray-300 tabular-nums'>
-          {s.blockCount.replace('{count}', String(filtered.length)).replace('{total}', String(blocks.length || 1269))}
+          {s.blockCount.replace('{count}', String(filtered.length)).replace('{total}', String(blocks.length || 713))}
         </span>
         {search && filtered.length > 0 && (
           <button
@@ -62,21 +65,16 @@ export default function Blocks() {
       {!blocks.length ? (
         <div className='text-center py-20 text-sm text-gray-300'>...</div>
       ) : (
-        <div className='grid grid-cols-[repeat(auto-fill,minmax(72px,1fr))] gap-1.5'>
+        <div className='grid grid-cols-[repeat(auto-fill,minmax(64px,1fr))] gap-2'>
           {filtered.map(block => (
             <button
               key={block.id}
               onClick={() => setSelected(selected?.id === block.id ? null : block)}
-              className={`flex flex-col items-center gap-0.5 p-1.5 rounded-lg transition-colors hover:bg-gray-100 ${
+              className={`flex flex-col items-center gap-1 p-2 rounded-lg transition-colors hover:bg-gray-100 ${
                 selected?.id === block.id ? 'bg-gray-100 ring-1 ring-blue-400' : ''
               }`}
             >
-              <img
-                src={`/MCToolKit/textures/${block.texture}`}
-                alt={block.id}
-                className='item-icon w-8 h-8'
-                loading='lazy'
-              />
+              <BlockIcon block={block} size={24} />
               <span className='text-[9px] text-gray-400 leading-tight text-center line-clamp-2 w-full'>
                 {block.id}
               </span>
@@ -85,17 +83,21 @@ export default function Blocks() {
         </div>
       )}
 
-      {/* Detail */}
+      {/* Detail Modal */}
       {selected && (
         <div className='fixed inset-0 z-[100] flex items-center justify-center bg-black/20 backdrop-blur-sm' onClick={() => setSelected(null)}>
-          <div className='bg-white rounded-xl border border-gray-200 p-5 w-72 shadow-xl' onClick={e => e.stopPropagation()}>
-            <div className='flex gap-3 mb-4'>
-              <div className='w-14 h-14 bg-gray-50 rounded-lg flex items-center justify-center shrink-0'>
-                <img src={`/MCToolKit/textures/${selected.texture}`} alt='' className='item-icon w-10 h-10' />
+          <div className='bg-white rounded-xl border border-gray-200 p-5 w-80 shadow-xl' onClick={e => e.stopPropagation()}>
+            <div className='flex gap-4 mb-4'>
+              <div className='w-20 h-20 bg-gray-50 rounded-lg flex items-center justify-center shrink-0'>
+                <BlockIcon block={selected} size={40} />
               </div>
               <div className='min-w-0'>
                 <h3 className='text-sm font-semibold text-gray-900 break-all'>{selected.id}</h3>
-                <p className='text-[11px] text-gray-300 font-mono mt-0.5'>{selected.texture}</p>
+                <div className='mt-1.5 space-y-0.5 text-[11px] text-gray-300 font-mono'>
+                  {selected.up && <p>top: {selected.up.replace('block/', '')}</p>}
+                  {selected.north && <p>side: {selected.north.replace('block/', '')}</p>}
+                  {(selected.east && selected.east !== selected.north) && <p>east: {selected.east.replace('block/', '')}</p>}
+                </div>
               </div>
             </div>
             <div className='flex gap-2'>
