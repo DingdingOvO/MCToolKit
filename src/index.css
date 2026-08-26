@@ -1,22 +1,10 @@
 @import "tailwindcss";
 
-@theme {
-  --color-mc-dark: #1a1a2e;
-  --color-mc-darker: #0f0f1a;
-  --color-mc-gray: #2a2a3e;
-  --color-mc-light: #3a3a52;
-  --color-mc-green: #5dba4b;
-  --color-mc-brown: #8b6914;
-  --color-mc-stone: #7a7a7a;
-}
-
 body {
   margin: 0;
-  background: var(--color-mc-darker);
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 }
 
-/* Minecraft-style pixelated rendering for item icons */
 .item-icon {
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
