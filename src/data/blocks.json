@@ -1,35 +1,5 @@
 [
   {
-    "id": "acacia_button",
-    "up": "block/acacia_planks",
-    "north": "block/acacia_planks",
-    "east": "block/acacia_planks",
-    "name": {
-      "zh_cn": "金合欢木按钮",
-      "en_us": "Acacia Button",
-      "zh_tw": "相思木按鈕",
-      "ja_jp": "アカシアのボタン",
-      "ko_kr": "아카시아나무 버튼",
-      "de_de": "Akazienholzknopf",
-      "fr_fr": "Bouton en acacia"
-    }
-  },
-  {
-    "id": "acacia_hanging_sign",
-    "up": "block/acacia_hanging_sign",
-    "north": "block/acacia_hanging_sign",
-    "east": "block/acacia_hanging_sign",
-    "name": {
-      "zh_cn": "悬挂式金合欢木告示牌",
-      "en_us": "Acacia Hanging Sign",
-      "zh_tw": "懸掛式相思木告示牌",
-      "ja_jp": "アカシアの吊り看板",
-      "ko_kr": "아카시아나무 매다는 표지판",
-      "de_de": "Akazienholzhängeschild",
-      "fr_fr": "Pancarte suspendue en acacia"
-    }
-  },
-  {
     "id": "acacia_leaves",
     "up": "block/acacia_leaves",
     "north": "block/acacia_leaves",
@@ -60,48 +30,18 @@
     }
   },
   {
-    "id": "acacia_shelf",
-    "up": "block/acacia_shelf",
-    "north": "block/acacia_shelf",
-    "east": "block/acacia_shelf",
+    "id": "acacia_planks",
+    "up": "block/acacia_planks",
+    "north": "block/acacia_planks",
+    "east": "block/acacia_planks",
     "name": {
-      "zh_cn": "金合欢木展示架",
-      "en_us": "Acacia Shelf",
-      "zh_tw": "相思木展示架",
-      "ja_jp": "アカシアの棚",
-      "ko_kr": "아카시아나무 선반",
-      "de_de": "Akazienholzregal",
-      "fr_fr": "Étagère en acacia"
-    }
-  },
-  {
-    "id": "acacia_sign",
-    "up": "block/acacia_sign",
-    "north": "block/acacia_sign",
-    "east": "block/acacia_sign",
-    "name": {
-      "zh_cn": "金合欢木告示牌",
-      "en_us": "Acacia Sign",
-      "zh_tw": "相思木告示牌",
-      "ja_jp": "アカシアの看板",
-      "ko_kr": "아카시아나무 표지판",
-      "de_de": "Akazienholzschild",
-      "fr_fr": "Pancarte en acacia"
-    }
-  },
-  {
-    "id": "acacia_trapdoor",
-    "up": "block/acacia_trapdoor",
-    "north": "block/acacia_trapdoor",
-    "east": "block/acacia_trapdoor",
-    "name": {
-      "zh_cn": "金合欢木活板门",
-      "en_us": "Acacia Trapdoor",
-      "zh_tw": "相思木地板門",
-      "ja_jp": "アカシアのトラップドア",
-      "ko_kr": "아카시아나무 다락문",
-      "de_de": "Akazienholzfalltür",
-      "fr_fr": "Trappe en acacia"
+      "zh_cn": "金合欢木板",
+      "en_us": "Acacia Planks",
+      "zh_tw": "相思木材",
+      "ja_jp": "アカシアの板材",
+      "ko_kr": "아카시아나무 판자",
+      "de_de": "Akazienholzbretter",
+      "fr_fr": "Planches d'acacia"
     }
   },
   {
@@ -117,21 +57,6 @@
       "ko_kr": "아카시아나무",
       "de_de": "Akazienholz",
       "fr_fr": "Bois d'acacia"
-    }
-  },
-  {
-    "id": "activator_rail",
-    "up": "block/activator_rail",
-    "north": "block/activator_rail",
-    "east": "block/activator_rail",
-    "name": {
-      "zh_cn": "激活铁轨",
-      "en_us": "Activator Rail",
-      "zh_tw": "觸發鐵軌",
-      "ja_jp": "アクティベーターレール",
-      "ko_kr": "활성화 레일",
-      "de_de": "Aktivierungsschiene",
-      "fr_fr": "Rails déclencheurs"
     }
   },
   {
@@ -180,36 +105,6 @@
     }
   },
   {
-    "id": "anvil",
-    "up": "block/anvil",
-    "north": "block/anvil",
-    "east": "block/anvil",
-    "name": {
-      "zh_cn": "铁砧",
-      "en_us": "Anvil",
-      "zh_tw": "鐵砧",
-      "ja_jp": "金床",
-      "ko_kr": "모루",
-      "de_de": "Amboss",
-      "fr_fr": "Enclume"
-    }
-  },
-  {
-    "id": "azalea",
-    "up": "block/azalea_top",
-    "north": "block/azalea_side",
-    "east": "block/azalea_side",
-    "name": {
-      "zh_cn": "杜鹃花丛",
-      "en_us": "Azalea",
-      "zh_tw": "杜鵑叢",
-      "ja_jp": "ツツジ",
-      "ko_kr": "진달래",
-      "de_de": "Azalee",
-      "fr_fr": "Azalée"
-    }
-  },
-  {
     "id": "azalea_leaves",
     "up": "block/azalea_leaves",
     "north": "block/azalea_leaves",
@@ -222,21 +117,6 @@
       "ko_kr": "진달래 잎",
       "de_de": "Azaleenlaub",
       "fr_fr": "Feuilles d'azalée"
-    }
-  },
-  {
-    "id": "bamboo",
-    "up": "block/bamboo_stalk",
-    "north": "block/bamboo_stalk",
-    "east": "block/bamboo_stalk",
-    "name": {
-      "zh_cn": "竹子",
-      "en_us": "Bamboo",
-      "zh_tw": "竹子",
-      "ja_jp": "竹",
-      "ko_kr": "대나무",
-      "de_de": "Bambus",
-      "fr_fr": "Bambou"
     }
   },
   {
@@ -255,66 +135,6 @@
     }
   },
   {
-    "id": "bamboo_button",
-    "up": "block/bamboo_planks",
-    "north": "block/bamboo_planks",
-    "east": "block/bamboo_planks",
-    "name": {
-      "zh_cn": "竹按钮",
-      "en_us": "Bamboo Button",
-      "zh_tw": "竹按鈕",
-      "ja_jp": "竹のボタン",
-      "ko_kr": "대나무 버튼",
-      "de_de": "Bambusknopf",
-      "fr_fr": "Bouton en bambou"
-    }
-  },
-  {
-    "id": "bamboo_fence",
-    "up": "block/bamboo_fence",
-    "north": "block/bamboo_fence",
-    "east": "block/bamboo_fence",
-    "name": {
-      "zh_cn": "竹栅栏",
-      "en_us": "Bamboo Fence",
-      "zh_tw": "竹柵欄",
-      "ja_jp": "竹のフェンス",
-      "ko_kr": "대나무 울타리",
-      "de_de": "Bambuszaun",
-      "fr_fr": "Barrière en bambou"
-    }
-  },
-  {
-    "id": "bamboo_fence_gate",
-    "up": "block/bamboo_fence_gate",
-    "north": "block/bamboo_fence_gate",
-    "east": "block/bamboo_fence_gate",
-    "name": {
-      "zh_cn": "竹栅栏门",
-      "en_us": "Bamboo Fence Gate",
-      "zh_tw": "竹柵欄門",
-      "ja_jp": "竹のフェンスゲート",
-      "ko_kr": "대나무 울타리 문",
-      "de_de": "Bambuszauntor",
-      "fr_fr": "Portillon en bambou"
-    }
-  },
-  {
-    "id": "bamboo_hanging_sign",
-    "up": "block/bamboo_hanging_sign",
-    "north": "block/bamboo_hanging_sign",
-    "east": "block/bamboo_hanging_sign",
-    "name": {
-      "zh_cn": "悬挂式竹告示牌",
-      "en_us": "Bamboo Hanging Sign",
-      "zh_tw": "懸掛式竹告示牌",
-      "ja_jp": "竹の吊り看板",
-      "ko_kr": "대나무 매다는 표지판",
-      "de_de": "Bambushängeschild",
-      "fr_fr": "Pancarte suspendue en bambou"
-    }
-  },
-  {
     "id": "bamboo_mosaic",
     "up": "block/bamboo_mosaic",
     "north": "block/bamboo_mosaic",
@@ -330,48 +150,18 @@
     }
   },
   {
-    "id": "bamboo_shelf",
-    "up": "block/bamboo_shelf",
-    "north": "block/bamboo_shelf",
-    "east": "block/bamboo_shelf",
+    "id": "bamboo_planks",
+    "up": "block/bamboo_planks",
+    "north": "block/bamboo_planks",
+    "east": "block/bamboo_planks",
     "name": {
-      "zh_cn": "竹展示架",
-      "en_us": "Bamboo Shelf",
-      "zh_tw": "竹展示架",
-      "ja_jp": "竹の棚",
-      "ko_kr": "대나무 선반",
-      "de_de": "Bambusregal",
-      "fr_fr": "Étagère en bambou"
-    }
-  },
-  {
-    "id": "bamboo_sign",
-    "up": "block/bamboo_sign",
-    "north": "block/bamboo_sign",
-    "east": "block/bamboo_sign",
-    "name": {
-      "zh_cn": "竹告示牌",
-      "en_us": "Bamboo Sign",
-      "zh_tw": "竹告示牌",
-      "ja_jp": "竹の看板",
-      "ko_kr": "대나무 표지판",
-      "de_de": "Bambusschild",
-      "fr_fr": "Pancarte en bambou"
-    }
-  },
-  {
-    "id": "bamboo_trapdoor",
-    "up": "block/bamboo_trapdoor",
-    "north": "block/bamboo_trapdoor",
-    "east": "block/bamboo_trapdoor",
-    "name": {
-      "zh_cn": "竹活板门",
-      "en_us": "Bamboo Trapdoor",
-      "zh_tw": "竹地板門",
-      "ja_jp": "竹のトラップドア",
-      "ko_kr": "대나무 다락문",
-      "de_de": "Bambusfalltür",
-      "fr_fr": "Trappe en bambou"
+      "zh_cn": "竹板",
+      "en_us": "Bamboo Planks",
+      "zh_tw": "竹材",
+      "ja_jp": "竹の板材",
+      "ko_kr": "대나무 판자",
+      "de_de": "Bambusbretter",
+      "fr_fr": "Planches de bambou"
     }
   },
   {
@@ -465,66 +255,6 @@
     }
   },
   {
-    "id": "bell",
-    "up": "block/dark_oak_planks",
-    "north": "block/dark_oak_planks",
-    "east": "block/dark_oak_planks",
-    "name": {
-      "zh_cn": "钟",
-      "en_us": "Bell",
-      "zh_tw": "鐘",
-      "ja_jp": "鐘",
-      "ko_kr": "종",
-      "de_de": "Glocke",
-      "fr_fr": "Cloche"
-    }
-  },
-  {
-    "id": "big_dripleaf",
-    "up": "block/big_dripleaf_top",
-    "north": "block/big_dripleaf_tip",
-    "east": "block/big_dripleaf_side",
-    "name": {
-      "zh_cn": "大型垂滴叶",
-      "en_us": "Big Dripleaf",
-      "zh_tw": "大懸葉草",
-      "ja_jp": "大きなドリップリーフ",
-      "ko_kr": "큰 흘림잎",
-      "de_de": "Großes Tropfblatt",
-      "fr_fr": "Grande foliogoutte"
-    }
-  },
-  {
-    "id": "birch_button",
-    "up": "block/birch_planks",
-    "north": "block/birch_planks",
-    "east": "block/birch_planks",
-    "name": {
-      "zh_cn": "白桦木按钮",
-      "en_us": "Birch Button",
-      "zh_tw": "樺木按鈕",
-      "ja_jp": "シラカバのボタン",
-      "ko_kr": "자작나무 버튼",
-      "de_de": "Birkenholzknopf",
-      "fr_fr": "Bouton en bouleau"
-    }
-  },
-  {
-    "id": "birch_hanging_sign",
-    "up": "block/birch_hanging_sign",
-    "north": "block/birch_hanging_sign",
-    "east": "block/birch_hanging_sign",
-    "name": {
-      "zh_cn": "悬挂式白桦木告示牌",
-      "en_us": "Birch Hanging Sign",
-      "zh_tw": "懸掛式樺木告示牌",
-      "ja_jp": "シラカバの吊り看板",
-      "ko_kr": "자작나무 매다는 표지판",
-      "de_de": "Birkenholzhängeschild",
-      "fr_fr": "Pancarte suspendue en bouleau"
-    }
-  },
-  {
     "id": "birch_leaves",
     "up": "block/birch_leaves",
     "north": "block/birch_leaves",
@@ -555,48 +285,18 @@
     }
   },
   {
-    "id": "birch_shelf",
-    "up": "block/birch_shelf",
-    "north": "block/birch_shelf",
-    "east": "block/birch_shelf",
+    "id": "birch_planks",
+    "up": "block/birch_planks",
+    "north": "block/birch_planks",
+    "east": "block/birch_planks",
     "name": {
-      "zh_cn": "白桦木展示架",
-      "en_us": "Birch Shelf",
-      "zh_tw": "樺木展示架",
-      "ja_jp": "シラカバの棚",
-      "ko_kr": "자작나무 선반",
-      "de_de": "Birkenholzregal",
-      "fr_fr": "Étagère en bouleau"
-    }
-  },
-  {
-    "id": "birch_sign",
-    "up": "block/birch_sign",
-    "north": "block/birch_sign",
-    "east": "block/birch_sign",
-    "name": {
-      "zh_cn": "白桦木告示牌",
-      "en_us": "Birch Sign",
-      "zh_tw": "樺木告示牌",
-      "ja_jp": "シラカバの看板",
-      "ko_kr": "자작나무 표지판",
-      "de_de": "Birkenholzschild",
-      "fr_fr": "Pancarte en bouleau"
-    }
-  },
-  {
-    "id": "birch_trapdoor",
-    "up": "block/birch_trapdoor",
-    "north": "block/birch_trapdoor",
-    "east": "block/birch_trapdoor",
-    "name": {
-      "zh_cn": "白桦木活板门",
-      "en_us": "Birch Trapdoor",
-      "zh_tw": "樺木地板門",
-      "ja_jp": "シラカバのトラップドア",
-      "ko_kr": "자작나무 다락문",
-      "de_de": "Birkenholzfalltür",
-      "fr_fr": "Trappe en bouleau"
+      "zh_cn": "白桦木板",
+      "en_us": "Birch Planks",
+      "zh_tw": "樺木材",
+      "ja_jp": "シラカバの板材",
+      "ko_kr": "자작나무 판자",
+      "de_de": "Birkenholzbretter",
+      "fr_fr": "Planches de bouleau"
     }
   },
   {
@@ -612,66 +312,6 @@
       "ko_kr": "자작나무",
       "de_de": "Birkenholz",
       "fr_fr": "Bois de bouleau"
-    }
-  },
-  {
-    "id": "black_bed",
-    "up": "block/black_bed_foot_up",
-    "north": "block/black_bed_foot_west",
-    "east": "block/black_bed_foot_east",
-    "name": {
-      "zh_cn": "黑色床",
-      "en_us": "Black Bed",
-      "zh_tw": "黑色床",
-      "ja_jp": "黒色のベッド",
-      "ko_kr": "검은색 침대",
-      "de_de": "Schwarzes Bett",
-      "fr_fr": "Lit noir"
-    }
-  },
-  {
-    "id": "black_candle",
-    "up": "block/black_candle",
-    "north": "block/black_candle",
-    "east": "block/black_candle",
-    "name": {
-      "zh_cn": "黑色蜡烛",
-      "en_us": "Black Candle",
-      "zh_tw": "黑色蠟燭",
-      "ja_jp": "黒色のろうそく",
-      "ko_kr": "검은색 초",
-      "de_de": "Schwarze Kerze",
-      "fr_fr": "Bougie noire"
-    }
-  },
-  {
-    "id": "black_candle_cake",
-    "up": "block/cake_top",
-    "north": "block/cake_side",
-    "east": "block/cake_side",
-    "name": {
-      "zh_cn": "插上黑色蜡烛的蛋糕",
-      "en_us": "Cake with Black Candle",
-      "zh_tw": "插上黑色蠟燭的蛋糕",
-      "ja_jp": "黒色のろうそくが立てられたケーキ",
-      "ko_kr": "검은색 초를 꽂은 케이크",
-      "de_de": "Kuchen mit schwarzer Kerze",
-      "fr_fr": "Gâteau à bougie noire"
-    }
-  },
-  {
-    "id": "black_carpet",
-    "up": "block/black_wool",
-    "north": "block/black_wool",
-    "east": "block/black_wool",
-    "name": {
-      "zh_cn": "黑色地毯",
-      "en_us": "Black Carpet",
-      "zh_tw": "黑色地毯",
-      "ja_jp": "黒色のカーペット",
-      "ko_kr": "검은색 양탄자",
-      "de_de": "Schwarzer Teppich",
-      "fr_fr": "Tapis noir"
     }
   },
   {
@@ -735,21 +375,6 @@
     }
   },
   {
-    "id": "black_stained_glass_pane",
-    "up": "block/black_stained_glass_pane_top",
-    "north": "block/black_stained_glass_pane_top",
-    "east": "block/black_stained_glass_pane_top",
-    "name": {
-      "zh_cn": "黑色染色玻璃板",
-      "en_us": "Black Stained Glass Pane",
-      "zh_tw": "黑色玻璃片",
-      "ja_jp": "黒色の色付きガラス板",
-      "ko_kr": "검은색 색유리 판",
-      "de_de": "Schwarze Glasscheibe",
-      "fr_fr": "Vitre noire"
-    }
-  },
-  {
     "id": "black_terracotta",
     "up": "block/black_terracotta",
     "north": "block/black_terracotta",
@@ -762,6 +387,21 @@
       "ko_kr": "검은색 테라코타",
       "de_de": "Schwarze Keramik",
       "fr_fr": "Terre cuite noire"
+    }
+  },
+  {
+    "id": "black_wool",
+    "up": "block/black_wool",
+    "north": "block/black_wool",
+    "east": "block/black_wool",
+    "name": {
+      "zh_cn": "黑色羊毛",
+      "en_us": "Black Wool",
+      "zh_tw": "黑色羊毛",
+      "ja_jp": "黒色の羊毛",
+      "ko_kr": "검은색 양털",
+      "de_de": "Schwarze Wolle",
+      "fr_fr": "Laine noire"
     }
   },
   {
@@ -780,21 +420,6 @@
     }
   },
   {
-    "id": "blackstone_wall",
-    "up": "block/blackstone",
-    "north": "block/blackstone",
-    "east": "block/blackstone",
-    "name": {
-      "zh_cn": "黑石墙",
-      "en_us": "Blackstone Wall",
-      "zh_tw": "黑石牆",
-      "ja_jp": "ブラックストーンの塀",
-      "ko_kr": "흑암 담장",
-      "de_de": "Schwarzsteinmauer",
-      "fr_fr": "Muret de roche noire"
-    }
-  },
-  {
     "id": "blast_furnace",
     "up": "block/blast_furnace_top",
     "north": "block/blast_furnace_front",
@@ -807,51 +432,6 @@
       "ko_kr": "용광로",
       "de_de": "Schmelzofen",
       "fr_fr": "Haut fourneau"
-    }
-  },
-  {
-    "id": "blue_bed",
-    "up": "block/blue_bed_foot_up",
-    "north": "block/blue_bed_foot_west",
-    "east": "block/blue_bed_foot_east",
-    "name": {
-      "zh_cn": "蓝色床",
-      "en_us": "Blue Bed",
-      "zh_tw": "藍色床",
-      "ja_jp": "青色のベッド",
-      "ko_kr": "파란색 침대",
-      "de_de": "Blaues Bett",
-      "fr_fr": "Lit bleu"
-    }
-  },
-  {
-    "id": "blue_candle",
-    "up": "block/blue_candle",
-    "north": "block/blue_candle",
-    "east": "block/blue_candle",
-    "name": {
-      "zh_cn": "蓝色蜡烛",
-      "en_us": "Blue Candle",
-      "zh_tw": "藍色蠟燭",
-      "ja_jp": "青色のろうそく",
-      "ko_kr": "파란색 초",
-      "de_de": "Blaue Kerze",
-      "fr_fr": "Bougie bleue"
-    }
-  },
-  {
-    "id": "blue_carpet",
-    "up": "block/blue_wool",
-    "north": "block/blue_wool",
-    "east": "block/blue_wool",
-    "name": {
-      "zh_cn": "蓝色地毯",
-      "en_us": "Blue Carpet",
-      "zh_tw": "藍色地毯",
-      "ja_jp": "青色のカーペット",
-      "ko_kr": "파란색 양탄자",
-      "de_de": "Blauer Teppich",
-      "fr_fr": "Tapis bleu"
     }
   },
   {
@@ -930,21 +510,6 @@
     }
   },
   {
-    "id": "blue_stained_glass_pane",
-    "up": "block/blue_stained_glass_pane_top",
-    "north": "block/blue_stained_glass_pane_top",
-    "east": "block/blue_stained_glass_pane_top",
-    "name": {
-      "zh_cn": "蓝色染色玻璃板",
-      "en_us": "Blue Stained Glass Pane",
-      "zh_tw": "藍色玻璃片",
-      "ja_jp": "青色の色付きガラス板",
-      "ko_kr": "파란색 색유리 판",
-      "de_de": "Blaue Glasscheibe",
-      "fr_fr": "Vitre bleue"
-    }
-  },
-  {
     "id": "blue_terracotta",
     "up": "block/blue_terracotta",
     "north": "block/blue_terracotta",
@@ -957,6 +522,21 @@
       "ko_kr": "파란색 테라코타",
       "de_de": "Blaue Keramik",
       "fr_fr": "Terre cuite bleue"
+    }
+  },
+  {
+    "id": "blue_wool",
+    "up": "block/blue_wool",
+    "north": "block/blue_wool",
+    "east": "block/blue_wool",
+    "name": {
+      "zh_cn": "蓝色羊毛",
+      "en_us": "Blue Wool",
+      "zh_tw": "藍色羊毛",
+      "ja_jp": "青色の羊毛",
+      "ko_kr": "파란색 양털",
+      "de_de": "Blaue Wolle",
+      "fr_fr": "Laine bleue"
     }
   },
   {
@@ -1005,93 +585,18 @@
     }
   },
   {
-    "id": "brain_coral_fan",
-    "up": "block/brain_coral_fan",
-    "north": "block/brain_coral_fan",
-    "east": "block/brain_coral_fan",
-    "name": {
-      "zh_cn": "脑纹珊瑚扇",
-      "en_us": "Brain Coral Fan",
-      "zh_tw": "扇狀腦珊瑚",
-      "ja_jp": "ノウウチワサンゴ",
-      "ko_kr": "부채형 뇌 산호",
-      "de_de": "Hirnkorallenfächer",
-      "fr_fr": "Gorgone de corail cerveau"
-    }
-  },
-  {
-    "id": "brewing_stand",
-    "up": "block/brewing_stand",
-    "north": "block/brewing_stand",
-    "east": "block/brewing_stand",
-    "name": {
-      "zh_cn": "酿造台",
-      "en_us": "Brewing Stand",
-      "zh_tw": "釀造台",
-      "ja_jp": "醸造台",
-      "ko_kr": "양조기",
-      "de_de": "Braustand",
-      "fr_fr": "Alambic"
-    }
-  },
-  {
-    "id": "brick_slab",
+    "id": "bricks",
     "up": "block/bricks",
     "north": "block/bricks",
     "east": "block/bricks",
     "name": {
-      "zh_cn": "红砖台阶",
-      "en_us": "Brick Slab",
-      "zh_tw": "紅磚半磚",
-      "ja_jp": "レンガのハーフブロック",
-      "ko_kr": "벽돌 반 블록",
-      "de_de": "Ziegelstufe",
-      "fr_fr": "Dalle de briques"
-    }
-  },
-  {
-    "id": "brown_bed",
-    "up": "block/brown_bed_foot_up",
-    "north": "block/brown_bed_foot_west",
-    "east": "block/brown_bed_foot_east",
-    "name": {
-      "zh_cn": "棕色床",
-      "en_us": "Brown Bed",
-      "zh_tw": "棕色床",
-      "ja_jp": "茶色のベッド",
-      "ko_kr": "갈색 침대",
-      "de_de": "Braunes Bett",
-      "fr_fr": "Lit marron"
-    }
-  },
-  {
-    "id": "brown_candle",
-    "up": "block/brown_candle",
-    "north": "block/brown_candle",
-    "east": "block/brown_candle",
-    "name": {
-      "zh_cn": "棕色蜡烛",
-      "en_us": "Brown Candle",
-      "zh_tw": "棕色蠟燭",
-      "ja_jp": "茶色のろうそく",
-      "ko_kr": "갈색 초",
-      "de_de": "Braune Kerze",
-      "fr_fr": "Bougie marron"
-    }
-  },
-  {
-    "id": "brown_carpet",
-    "up": "block/brown_wool",
-    "north": "block/brown_wool",
-    "east": "block/brown_wool",
-    "name": {
-      "zh_cn": "棕色地毯",
-      "en_us": "Brown Carpet",
-      "zh_tw": "棕色地毯",
-      "ja_jp": "茶色のカーペット",
-      "ko_kr": "갈색 양탄자",
-      "de_de": "Brauner Teppich",
-      "fr_fr": "Tapis marron"
+      "zh_cn": "红砖块",
+      "en_us": "Bricks",
+      "zh_tw": "紅磚",
+      "ja_jp": "レンガ",
+      "ko_kr": "벽돌",
+      "de_de": "Ziegelsteine",
+      "fr_fr": "Briques"
     }
   },
   {
@@ -1155,21 +660,6 @@
     }
   },
   {
-    "id": "brown_stained_glass_pane",
-    "up": "block/brown_stained_glass_pane_top",
-    "north": "block/brown_stained_glass_pane_top",
-    "east": "block/brown_stained_glass_pane_top",
-    "name": {
-      "zh_cn": "棕色染色玻璃板",
-      "en_us": "Brown Stained Glass Pane",
-      "zh_tw": "棕色玻璃片",
-      "ja_jp": "茶色の色付きガラス板",
-      "ko_kr": "갈색 색유리 판",
-      "de_de": "Braune Glasscheibe",
-      "fr_fr": "Vitre marron"
-    }
-  },
-  {
     "id": "brown_terracotta",
     "up": "block/brown_terracotta",
     "north": "block/brown_terracotta",
@@ -1185,6 +675,21 @@
     }
   },
   {
+    "id": "brown_wool",
+    "up": "block/brown_wool",
+    "north": "block/brown_wool",
+    "east": "block/brown_wool",
+    "name": {
+      "zh_cn": "棕色羊毛",
+      "en_us": "Brown Wool",
+      "zh_tw": "棕色羊毛",
+      "ja_jp": "茶色の羊毛",
+      "ko_kr": "갈색 양털",
+      "de_de": "Braune Wolle",
+      "fr_fr": "Laine marron"
+    }
+  },
+  {
     "id": "bubble_coral_block",
     "up": "block/bubble_coral_block",
     "north": "block/bubble_coral_block",
@@ -1197,21 +702,6 @@
       "ko_kr": "거품 산호 블록",
       "de_de": "Blasenkorallenblock",
       "fr_fr": "Bloc de corail bulles"
-    }
-  },
-  {
-    "id": "bubble_coral_fan",
-    "up": "block/bubble_coral_fan",
-    "north": "block/bubble_coral_fan",
-    "east": "block/bubble_coral_fan",
-    "name": {
-      "zh_cn": "气泡珊瑚扇",
-      "en_us": "Bubble Coral Fan",
-      "zh_tw": "扇狀氣泡珊瑚",
-      "ja_jp": "ミズタマウチワサンゴ",
-      "ko_kr": "부채형 거품 산호",
-      "de_de": "Blasenkorallenfächer",
-      "fr_fr": "Gorgone de corail bulles"
     }
   },
   {
@@ -1260,51 +750,6 @@
     }
   },
   {
-    "id": "calibrated_sculk_sensor",
-    "up": "block/calibrated_sculk_sensor_top",
-    "north": "block/sculk_sensor_side",
-    "east": "block/sculk_sensor_side",
-    "name": {
-      "zh_cn": "校频幽匿感测体",
-      "en_us": "Calibrated Sculk Sensor",
-      "zh_tw": "校準伏聆振測器",
-      "ja_jp": "調律されたスカルクセンサー",
-      "ko_kr": "조율한 스컬크 감지체",
-      "de_de": "Kalibrierter Sculk-Sensor",
-      "fr_fr": "Capteur sculk calibré"
-    }
-  },
-  {
-    "id": "campfire",
-    "up": "block/campfire_log",
-    "north": "block/campfire_log",
-    "east": "block/campfire_log",
-    "name": {
-      "zh_cn": "营火",
-      "en_us": "Campfire",
-      "zh_tw": "營火",
-      "ja_jp": "焚き火",
-      "ko_kr": "모닥불",
-      "de_de": "Lagerfeuer",
-      "fr_fr": "Feu de camp"
-    }
-  },
-  {
-    "id": "candle",
-    "up": "block/candle",
-    "north": "block/candle",
-    "east": "block/candle",
-    "name": {
-      "zh_cn": "蜡烛",
-      "en_us": "Candle",
-      "zh_tw": "蠟燭",
-      "ja_jp": "ろうそく",
-      "ko_kr": "초",
-      "de_de": "Kerze",
-      "fr_fr": "Bougie"
-    }
-  },
-  {
     "id": "cartography_table",
     "up": "block/cartography_table_top",
     "north": "block/cartography_table_side3",
@@ -1335,21 +780,6 @@
     }
   },
   {
-    "id": "cauldron",
-    "up": "block/cauldron_top",
-    "north": "block/cauldron_side",
-    "east": "block/cauldron_side",
-    "name": {
-      "zh_cn": "炼药锅",
-      "en_us": "Cauldron",
-      "zh_tw": "鍋釜",
-      "ja_jp": "大釜",
-      "ko_kr": "가마솥",
-      "de_de": "Kessel",
-      "fr_fr": "Chaudron"
-    }
-  },
-  {
     "id": "chain_command_block",
     "up": "block/chain_command_block_side",
     "north": "block/chain_command_block_front",
@@ -1362,36 +792,6 @@
       "ko_kr": "연쇄형 명령 블록",
       "de_de": "Ketten-Befehlsblock",
       "fr_fr": "Bloc de commande en chaîne"
-    }
-  },
-  {
-    "id": "cherry_button",
-    "up": "block/cherry_planks",
-    "north": "block/cherry_planks",
-    "east": "block/cherry_planks",
-    "name": {
-      "zh_cn": "樱花木按钮",
-      "en_us": "Cherry Button",
-      "zh_tw": "櫻花木按鈕",
-      "ja_jp": "サクラのボタン",
-      "ko_kr": "벚나무 버튼",
-      "de_de": "Kirschholzknopf",
-      "fr_fr": "Bouton en cerisier"
-    }
-  },
-  {
-    "id": "cherry_hanging_sign",
-    "up": "block/cherry_hanging_sign",
-    "north": "block/cherry_hanging_sign",
-    "east": "block/cherry_hanging_sign",
-    "name": {
-      "zh_cn": "悬挂式樱花木告示牌",
-      "en_us": "Cherry Hanging Sign",
-      "zh_tw": "懸掛式櫻花木告示牌",
-      "ja_jp": "サクラの吊り看板",
-      "ko_kr": "벚나무 매다는 표지판",
-      "de_de": "Kirschholzhängeschild",
-      "fr_fr": "Pancarte suspendue en cerisier"
     }
   },
   {
@@ -1425,48 +825,18 @@
     }
   },
   {
-    "id": "cherry_shelf",
-    "up": "block/cherry_shelf",
-    "north": "block/cherry_shelf",
-    "east": "block/cherry_shelf",
+    "id": "cherry_planks",
+    "up": "block/cherry_planks",
+    "north": "block/cherry_planks",
+    "east": "block/cherry_planks",
     "name": {
-      "zh_cn": "樱花木展示架",
-      "en_us": "Cherry Shelf",
-      "zh_tw": "櫻花木展示架",
-      "ja_jp": "サクラの棚",
-      "ko_kr": "벚나무 선반",
-      "de_de": "Kirschholzregal",
-      "fr_fr": "Étagère en cerisier"
-    }
-  },
-  {
-    "id": "cherry_sign",
-    "up": "block/cherry_sign",
-    "north": "block/cherry_sign",
-    "east": "block/cherry_sign",
-    "name": {
-      "zh_cn": "樱花木告示牌",
-      "en_us": "Cherry Sign",
-      "zh_tw": "櫻花木告示牌",
-      "ja_jp": "サクラの看板",
-      "ko_kr": "벚나무 표지판",
-      "de_de": "Kirschholzschild",
-      "fr_fr": "Pancarte en cerisier"
-    }
-  },
-  {
-    "id": "cherry_trapdoor",
-    "up": "block/cherry_trapdoor",
-    "north": "block/cherry_trapdoor",
-    "east": "block/cherry_trapdoor",
-    "name": {
-      "zh_cn": "樱花木活板门",
-      "en_us": "Cherry Trapdoor",
-      "zh_tw": "櫻花木地板門",
-      "ja_jp": "サクラのトラップドア",
-      "ko_kr": "벚나무 다락문",
-      "de_de": "Kirschholzfalltür",
-      "fr_fr": "Trappe en cerisier"
+      "zh_cn": "樱花木板",
+      "en_us": "Cherry Planks",
+      "zh_tw": "櫻花木材",
+      "ja_jp": "サクラの板材",
+      "ko_kr": "벚나무 판자",
+      "de_de": "Kirschholzbretter",
+      "fr_fr": "Planches de cerisier"
     }
   },
   {
@@ -1695,36 +1065,6 @@
     }
   },
   {
-    "id": "chorus_flower",
-    "up": "block/chorus_flower",
-    "north": "block/chorus_plant",
-    "east": "block/chorus_plant",
-    "name": {
-      "zh_cn": "紫颂花",
-      "en_us": "Chorus Flower",
-      "zh_tw": "歌萊花",
-      "ja_jp": "コーラスフラワー",
-      "ko_kr": "후렴화",
-      "de_de": "Chorusblüte",
-      "fr_fr": "Fleur de chorus"
-    }
-  },
-  {
-    "id": "chorus_plant",
-    "up": "block/chorus_plant",
-    "north": "block/chorus_plant",
-    "east": "block/chorus_plant",
-    "name": {
-      "zh_cn": "紫颂植株",
-      "en_us": "Chorus Plant",
-      "zh_tw": "歌萊枝",
-      "ja_jp": "コーラスプラント",
-      "ko_kr": "후렴초",
-      "de_de": "Choruspflanze",
-      "fr_fr": "Plante de chorus"
-    }
-  },
-  {
     "id": "cinnabar",
     "up": "block/cinnabar",
     "north": "block/cinnabar",
@@ -1740,18 +1080,18 @@
     }
   },
   {
-    "id": "cinnabar_brick_slab",
+    "id": "cinnabar_bricks",
     "up": "block/cinnabar_bricks",
     "north": "block/cinnabar_bricks",
     "east": "block/cinnabar_bricks",
     "name": {
-      "zh_cn": "朱砂砖台阶",
-      "en_us": "Cinnabar Brick Slab",
-      "zh_tw": "硃砂磚半磚",
-      "ja_jp": "辰砂レンガのハーフブロック",
-      "ko_kr": "진사 벽돌 반 블록",
-      "de_de": "Zinnoberziegelstufe",
-      "fr_fr": "Dalle de cinabre taillé"
+      "zh_cn": "朱砂砖",
+      "en_us": "Cinnabar Bricks",
+      "zh_tw": "硃砂磚",
+      "ja_jp": "辰砂レンガ",
+      "ko_kr": "진사 벽돌",
+      "de_de": "Zinnoberziegel",
+      "fr_fr": "Cinabre taillé"
     }
   },
   {
@@ -1845,21 +1185,6 @@
     }
   },
   {
-    "id": "cocoa",
-    "up": "block/cocoa_stage0",
-    "north": "block/cocoa_stage0",
-    "east": "block/cocoa_stage0",
-    "name": {
-      "zh_cn": "可可果",
-      "en_us": "Cocoa",
-      "zh_tw": "可可豆",
-      "ja_jp": "カカオの実",
-      "ko_kr": "코코아",
-      "de_de": "Kakao",
-      "fr_fr": "Cacao"
-    }
-  },
-  {
     "id": "command_block",
     "up": "block/command_block_side",
     "north": "block/command_block_front",
@@ -1872,51 +1197,6 @@
       "ko_kr": "명령 블록",
       "de_de": "Befehlsblock",
       "fr_fr": "Bloc de commande"
-    }
-  },
-  {
-    "id": "comparator",
-    "up": "block/comparator",
-    "north": "block/smooth_stone",
-    "east": "block/smooth_stone",
-    "name": {
-      "zh_cn": "红石比较器",
-      "en_us": "Redstone Comparator",
-      "zh_tw": "紅石比較器",
-      "ja_jp": "レッドストーンコンパレーター",
-      "ko_kr": "레드스톤 비교기",
-      "de_de": "Redstone-Komparator",
-      "fr_fr": "Comparateur de redstone"
-    }
-  },
-  {
-    "id": "composter",
-    "up": "block/composter_bottom",
-    "north": "block/composter_side",
-    "east": "block/composter_side",
-    "name": {
-      "zh_cn": "堆肥桶",
-      "en_us": "Composter",
-      "zh_tw": "堆肥箱",
-      "ja_jp": "コンポスター",
-      "ko_kr": "퇴비통",
-      "de_de": "Komposter",
-      "fr_fr": "Composteur"
-    }
-  },
-  {
-    "id": "copper_bars",
-    "up": "block/copper_bars",
-    "north": "block/copper_bars",
-    "east": "block/copper_bars",
-    "name": {
-      "zh_cn": "铜栏杆",
-      "en_us": "Copper Bars",
-      "zh_tw": "銅柵欄",
-      "ja_jp": "銅格子",
-      "ko_kr": "구리 창살",
-      "de_de": "Kupfergitter",
-      "fr_fr": "Barreaux de cuivre"
     }
   },
   {
@@ -1965,21 +1245,6 @@
     }
   },
   {
-    "id": "copper_lantern",
-    "up": "block/copper_lantern",
-    "north": "block/copper_lantern",
-    "east": "block/copper_lantern",
-    "name": {
-      "zh_cn": "铜灯笼",
-      "en_us": "Copper Lantern",
-      "zh_tw": "銅燈籠",
-      "ja_jp": "銅のランタン",
-      "ko_kr": "구리 랜턴",
-      "de_de": "Kupferlaterne",
-      "fr_fr": "Lanterne en cuivre"
-    }
-  },
-  {
     "id": "copper_ore",
     "up": "block/copper_ore",
     "north": "block/copper_ore",
@@ -1992,36 +1257,6 @@
       "ko_kr": "구리 광석",
       "de_de": "Kupfererz",
       "fr_fr": "Minerai de cuivre"
-    }
-  },
-  {
-    "id": "copper_torch",
-    "up": "block/copper_torch",
-    "north": "block/copper_torch",
-    "east": "block/copper_torch",
-    "name": {
-      "zh_cn": "铜火把",
-      "en_us": "Copper Torch",
-      "zh_tw": "銅火把",
-      "ja_jp": "銅の松明",
-      "ko_kr": "구리 횃불",
-      "de_de": "Kupferfackel",
-      "fr_fr": "Torche de cuivre"
-    }
-  },
-  {
-    "id": "copper_trapdoor",
-    "up": "block/copper_trapdoor",
-    "north": "block/copper_trapdoor",
-    "east": "block/copper_trapdoor",
-    "name": {
-      "zh_cn": "铜活板门",
-      "en_us": "Copper Trapdoor",
-      "zh_tw": "銅地板門",
-      "ja_jp": "銅のトラップドア",
-      "ko_kr": "구리 다락문",
-      "de_de": "Kupferfalltür",
-      "fr_fr": "Trappe en cuivre"
     }
   },
   {
@@ -2145,36 +1380,6 @@
     }
   },
   {
-    "id": "crimson_button",
-    "up": "block/crimson_planks",
-    "north": "block/crimson_planks",
-    "east": "block/crimson_planks",
-    "name": {
-      "zh_cn": "绯红木按钮",
-      "en_us": "Crimson Button",
-      "zh_tw": "緋紅蕈木按鈕",
-      "ja_jp": "真紅のボタン",
-      "ko_kr": "진홍빛 버튼",
-      "de_de": "Karmesinknopf",
-      "fr_fr": "Bouton carmin"
-    }
-  },
-  {
-    "id": "crimson_hanging_sign",
-    "up": "block/crimson_hanging_sign",
-    "north": "block/crimson_hanging_sign",
-    "east": "block/crimson_hanging_sign",
-    "name": {
-      "zh_cn": "悬挂式绯红木告示牌",
-      "en_us": "Crimson Hanging Sign",
-      "zh_tw": "懸掛式緋紅蕈木告示牌",
-      "ja_jp": "真紅の吊り看板",
-      "ko_kr": "진홍빛 매다는 표지판",
-      "de_de": "Karmesinhängeschild",
-      "fr_fr": "Pancarte suspendue carmin"
-    }
-  },
-  {
     "id": "crimson_hyphae",
     "up": "block/crimson_stem",
     "north": "block/crimson_stem",
@@ -2205,33 +1410,18 @@
     }
   },
   {
-    "id": "crimson_shelf",
-    "up": "block/crimson_shelf",
-    "north": "block/crimson_shelf",
-    "east": "block/crimson_shelf",
+    "id": "crimson_planks",
+    "up": "block/crimson_planks",
+    "north": "block/crimson_planks",
+    "east": "block/crimson_planks",
     "name": {
-      "zh_cn": "绯红木展示架",
-      "en_us": "Crimson Shelf",
-      "zh_tw": "緋紅蕈木展示架",
-      "ja_jp": "真紅の棚",
-      "ko_kr": "진홍빛 선반",
-      "de_de": "Karmesinregal",
-      "fr_fr": "Étagère carmin"
-    }
-  },
-  {
-    "id": "crimson_sign",
-    "up": "block/crimson_sign",
-    "north": "block/crimson_sign",
-    "east": "block/crimson_sign",
-    "name": {
-      "zh_cn": "绯红木告示牌",
-      "en_us": "Crimson Sign",
-      "zh_tw": "緋紅蕈木告示牌",
-      "ja_jp": "真紅の看板",
-      "ko_kr": "진홍빛 표지판",
-      "de_de": "Karmesinschild",
-      "fr_fr": "Pancarte carmin"
+      "zh_cn": "绯红木板",
+      "en_us": "Crimson Planks",
+      "zh_tw": "緋紅蕈木材",
+      "ja_jp": "真紅の板材",
+      "ko_kr": "진홍빛 판자",
+      "de_de": "Karmesinbretter",
+      "fr_fr": "Planches carmin"
     }
   },
   {
@@ -2247,21 +1437,6 @@
       "ko_kr": "진홍빛 자루",
       "de_de": "Karmesinstiel",
       "fr_fr": "Tige carmin"
-    }
-  },
-  {
-    "id": "crimson_trapdoor",
-    "up": "block/crimson_trapdoor",
-    "north": "block/crimson_trapdoor",
-    "east": "block/crimson_trapdoor",
-    "name": {
-      "zh_cn": "绯红木活板门",
-      "en_us": "Crimson Trapdoor",
-      "zh_tw": "緋紅蕈木地板門",
-      "ja_jp": "真紅のトラップドア",
-      "ko_kr": "진홍빛 다락문",
-      "de_de": "Karmesinfalltür",
-      "fr_fr": "Trappe carmin"
     }
   },
   {
@@ -2325,51 +1500,6 @@
     }
   },
   {
-    "id": "cyan_bed",
-    "up": "block/cyan_bed_foot_up",
-    "north": "block/cyan_bed_foot_west",
-    "east": "block/cyan_bed_foot_east",
-    "name": {
-      "zh_cn": "青色床",
-      "en_us": "Cyan Bed",
-      "zh_tw": "青色床",
-      "ja_jp": "青緑色のベッド",
-      "ko_kr": "청록색 침대",
-      "de_de": "Türkises Bett",
-      "fr_fr": "Lit cyan"
-    }
-  },
-  {
-    "id": "cyan_candle",
-    "up": "block/cyan_candle",
-    "north": "block/cyan_candle",
-    "east": "block/cyan_candle",
-    "name": {
-      "zh_cn": "青色蜡烛",
-      "en_us": "Cyan Candle",
-      "zh_tw": "青色蠟燭",
-      "ja_jp": "青緑色のろうそく",
-      "ko_kr": "청록색 초",
-      "de_de": "Türkise Kerze",
-      "fr_fr": "Bougie cyan"
-    }
-  },
-  {
-    "id": "cyan_carpet",
-    "up": "block/cyan_wool",
-    "north": "block/cyan_wool",
-    "east": "block/cyan_wool",
-    "name": {
-      "zh_cn": "青色地毯",
-      "en_us": "Cyan Carpet",
-      "zh_tw": "青色地毯",
-      "ja_jp": "青緑色のカーペット",
-      "ko_kr": "청록색 양탄자",
-      "de_de": "Türkiser Teppich",
-      "fr_fr": "Tapis cyan"
-    }
-  },
-  {
     "id": "cyan_concrete",
     "up": "block/cyan_concrete",
     "north": "block/cyan_concrete",
@@ -2430,21 +1560,6 @@
     }
   },
   {
-    "id": "cyan_stained_glass_pane",
-    "up": "block/cyan_stained_glass_pane_top",
-    "north": "block/cyan_stained_glass_pane_top",
-    "east": "block/cyan_stained_glass_pane_top",
-    "name": {
-      "zh_cn": "青色染色玻璃板",
-      "en_us": "Cyan Stained Glass Pane",
-      "zh_tw": "青色玻璃片",
-      "ja_jp": "青緑色の色付きガラス板",
-      "ko_kr": "청록색 색유리 판",
-      "de_de": "Türkise Glasscheibe",
-      "fr_fr": "Vitre cyan"
-    }
-  },
-  {
     "id": "cyan_terracotta",
     "up": "block/cyan_terracotta",
     "north": "block/cyan_terracotta",
@@ -2460,18 +1575,18 @@
     }
   },
   {
-    "id": "dark_oak_hanging_sign",
-    "up": "block/dark_oak_hanging_sign",
-    "north": "block/dark_oak_hanging_sign",
-    "east": "block/dark_oak_hanging_sign",
+    "id": "cyan_wool",
+    "up": "block/cyan_wool",
+    "north": "block/cyan_wool",
+    "east": "block/cyan_wool",
     "name": {
-      "zh_cn": "悬挂式深色橡木告示牌",
-      "en_us": "Dark Oak Hanging Sign",
-      "zh_tw": "懸掛式黑橡木告示牌",
-      "ja_jp": "ダークオークの吊り看板",
-      "ko_kr": "짙은 참나무 매다는 표지판",
-      "de_de": "Schwarzeichenholzhängeschild",
-      "fr_fr": "Pancarte suspendue en chêne noir"
+      "zh_cn": "青色羊毛",
+      "en_us": "Cyan Wool",
+      "zh_tw": "青色羊毛",
+      "ja_jp": "青緑色の羊毛",
+      "ko_kr": "청록색 양털",
+      "de_de": "Türkise Wolle",
+      "fr_fr": "Laine cyan"
     }
   },
   {
@@ -2505,48 +1620,18 @@
     }
   },
   {
-    "id": "dark_oak_shelf",
-    "up": "block/dark_oak_shelf",
-    "north": "block/dark_oak_shelf",
-    "east": "block/dark_oak_shelf",
+    "id": "dark_oak_planks",
+    "up": "block/dark_oak_planks",
+    "north": "block/dark_oak_planks",
+    "east": "block/dark_oak_planks",
     "name": {
-      "zh_cn": "深色橡木展示架",
-      "en_us": "Dark Oak Shelf",
-      "zh_tw": "黑橡木展示架",
-      "ja_jp": "ダークオークの棚",
-      "ko_kr": "짙은 참나무 선반",
-      "de_de": "Schwarzeichenholzregal",
-      "fr_fr": "Étagère en chêne noir"
-    }
-  },
-  {
-    "id": "dark_oak_sign",
-    "up": "block/dark_oak_sign",
-    "north": "block/dark_oak_sign",
-    "east": "block/dark_oak_sign",
-    "name": {
-      "zh_cn": "深色橡木告示牌",
-      "en_us": "Dark Oak Sign",
-      "zh_tw": "黑橡木告示牌",
-      "ja_jp": "ダークオークの看板",
-      "ko_kr": "짙은 참나무 표지판",
-      "de_de": "Schwarzeichenholzschild",
-      "fr_fr": "Pancarte en chêne noir"
-    }
-  },
-  {
-    "id": "dark_oak_trapdoor",
-    "up": "block/dark_oak_trapdoor",
-    "north": "block/dark_oak_trapdoor",
-    "east": "block/dark_oak_trapdoor",
-    "name": {
-      "zh_cn": "深色橡木活板门",
-      "en_us": "Dark Oak Trapdoor",
-      "zh_tw": "黑橡木地板門",
-      "ja_jp": "ダークオークのトラップドア",
-      "ko_kr": "짙은 참나무 다락문",
-      "de_de": "Schwarzeichenholzfalltür",
-      "fr_fr": "Trappe en chêne noir"
+      "zh_cn": "深色橡木木板",
+      "en_us": "Dark Oak Planks",
+      "zh_tw": "黑橡木材",
+      "ja_jp": "ダークオークの板材",
+      "ko_kr": "짙은 참나무 판자",
+      "de_de": "Schwarzeichenholzbretter",
+      "fr_fr": "Planches de chêne noir"
     }
   },
   {
@@ -2580,21 +1665,6 @@
     }
   },
   {
-    "id": "daylight_detector",
-    "up": "block/daylight_detector_top",
-    "north": "block/daylight_detector_side",
-    "east": "block/daylight_detector_side",
-    "name": {
-      "zh_cn": "阳光探测器",
-      "en_us": "Daylight Detector",
-      "zh_tw": "日光感測器",
-      "ja_jp": "日照センサー",
-      "ko_kr": "햇빛 감지기",
-      "de_de": "Tageslichtsensor",
-      "fr_fr": "Capteur de lumière"
-    }
-  },
-  {
     "id": "dead_brain_coral_block",
     "up": "block/dead_brain_coral_block",
     "north": "block/dead_brain_coral_block",
@@ -2607,21 +1677,6 @@
       "ko_kr": "죽은 뇌 산호 블록",
       "de_de": "Abgestorbener Hirnkorallenblock",
       "fr_fr": "Bloc de corail cerveau mort"
-    }
-  },
-  {
-    "id": "dead_brain_coral_fan",
-    "up": "block/dead_brain_coral_fan",
-    "north": "block/dead_brain_coral_fan",
-    "east": "block/dead_brain_coral_fan",
-    "name": {
-      "zh_cn": "失活的脑纹珊瑚扇",
-      "en_us": "Dead Brain Coral Fan",
-      "zh_tw": "死亡的扇狀腦珊瑚",
-      "ja_jp": "死んだノウウチワサンゴ",
-      "ko_kr": "죽은 부채형 뇌 산호",
-      "de_de": "Abgestorbener Hirnkorallenfächer",
-      "fr_fr": "Gorgone de corail cerveau morte"
     }
   },
   {
@@ -2640,21 +1695,6 @@
     }
   },
   {
-    "id": "dead_bubble_coral_fan",
-    "up": "block/dead_bubble_coral_fan",
-    "north": "block/dead_bubble_coral_fan",
-    "east": "block/dead_bubble_coral_fan",
-    "name": {
-      "zh_cn": "失活的气泡珊瑚扇",
-      "en_us": "Dead Bubble Coral Fan",
-      "zh_tw": "死亡的扇狀氣泡珊瑚",
-      "ja_jp": "死んだミズタマウチワサンゴ",
-      "ko_kr": "죽은 부채형 거품 산호",
-      "de_de": "Abgestorbener Blasenkorallenfächer",
-      "fr_fr": "Gorgone de corail bulles morte"
-    }
-  },
-  {
     "id": "dead_fire_coral_block",
     "up": "block/dead_fire_coral_block",
     "north": "block/dead_fire_coral_block",
@@ -2667,21 +1707,6 @@
       "ko_kr": "죽은 불 산호 블록",
       "de_de": "Abgestorbener Feuerkorallenblock",
       "fr_fr": "Bloc de corail de feu mort"
-    }
-  },
-  {
-    "id": "dead_fire_coral_fan",
-    "up": "block/dead_fire_coral_fan",
-    "north": "block/dead_fire_coral_fan",
-    "east": "block/dead_fire_coral_fan",
-    "name": {
-      "zh_cn": "失活的火珊瑚扇",
-      "en_us": "Dead Fire Coral Fan",
-      "zh_tw": "死亡的扇狀火珊瑚",
-      "ja_jp": "死んだミレポラウチワサンゴ",
-      "ko_kr": "죽은 부채형 불 산호",
-      "de_de": "Abgestorbener Feuerkorallenfächer",
-      "fr_fr": "Gorgone de corail de feu morte"
     }
   },
   {
@@ -2700,21 +1725,6 @@
     }
   },
   {
-    "id": "dead_horn_coral_fan",
-    "up": "block/dead_horn_coral_fan",
-    "north": "block/dead_horn_coral_fan",
-    "east": "block/dead_horn_coral_fan",
-    "name": {
-      "zh_cn": "失活的鹿角珊瑚扇",
-      "en_us": "Dead Horn Coral Fan",
-      "zh_tw": "死亡的扇狀角珊瑚",
-      "ja_jp": "死んだシカツノウチワサンゴ",
-      "ko_kr": "죽은 부채형 사방산호",
-      "de_de": "Abgestorbener Geweihkorallenfächer",
-      "fr_fr": "Gorgone de corail corné morte"
-    }
-  },
-  {
     "id": "dead_tube_coral_block",
     "up": "block/dead_tube_coral_block",
     "north": "block/dead_tube_coral_block",
@@ -2727,21 +1737,6 @@
       "ko_kr": "죽은 관 산호 블록",
       "de_de": "Abgestorbener Orgelkorallenblock",
       "fr_fr": "Bloc de corail tubulaire mort"
-    }
-  },
-  {
-    "id": "dead_tube_coral_fan",
-    "up": "block/dead_tube_coral_fan",
-    "north": "block/dead_tube_coral_fan",
-    "east": "block/dead_tube_coral_fan",
-    "name": {
-      "zh_cn": "失活的管珊瑚扇",
-      "en_us": "Dead Tube Coral Fan",
-      "zh_tw": "死亡的扇狀管珊瑚",
-      "ja_jp": "死んだクダウチワサンゴ",
-      "ko_kr": "죽은 부채형 관 산호",
-      "de_de": "Abgestorbener Orgelkorallenfächer",
-      "fr_fr": "Gorgone de corail tubulaire morte"
     }
   },
   {
@@ -2760,18 +1755,18 @@
     }
   },
   {
-    "id": "deepslate_brick_slab",
+    "id": "deepslate_bricks",
     "up": "block/deepslate_bricks",
     "north": "block/deepslate_bricks",
     "east": "block/deepslate_bricks",
     "name": {
-      "zh_cn": "深板岩砖台阶",
-      "en_us": "Deepslate Brick Slab",
-      "zh_tw": "深板岩磚半磚",
-      "ja_jp": "深層岩レンガのハーフブロック",
-      "ko_kr": "심층암 벽돌 반 블록",
-      "de_de": "Tiefenschieferziegelstufe",
-      "fr_fr": "Dalle d'ardoise des abîmes taillée"
+      "zh_cn": "深板岩砖",
+      "en_us": "Deepslate Bricks",
+      "zh_tw": "深板岩磚",
+      "ja_jp": "深層岩レンガ",
+      "ko_kr": "심층암 벽돌",
+      "de_de": "Tiefenschieferziegel",
+      "fr_fr": "Ardoise des abîmes taillée"
     }
   },
   {
@@ -2895,33 +1890,18 @@
     }
   },
   {
-    "id": "deepslate_tile_slab",
+    "id": "deepslate_tiles",
     "up": "block/deepslate_tiles",
     "north": "block/deepslate_tiles",
     "east": "block/deepslate_tiles",
     "name": {
-      "zh_cn": "深板岩瓦台阶",
-      "en_us": "Deepslate Tile Slab",
-      "zh_tw": "深板岩磚瓦半磚",
-      "ja_jp": "深層岩タイルのハーフブロック",
-      "ko_kr": "심층암 타일 반 블록",
-      "de_de": "Tiefenschieferfliesenstufe",
-      "fr_fr": "Dalle d'ardoise des abîmes carrelée"
-    }
-  },
-  {
-    "id": "detector_rail",
-    "up": "block/detector_rail",
-    "north": "block/detector_rail",
-    "east": "block/detector_rail",
-    "name": {
-      "zh_cn": "探测铁轨",
-      "en_us": "Detector Rail",
-      "zh_tw": "感測鐵軌",
-      "ja_jp": "ディテクターレール",
-      "ko_kr": "감지 레일",
-      "de_de": "Sensorschiene",
-      "fr_fr": "Rails détecteurs"
+      "zh_cn": "深板岩瓦",
+      "en_us": "Deepslate Tiles",
+      "zh_tw": "深板岩磚瓦",
+      "ja_jp": "深層岩タイル",
+      "ko_kr": "심층암 타일",
+      "de_de": "Tiefenschieferfliesen",
+      "fr_fr": "Ardoise des abîmes carrelée"
     }
   },
   {
@@ -2985,21 +1965,6 @@
     }
   },
   {
-    "id": "dirt_path",
-    "up": "block/dirt_path_top",
-    "north": "block/dirt_path_side",
-    "east": "block/dirt_path_side",
-    "name": {
-      "zh_cn": "土径",
-      "en_us": "Dirt Path",
-      "zh_tw": "土徑",
-      "ja_jp": "土の道",
-      "ko_kr": "흙 길",
-      "de_de": "Trampelpfad",
-      "fr_fr": "Chemin de terre"
-    }
-  },
-  {
     "id": "dispenser",
     "up": "block/dispenser_front_vertical",
     "north": "block/furnace_top",
@@ -3012,36 +1977,6 @@
       "ko_kr": "발사기",
       "de_de": "Werfer",
       "fr_fr": "Distributeur"
-    }
-  },
-  {
-    "id": "dragon_egg",
-    "up": "block/dragon_egg",
-    "north": "block/dragon_egg",
-    "east": "block/dragon_egg",
-    "name": {
-      "zh_cn": "龙蛋",
-      "en_us": "Dragon Egg",
-      "zh_tw": "龍蛋",
-      "ja_jp": "ドラゴンの卵",
-      "ko_kr": "드래곤 알",
-      "de_de": "Drachenei",
-      "fr_fr": "Oeuf de dragon"
-    }
-  },
-  {
-    "id": "dried_ghast",
-    "up": "block/dried_ghast_hydration_0_top",
-    "north": "block/dried_ghast_hydration_0_north",
-    "east": "block/dried_ghast_hydration_0_east",
-    "name": {
-      "zh_cn": "失水恶魂",
-      "en_us": "Dried Ghast",
-      "zh_tw": "乾癟幽靈",
-      "ja_jp": "乾燥したガスト",
-      "ko_kr": "마른 가스트",
-      "de_de": "Ausgetrockneter Ghast",
-      "fr_fr": "Ghast desséché"
     }
   },
   {
@@ -3120,51 +2055,6 @@
     }
   },
   {
-    "id": "enchanting_table",
-    "up": "block/enchanting_table_top",
-    "north": "block/enchanting_table_side",
-    "east": "block/enchanting_table_side",
-    "name": {
-      "zh_cn": "附魔台",
-      "en_us": "Enchanting Table",
-      "zh_tw": "附魔台",
-      "ja_jp": "エンチャントテーブル",
-      "ko_kr": "마법 부여대",
-      "de_de": "Zaubertisch",
-      "fr_fr": "Table d'enchantement"
-    }
-  },
-  {
-    "id": "end_portal_frame",
-    "up": "block/end_portal_frame_top",
-    "north": "block/end_portal_frame_side",
-    "east": "block/end_portal_frame_side",
-    "name": {
-      "zh_cn": "末地传送门框架",
-      "en_us": "End Portal Frame",
-      "zh_tw": "終界傳送門框架",
-      "ja_jp": "エンドポータルフレーム",
-      "ko_kr": "엔드 차원문 틀",
-      "de_de": "Endportalrahmen",
-      "fr_fr": "Cadre de portail de l'End"
-    }
-  },
-  {
-    "id": "end_rod",
-    "up": "block/end_rod",
-    "north": "block/end_rod",
-    "east": "block/end_rod",
-    "name": {
-      "zh_cn": "末地烛",
-      "en_us": "End Rod",
-      "zh_tw": "終界燭",
-      "ja_jp": "エンドロッド",
-      "ko_kr": "엔드 막대기",
-      "de_de": "Endstab",
-      "fr_fr": "Barre de l'End"
-    }
-  },
-  {
     "id": "end_stone",
     "up": "block/end_stone",
     "north": "block/end_stone",
@@ -3180,18 +2070,18 @@
     }
   },
   {
-    "id": "end_stone_brick_slab",
+    "id": "end_stone_bricks",
     "up": "block/end_stone_bricks",
     "north": "block/end_stone_bricks",
     "east": "block/end_stone_bricks",
     "name": {
-      "zh_cn": "末地石砖台阶",
-      "en_us": "End Stone Brick Slab",
-      "zh_tw": "終界石磚半磚",
-      "ja_jp": "エンドストーンレンガのハーフブロック",
-      "ko_kr": "엔드 석재 벽돌 반 블록",
-      "de_de": "Endsteinziegelstufe",
-      "fr_fr": "Dalle de pierre taillée de l'End"
+      "zh_cn": "末地石砖",
+      "en_us": "End Stone Bricks",
+      "zh_tw": "終界石磚",
+      "ja_jp": "エンドストーンレンガ",
+      "ko_kr": "엔드 석재 벽돌",
+      "de_de": "Endsteinziegel",
+      "fr_fr": "Pierre taillée de l'End"
     }
   },
   {
@@ -3225,21 +2115,6 @@
     }
   },
   {
-    "id": "exposed_copper_bars",
-    "up": "block/exposed_copper_bars",
-    "north": "block/exposed_copper_bars",
-    "east": "block/exposed_copper_bars",
-    "name": {
-      "zh_cn": "斑驳的铜栏杆",
-      "en_us": "Exposed Copper Bars",
-      "zh_tw": "斑駁的銅柵欄",
-      "ja_jp": "風化した銅格子",
-      "ko_kr": "약간 녹슨 구리 창살",
-      "de_de": "Angelaufenes Kupfergitter",
-      "fr_fr": "Barreaux de cuivre exposé"
-    }
-  },
-  {
     "id": "exposed_copper_bulb",
     "up": "block/exposed_copper_bulb",
     "north": "block/exposed_copper_bulb",
@@ -3270,36 +2145,6 @@
     }
   },
   {
-    "id": "exposed_copper_lantern",
-    "up": "block/exposed_copper_lantern",
-    "north": "block/exposed_copper_lantern",
-    "east": "block/exposed_copper_lantern",
-    "name": {
-      "zh_cn": "斑驳的铜灯笼",
-      "en_us": "Exposed Copper Lantern",
-      "zh_tw": "斑駁的銅燈籠",
-      "ja_jp": "風化した銅のランタン",
-      "ko_kr": "약간 녹슨 구리 랜턴",
-      "de_de": "Angelaufene Kupferlaterne",
-      "fr_fr": "Lanterne en cuivre exposé"
-    }
-  },
-  {
-    "id": "exposed_copper_trapdoor",
-    "up": "block/exposed_copper_trapdoor",
-    "north": "block/exposed_copper_trapdoor",
-    "east": "block/exposed_copper_trapdoor",
-    "name": {
-      "zh_cn": "斑驳的铜活板门",
-      "en_us": "Exposed Copper Trapdoor",
-      "zh_tw": "斑駁的銅地板門",
-      "ja_jp": "風化した銅のトラップドア",
-      "ko_kr": "약간 녹슨 구리 다락문",
-      "de_de": "Angelaufene Kupferfalltür",
-      "fr_fr": "Trappe en cuivre exposé"
-    }
-  },
-  {
     "id": "exposed_cut_copper",
     "up": "block/exposed_cut_copper",
     "north": "block/exposed_cut_copper",
@@ -3312,36 +2157,6 @@
       "ko_kr": "약간 녹슨 깎인 구리",
       "de_de": "Angelaufener geschnittener Kupferblock",
       "fr_fr": "Cuivre taillé exposé"
-    }
-  },
-  {
-    "id": "exposed_lightning_rod",
-    "up": "block/exposed_lightning_rod",
-    "north": "block/exposed_lightning_rod",
-    "east": "block/exposed_lightning_rod",
-    "name": {
-      "zh_cn": "斑驳的避雷针",
-      "en_us": "Exposed Lightning Rod",
-      "zh_tw": "斑駁的避雷針",
-      "ja_jp": "風化した避雷針",
-      "ko_kr": "약간 녹슨 피뢰침",
-      "de_de": "Angelaufener Blitzableiter",
-      "fr_fr": "Paratonnerre exposé"
-    }
-  },
-  {
-    "id": "farmland",
-    "up": "block/farmland",
-    "north": "block/dirt",
-    "east": "block/dirt",
-    "name": {
-      "zh_cn": "耕地",
-      "en_us": "Farmland",
-      "zh_tw": "耕地",
-      "ja_jp": "耕地",
-      "ko_kr": "경작지",
-      "de_de": "Ackerboden",
-      "fr_fr": "Terre labourée"
     }
   },
   {
@@ -3360,21 +2175,6 @@
     }
   },
   {
-    "id": "fire_coral_fan",
-    "up": "block/fire_coral_fan",
-    "north": "block/fire_coral_fan",
-    "east": "block/fire_coral_fan",
-    "name": {
-      "zh_cn": "火珊瑚扇",
-      "en_us": "Fire Coral Fan",
-      "zh_tw": "扇狀火珊瑚",
-      "ja_jp": "ミレポラウチワサンゴ",
-      "ko_kr": "부채형 불 산호",
-      "de_de": "Feuerkorallenfächer",
-      "fr_fr": "Gorgone de corail de feu"
-    }
-  },
-  {
     "id": "fletching_table",
     "up": "block/fletching_table_top",
     "north": "block/fletching_table_front",
@@ -3390,36 +2190,6 @@
     }
   },
   {
-    "id": "flower_pot",
-    "up": "block/flower_pot",
-    "north": "block/flower_pot",
-    "east": "block/flower_pot",
-    "name": {
-      "zh_cn": "花盆",
-      "en_us": "Flower Pot",
-      "zh_tw": "花盆",
-      "ja_jp": "植木鉢",
-      "ko_kr": "화분",
-      "de_de": "Blumentopf",
-      "fr_fr": "Pot de fleurs"
-    }
-  },
-  {
-    "id": "flowering_azalea",
-    "up": "block/flowering_azalea_top",
-    "north": "block/flowering_azalea_side",
-    "east": "block/flowering_azalea_side",
-    "name": {
-      "zh_cn": "盛开的杜鹃花丛",
-      "en_us": "Flowering Azalea",
-      "zh_tw": "開花的杜鵑叢",
-      "ja_jp": "開花したツツジ",
-      "ko_kr": "꽃 핀 진달래",
-      "de_de": "Blühende Azalee",
-      "fr_fr": "Azalée fleurie"
-    }
-  },
-  {
     "id": "flowering_azalea_leaves",
     "up": "block/flowering_azalea_leaves",
     "north": "block/flowering_azalea_leaves",
@@ -3432,21 +2202,6 @@
       "ko_kr": "꽃 핀 진달래 잎",
       "de_de": "Blühendes Azaleenlaub",
       "fr_fr": "Feuilles d'azalée fleurie"
-    }
-  },
-  {
-    "id": "frogspawn",
-    "up": "block/frogspawn",
-    "north": "block/frogspawn",
-    "east": "block/frogspawn",
-    "name": {
-      "zh_cn": "青蛙卵",
-      "en_us": "Frogspawn",
-      "zh_tw": "青蛙卵",
-      "ja_jp": "カエルの卵",
-      "ko_kr": "개구리알",
-      "de_de": "Froschlaich",
-      "fr_fr": "Oeufs de grenouille"
     }
   },
   {
@@ -3492,21 +2247,6 @@
       "ko_kr": "황금이 박힌 흑암",
       "de_de": "Golddurchzogener Schwarzstein",
       "fr_fr": "Roche noire dorée"
-    }
-  },
-  {
-    "id": "glass_pane",
-    "up": "block/glass_pane_top",
-    "north": "block/glass_pane_top",
-    "east": "block/glass_pane_top",
-    "name": {
-      "zh_cn": "玻璃板",
-      "en_us": "Glass Pane",
-      "zh_tw": "玻璃片",
-      "ja_jp": "ガラス板",
-      "ko_kr": "유리판",
-      "de_de": "Glasscheibe",
-      "fr_fr": "Vitre"
     }
   },
   {
@@ -3600,51 +2340,6 @@
     }
   },
   {
-    "id": "gray_bed",
-    "up": "block/gray_bed_foot_up",
-    "north": "block/gray_bed_foot_west",
-    "east": "block/gray_bed_foot_east",
-    "name": {
-      "zh_cn": "灰色床",
-      "en_us": "Gray Bed",
-      "zh_tw": "灰色床",
-      "ja_jp": "灰色のベッド",
-      "ko_kr": "회색 침대",
-      "de_de": "Graues Bett",
-      "fr_fr": "Lit gris"
-    }
-  },
-  {
-    "id": "gray_candle",
-    "up": "block/gray_candle",
-    "north": "block/gray_candle",
-    "east": "block/gray_candle",
-    "name": {
-      "zh_cn": "灰色蜡烛",
-      "en_us": "Gray Candle",
-      "zh_tw": "灰色蠟燭",
-      "ja_jp": "灰色のろうそく",
-      "ko_kr": "회색 초",
-      "de_de": "Graue Kerze",
-      "fr_fr": "Bougie grise"
-    }
-  },
-  {
-    "id": "gray_carpet",
-    "up": "block/gray_wool",
-    "north": "block/gray_wool",
-    "east": "block/gray_wool",
-    "name": {
-      "zh_cn": "灰色地毯",
-      "en_us": "Gray Carpet",
-      "zh_tw": "灰色地毯",
-      "ja_jp": "灰色のカーペット",
-      "ko_kr": "회색 양탄자",
-      "de_de": "Grauer Teppich",
-      "fr_fr": "Tapis gris"
-    }
-  },
-  {
     "id": "gray_concrete",
     "up": "block/gray_concrete",
     "north": "block/gray_concrete",
@@ -3705,21 +2400,6 @@
     }
   },
   {
-    "id": "gray_stained_glass_pane",
-    "up": "block/gray_stained_glass_pane_top",
-    "north": "block/gray_stained_glass_pane_top",
-    "east": "block/gray_stained_glass_pane_top",
-    "name": {
-      "zh_cn": "灰色染色玻璃板",
-      "en_us": "Gray Stained Glass Pane",
-      "zh_tw": "灰色玻璃片",
-      "ja_jp": "灰色の色付きガラス板",
-      "ko_kr": "회색 색유리 판",
-      "de_de": "Graue Glasscheibe",
-      "fr_fr": "Vitre grise"
-    }
-  },
-  {
     "id": "gray_terracotta",
     "up": "block/gray_terracotta",
     "north": "block/gray_terracotta",
@@ -3735,48 +2415,18 @@
     }
   },
   {
-    "id": "green_bed",
-    "up": "block/green_bed_foot_up",
-    "north": "block/green_bed_foot_west",
-    "east": "block/green_bed_foot_east",
+    "id": "gray_wool",
+    "up": "block/gray_wool",
+    "north": "block/gray_wool",
+    "east": "block/gray_wool",
     "name": {
-      "zh_cn": "绿色床",
-      "en_us": "Green Bed",
-      "zh_tw": "綠色床",
-      "ja_jp": "緑色のベッド",
-      "ko_kr": "초록색 침대",
-      "de_de": "Grünes Bett",
-      "fr_fr": "Lit vert"
-    }
-  },
-  {
-    "id": "green_candle",
-    "up": "block/green_candle",
-    "north": "block/green_candle",
-    "east": "block/green_candle",
-    "name": {
-      "zh_cn": "绿色蜡烛",
-      "en_us": "Green Candle",
-      "zh_tw": "綠色蠟燭",
-      "ja_jp": "緑色のろうそく",
-      "ko_kr": "초록색 초",
-      "de_de": "Grüne Kerze",
-      "fr_fr": "Bougie verte"
-    }
-  },
-  {
-    "id": "green_carpet",
-    "up": "block/green_wool",
-    "north": "block/green_wool",
-    "east": "block/green_wool",
-    "name": {
-      "zh_cn": "绿色地毯",
-      "en_us": "Green Carpet",
-      "zh_tw": "綠色地毯",
-      "ja_jp": "緑色のカーペット",
-      "ko_kr": "초록색 양탄자",
-      "de_de": "Grüner Teppich",
-      "fr_fr": "Tapis vert"
+      "zh_cn": "灰色羊毛",
+      "en_us": "Gray Wool",
+      "zh_tw": "灰色羊毛",
+      "ja_jp": "灰色の羊毛",
+      "ko_kr": "회색 양털",
+      "de_de": "Graue Wolle",
+      "fr_fr": "Laine grise"
     }
   },
   {
@@ -3840,21 +2490,6 @@
     }
   },
   {
-    "id": "green_stained_glass_pane",
-    "up": "block/green_stained_glass_pane_top",
-    "north": "block/green_stained_glass_pane_top",
-    "east": "block/green_stained_glass_pane_top",
-    "name": {
-      "zh_cn": "绿色染色玻璃板",
-      "en_us": "Green Stained Glass Pane",
-      "zh_tw": "綠色玻璃片",
-      "ja_jp": "緑色の色付きガラス板",
-      "ko_kr": "초록색 색유리 판",
-      "de_de": "Grüne Glasscheibe",
-      "fr_fr": "Vitre verte"
-    }
-  },
-  {
     "id": "green_terracotta",
     "up": "block/green_terracotta",
     "north": "block/green_terracotta",
@@ -3870,18 +2505,18 @@
     }
   },
   {
-    "id": "grindstone",
-    "up": "block/grindstone_pivot",
-    "north": "block/dark_oak_log",
-    "east": "block/dark_oak_log",
+    "id": "green_wool",
+    "up": "block/green_wool",
+    "north": "block/green_wool",
+    "east": "block/green_wool",
     "name": {
-      "zh_cn": "砂轮",
-      "en_us": "Grindstone",
-      "zh_tw": "砂輪",
-      "ja_jp": "砥石",
-      "ko_kr": "숫돌",
-      "de_de": "Schleifstein",
-      "fr_fr": "Meule"
+      "zh_cn": "绿色羊毛",
+      "en_us": "Green Wool",
+      "zh_tw": "綠色羊毛",
+      "ja_jp": "緑色の羊毛",
+      "ko_kr": "초록색 양털",
+      "de_de": "Grüne Wolle",
+      "fr_fr": "Laine verte"
     }
   },
   {
@@ -3897,21 +2532,6 @@
       "ko_kr": "건초 더미",
       "de_de": "Strohballen",
       "fr_fr": "Botte de paille"
-    }
-  },
-  {
-    "id": "heavy_weighted_pressure_plate",
-    "up": "block/iron_block",
-    "north": "block/iron_block",
-    "east": "block/iron_block",
-    "name": {
-      "zh_cn": "重质测重压力板",
-      "en_us": "Heavy Weighted Pressure Plate",
-      "zh_tw": "重質測重壓力板",
-      "ja_jp": "重量用感圧板",
-      "ko_kr": "중형 무게 압력판",
-      "de_de": "Grobwägeplatte",
-      "fr_fr": "Plaque de pression pondérée lourde"
     }
   },
   {
@@ -3945,21 +2565,6 @@
     }
   },
   {
-    "id": "hopper",
-    "up": "block/hopper_inside",
-    "north": "block/hopper_outside",
-    "east": "block/hopper_outside",
-    "name": {
-      "zh_cn": "漏斗",
-      "en_us": "Hopper",
-      "zh_tw": "漏斗",
-      "ja_jp": "ホッパー",
-      "ko_kr": "호퍼",
-      "de_de": "Trichter",
-      "fr_fr": "Entonnoir"
-    }
-  },
-  {
     "id": "horn_coral_block",
     "up": "block/horn_coral_block",
     "north": "block/horn_coral_block",
@@ -3972,21 +2577,6 @@
       "ko_kr": "사방산호 블록",
       "de_de": "Geweihkorallenblock",
       "fr_fr": "Bloc de corail corné"
-    }
-  },
-  {
-    "id": "horn_coral_fan",
-    "up": "block/horn_coral_fan",
-    "north": "block/horn_coral_fan",
-    "east": "block/horn_coral_fan",
-    "name": {
-      "zh_cn": "鹿角珊瑚扇",
-      "en_us": "Horn Coral Fan",
-      "zh_tw": "扇狀角珊瑚",
-      "ja_jp": "シカツノウチワサンゴ",
-      "ko_kr": "부채형 사방산호",
-      "de_de": "Geweihkorallenfächer",
-      "fr_fr": "Gorgone de corail corné"
     }
   },
   {
@@ -4050,18 +2640,18 @@
     }
   },
   {
-    "id": "iron_bars",
-    "up": "block/iron_bars",
-    "north": "block/iron_bars",
-    "east": "block/iron_bars",
+    "id": "iron_block",
+    "up": "block/iron_block",
+    "north": "block/iron_block",
+    "east": "block/iron_block",
     "name": {
-      "zh_cn": "铁栏杆",
-      "en_us": "Iron Bars",
-      "zh_tw": "鐵柵欄",
-      "ja_jp": "鉄格子",
-      "ko_kr": "철 창살",
-      "de_de": "Eisengitter",
-      "fr_fr": "Barreaux de fer"
+      "zh_cn": "铁块",
+      "en_us": "Block of Iron",
+      "zh_tw": "鐵方塊",
+      "ja_jp": "鉄ブロック",
+      "ko_kr": "철 블록",
+      "de_de": "Eisenblock",
+      "fr_fr": "Bloc de fer"
     }
   },
   {
@@ -4077,21 +2667,6 @@
       "ko_kr": "철 광석",
       "de_de": "Eisenerz",
       "fr_fr": "Minerai de fer"
-    }
-  },
-  {
-    "id": "iron_trapdoor",
-    "up": "block/iron_trapdoor",
-    "north": "block/iron_trapdoor",
-    "east": "block/iron_trapdoor",
-    "name": {
-      "zh_cn": "铁活板门",
-      "en_us": "Iron Trapdoor",
-      "zh_tw": "鐵地板門",
-      "ja_jp": "鉄のトラップドア",
-      "ko_kr": "철 다락문",
-      "de_de": "Eisenfalltür",
-      "fr_fr": "Trappe en fer"
     }
   },
   {
@@ -4140,36 +2715,6 @@
     }
   },
   {
-    "id": "jungle_button",
-    "up": "block/jungle_planks",
-    "north": "block/jungle_planks",
-    "east": "block/jungle_planks",
-    "name": {
-      "zh_cn": "丛林木按钮",
-      "en_us": "Jungle Button",
-      "zh_tw": "叢林木按鈕",
-      "ja_jp": "ジャングルのボタン",
-      "ko_kr": "정글나무 버튼",
-      "de_de": "Tropenholzknopf",
-      "fr_fr": "Bouton en acajou"
-    }
-  },
-  {
-    "id": "jungle_hanging_sign",
-    "up": "block/jungle_hanging_sign",
-    "north": "block/jungle_hanging_sign",
-    "east": "block/jungle_hanging_sign",
-    "name": {
-      "zh_cn": "悬挂式丛林木告示牌",
-      "en_us": "Jungle Hanging Sign",
-      "zh_tw": "懸掛式叢林木告示牌",
-      "ja_jp": "ジャングルの吊り看板",
-      "ko_kr": "정글나무 매다는 표지판",
-      "de_de": "Tropenholzhängeschild",
-      "fr_fr": "Pancarte suspendue en acajou"
-    }
-  },
-  {
     "id": "jungle_leaves",
     "up": "block/jungle_leaves",
     "north": "block/jungle_leaves",
@@ -4200,48 +2745,18 @@
     }
   },
   {
-    "id": "jungle_shelf",
-    "up": "block/jungle_shelf",
-    "north": "block/jungle_shelf",
-    "east": "block/jungle_shelf",
+    "id": "jungle_planks",
+    "up": "block/jungle_planks",
+    "north": "block/jungle_planks",
+    "east": "block/jungle_planks",
     "name": {
-      "zh_cn": "丛林木展示架",
-      "en_us": "Jungle Shelf",
-      "zh_tw": "叢林木展示架",
-      "ja_jp": "ジャングルの棚",
-      "ko_kr": "정글나무 선반",
-      "de_de": "Tropenholzregal",
-      "fr_fr": "Étagère en acajou"
-    }
-  },
-  {
-    "id": "jungle_sign",
-    "up": "block/jungle_sign",
-    "north": "block/jungle_sign",
-    "east": "block/jungle_sign",
-    "name": {
-      "zh_cn": "丛林木告示牌",
-      "en_us": "Jungle Sign",
-      "zh_tw": "叢林木告示牌",
-      "ja_jp": "ジャングルの看板",
-      "ko_kr": "정글나무 표지판",
-      "de_de": "Tropenholzschild",
-      "fr_fr": "Pancarte en acajou"
-    }
-  },
-  {
-    "id": "jungle_trapdoor",
-    "up": "block/jungle_trapdoor",
-    "north": "block/jungle_trapdoor",
-    "east": "block/jungle_trapdoor",
-    "name": {
-      "zh_cn": "丛林木活板门",
-      "en_us": "Jungle Trapdoor",
-      "zh_tw": "叢林木地板門",
-      "ja_jp": "ジャングルのトラップドア",
-      "ko_kr": "정글나무 다락문",
-      "de_de": "Tropenholzfalltür",
-      "fr_fr": "Trappe en acajou"
+      "zh_cn": "丛林木板",
+      "en_us": "Jungle Planks",
+      "zh_tw": "叢林木材",
+      "ja_jp": "ジャングルの板材",
+      "ko_kr": "정글나무 판자",
+      "de_de": "Tropenholzbretter",
+      "fr_fr": "Planches d'acajou"
     }
   },
   {
@@ -4257,21 +2772,6 @@
       "ko_kr": "정글나무",
       "de_de": "Tropenholz",
       "fr_fr": "Bois d'acajou"
-    }
-  },
-  {
-    "id": "lantern",
-    "up": "block/lantern",
-    "north": "block/lantern",
-    "east": "block/lantern",
-    "name": {
-      "zh_cn": "灯笼",
-      "en_us": "Lantern",
-      "zh_tw": "燈籠",
-      "ja_jp": "ランタン",
-      "ko_kr": "랜턴",
-      "de_de": "Laterne",
-      "fr_fr": "Lanterne"
     }
   },
   {
@@ -4302,81 +2802,6 @@
       "ko_kr": "청금석 광석",
       "de_de": "Lapislazulierz",
       "fr_fr": "Minerai de lapis-lazuli"
-    }
-  },
-  {
-    "id": "leaf_litter",
-    "up": "block/leaf_litter",
-    "north": "block/leaf_litter",
-    "east": "block/leaf_litter",
-    "name": {
-      "zh_cn": "枯叶堆",
-      "en_us": "Leaf Litter",
-      "zh_tw": "枯葉",
-      "ja_jp": "落ち葉",
-      "ko_kr": "낙엽",
-      "de_de": "Laubhaufen",
-      "fr_fr": "Tas de feuilles"
-    }
-  },
-  {
-    "id": "lectern",
-    "up": "block/lectern_base",
-    "north": "block/lectern_base",
-    "east": "block/lectern_base",
-    "name": {
-      "zh_cn": "讲台",
-      "en_us": "Lectern",
-      "zh_tw": "講台",
-      "ja_jp": "書見台",
-      "ko_kr": "독서대",
-      "de_de": "Lesepult",
-      "fr_fr": "Pupitre"
-    }
-  },
-  {
-    "id": "light_blue_bed",
-    "up": "block/light_blue_bed_foot_up",
-    "north": "block/light_blue_bed_foot_west",
-    "east": "block/light_blue_bed_foot_east",
-    "name": {
-      "zh_cn": "淡蓝色床",
-      "en_us": "Light Blue Bed",
-      "zh_tw": "淺藍色床",
-      "ja_jp": "空色のベッド",
-      "ko_kr": "하늘색 침대",
-      "de_de": "Hellblaues Bett",
-      "fr_fr": "Lit bleu clair"
-    }
-  },
-  {
-    "id": "light_blue_candle",
-    "up": "block/light_blue_candle",
-    "north": "block/light_blue_candle",
-    "east": "block/light_blue_candle",
-    "name": {
-      "zh_cn": "淡蓝色蜡烛",
-      "en_us": "Light Blue Candle",
-      "zh_tw": "淺藍色蠟燭",
-      "ja_jp": "空色のろうそく",
-      "ko_kr": "하늘색 초",
-      "de_de": "Hellblaue Kerze",
-      "fr_fr": "Bougie bleu clair"
-    }
-  },
-  {
-    "id": "light_blue_carpet",
-    "up": "block/light_blue_wool",
-    "north": "block/light_blue_wool",
-    "east": "block/light_blue_wool",
-    "name": {
-      "zh_cn": "淡蓝色地毯",
-      "en_us": "Light Blue Carpet",
-      "zh_tw": "淺藍色地毯",
-      "ja_jp": "空色のカーペット",
-      "ko_kr": "하늘색 양탄자",
-      "de_de": "Hellblauer Teppich",
-      "fr_fr": "Tapis bleu clair"
     }
   },
   {
@@ -4440,21 +2865,6 @@
     }
   },
   {
-    "id": "light_blue_stained_glass_pane",
-    "up": "block/light_blue_stained_glass_pane_top",
-    "north": "block/light_blue_stained_glass_pane_top",
-    "east": "block/light_blue_stained_glass_pane_top",
-    "name": {
-      "zh_cn": "淡蓝色染色玻璃板",
-      "en_us": "Light Blue Stained Glass Pane",
-      "zh_tw": "淺藍色玻璃片",
-      "ja_jp": "空色の色付きガラス板",
-      "ko_kr": "하늘색 색유리 판",
-      "de_de": "Hellblaue Glasscheibe",
-      "fr_fr": "Vitre bleu clair"
-    }
-  },
-  {
     "id": "light_blue_terracotta",
     "up": "block/light_blue_terracotta",
     "north": "block/light_blue_terracotta",
@@ -4470,48 +2880,18 @@
     }
   },
   {
-    "id": "light_gray_bed",
-    "up": "block/light_gray_bed_foot_up",
-    "north": "block/light_gray_bed_foot_west",
-    "east": "block/light_gray_bed_foot_east",
+    "id": "light_blue_wool",
+    "up": "block/light_blue_wool",
+    "north": "block/light_blue_wool",
+    "east": "block/light_blue_wool",
     "name": {
-      "zh_cn": "淡灰色床",
-      "en_us": "Light Gray Bed",
-      "zh_tw": "淺灰色床",
-      "ja_jp": "薄灰色のベッド",
-      "ko_kr": "회백색 침대",
-      "de_de": "Hellgraues Bett",
-      "fr_fr": "Lit gris clair"
-    }
-  },
-  {
-    "id": "light_gray_candle",
-    "up": "block/light_gray_candle",
-    "north": "block/light_gray_candle",
-    "east": "block/light_gray_candle",
-    "name": {
-      "zh_cn": "淡灰色蜡烛",
-      "en_us": "Light Gray Candle",
-      "zh_tw": "淺灰色蠟燭",
-      "ja_jp": "薄灰色のろうそく",
-      "ko_kr": "회백색 초",
-      "de_de": "Hellgraue Kerze",
-      "fr_fr": "Bougie gris clair"
-    }
-  },
-  {
-    "id": "light_gray_carpet",
-    "up": "block/light_gray_wool",
-    "north": "block/light_gray_wool",
-    "east": "block/light_gray_wool",
-    "name": {
-      "zh_cn": "淡灰色地毯",
-      "en_us": "Light Gray Carpet",
-      "zh_tw": "淺灰色地毯",
-      "ja_jp": "薄灰色のカーペット",
-      "ko_kr": "회백색 양탄자",
-      "de_de": "Hellgrauer Teppich",
-      "fr_fr": "Tapis gris clair"
+      "zh_cn": "淡蓝色羊毛",
+      "en_us": "Light Blue Wool",
+      "zh_tw": "淺藍色羊毛",
+      "ja_jp": "空色の羊毛",
+      "ko_kr": "하늘색 양털",
+      "de_de": "Hellblaue Wolle",
+      "fr_fr": "Laine bleu clair"
     }
   },
   {
@@ -4575,21 +2955,6 @@
     }
   },
   {
-    "id": "light_gray_stained_glass_pane",
-    "up": "block/light_gray_stained_glass_pane_top",
-    "north": "block/light_gray_stained_glass_pane_top",
-    "east": "block/light_gray_stained_glass_pane_top",
-    "name": {
-      "zh_cn": "淡灰色染色玻璃板",
-      "en_us": "Light Gray Stained Glass Pane",
-      "zh_tw": "淺灰色玻璃片",
-      "ja_jp": "薄灰色の色付きガラス板",
-      "ko_kr": "회백색 색유리 판",
-      "de_de": "Hellgraue Glasscheibe",
-      "fr_fr": "Vitre gris clair"
-    }
-  },
-  {
     "id": "light_gray_terracotta",
     "up": "block/light_gray_terracotta",
     "north": "block/light_gray_terracotta",
@@ -4605,78 +2970,18 @@
     }
   },
   {
-    "id": "lightning_rod",
-    "up": "block/lightning_rod",
-    "north": "block/lightning_rod",
-    "east": "block/lightning_rod",
+    "id": "light_gray_wool",
+    "up": "block/light_gray_wool",
+    "north": "block/light_gray_wool",
+    "east": "block/light_gray_wool",
     "name": {
-      "zh_cn": "避雷针",
-      "en_us": "Lightning Rod",
-      "zh_tw": "避雷針",
-      "ja_jp": "避雷針",
-      "ko_kr": "피뢰침",
-      "de_de": "Blitzableiter",
-      "fr_fr": "Paratonnerre"
-    }
-  },
-  {
-    "id": "lily_pad",
-    "up": "block/lily_pad",
-    "north": "block/lily_pad",
-    "east": "block/lily_pad",
-    "name": {
-      "zh_cn": "睡莲",
-      "en_us": "Lily Pad",
-      "zh_tw": "荷葉",
-      "ja_jp": "スイレンの葉",
-      "ko_kr": "수련잎",
-      "de_de": "Seerosenblatt",
-      "fr_fr": "Nénuphar"
-    }
-  },
-  {
-    "id": "lime_bed",
-    "up": "block/lime_bed_foot_up",
-    "north": "block/lime_bed_foot_west",
-    "east": "block/lime_bed_foot_east",
-    "name": {
-      "zh_cn": "黄绿色床",
-      "en_us": "Lime Bed",
-      "zh_tw": "淺綠色床",
-      "ja_jp": "黄緑色のベッド",
-      "ko_kr": "연두색 침대",
-      "de_de": "Hellgrünes Bett",
-      "fr_fr": "Lit vert clair"
-    }
-  },
-  {
-    "id": "lime_candle",
-    "up": "block/lime_candle",
-    "north": "block/lime_candle",
-    "east": "block/lime_candle",
-    "name": {
-      "zh_cn": "黄绿色蜡烛",
-      "en_us": "Lime Candle",
-      "zh_tw": "淺綠色蠟燭",
-      "ja_jp": "黄緑色のろうそく",
-      "ko_kr": "연두색 초",
-      "de_de": "Hellgrüne Kerze",
-      "fr_fr": "Bougie vert clair"
-    }
-  },
-  {
-    "id": "lime_carpet",
-    "up": "block/lime_wool",
-    "north": "block/lime_wool",
-    "east": "block/lime_wool",
-    "name": {
-      "zh_cn": "黄绿色地毯",
-      "en_us": "Lime Carpet",
-      "zh_tw": "淺綠色地毯",
-      "ja_jp": "黄緑色のカーペット",
-      "ko_kr": "연두색 양탄자",
-      "de_de": "Hellgrüner Teppich",
-      "fr_fr": "Tapis vert clair"
+      "zh_cn": "淡灰色羊毛",
+      "en_us": "Light Gray Wool",
+      "zh_tw": "淺灰色羊毛",
+      "ja_jp": "薄灰色の羊毛",
+      "ko_kr": "회백색 양털",
+      "de_de": "Hellgraue Wolle",
+      "fr_fr": "Laine gris clair"
     }
   },
   {
@@ -4740,21 +3045,6 @@
     }
   },
   {
-    "id": "lime_stained_glass_pane",
-    "up": "block/lime_stained_glass_pane_top",
-    "north": "block/lime_stained_glass_pane_top",
-    "east": "block/lime_stained_glass_pane_top",
-    "name": {
-      "zh_cn": "黄绿色染色玻璃板",
-      "en_us": "Lime Stained Glass Pane",
-      "zh_tw": "淺綠色玻璃片",
-      "ja_jp": "黄緑色の色付きガラス板",
-      "ko_kr": "연두색 색유리 판",
-      "de_de": "Hellgrüne Glasscheibe",
-      "fr_fr": "Vitre vert clair"
-    }
-  },
-  {
     "id": "lime_terracotta",
     "up": "block/lime_terracotta",
     "north": "block/lime_terracotta",
@@ -4767,6 +3057,21 @@
       "ko_kr": "연두색 테라코타",
       "de_de": "Hellgrüne Keramik",
       "fr_fr": "Terre cuite vert clair"
+    }
+  },
+  {
+    "id": "lime_wool",
+    "up": "block/lime_wool",
+    "north": "block/lime_wool",
+    "east": "block/lime_wool",
+    "name": {
+      "zh_cn": "黄绿色羊毛",
+      "en_us": "Lime Wool",
+      "zh_tw": "淺綠色羊毛",
+      "ja_jp": "黄緑色の羊毛",
+      "ko_kr": "연두색 양털",
+      "de_de": "Hellgrüne Wolle",
+      "fr_fr": "Laine vert clair"
     }
   },
   {
@@ -4797,51 +3102,6 @@
       "ko_kr": "베틀",
       "de_de": "Webstuhl",
       "fr_fr": "Métier à tisser"
-    }
-  },
-  {
-    "id": "magenta_bed",
-    "up": "block/magenta_bed_foot_up",
-    "north": "block/magenta_bed_foot_west",
-    "east": "block/magenta_bed_foot_east",
-    "name": {
-      "zh_cn": "品红色床",
-      "en_us": "Magenta Bed",
-      "zh_tw": "洋紅色床",
-      "ja_jp": "赤紫色のベッド",
-      "ko_kr": "자홍색 침대",
-      "de_de": "Magenta Bett",
-      "fr_fr": "Lit magenta"
-    }
-  },
-  {
-    "id": "magenta_candle",
-    "up": "block/magenta_candle",
-    "north": "block/magenta_candle",
-    "east": "block/magenta_candle",
-    "name": {
-      "zh_cn": "品红色蜡烛",
-      "en_us": "Magenta Candle",
-      "zh_tw": "洋紅色蠟燭",
-      "ja_jp": "赤紫色のろうそく",
-      "ko_kr": "자홍색 초",
-      "de_de": "Magenta Kerze",
-      "fr_fr": "Bougie magenta"
-    }
-  },
-  {
-    "id": "magenta_carpet",
-    "up": "block/magenta_wool",
-    "north": "block/magenta_wool",
-    "east": "block/magenta_wool",
-    "name": {
-      "zh_cn": "品红色地毯",
-      "en_us": "Magenta Carpet",
-      "zh_tw": "洋紅色地毯",
-      "ja_jp": "赤紫色のカーペット",
-      "ko_kr": "자홍색 양탄자",
-      "de_de": "Magenta Teppich",
-      "fr_fr": "Tapis magenta"
     }
   },
   {
@@ -4905,21 +3165,6 @@
     }
   },
   {
-    "id": "magenta_stained_glass_pane",
-    "up": "block/magenta_stained_glass_pane_top",
-    "north": "block/magenta_stained_glass_pane_top",
-    "east": "block/magenta_stained_glass_pane_top",
-    "name": {
-      "zh_cn": "品红色染色玻璃板",
-      "en_us": "Magenta Stained Glass Pane",
-      "zh_tw": "洋紅色玻璃片",
-      "ja_jp": "赤紫色の色付きガラス板",
-      "ko_kr": "자홍색 색유리 판",
-      "de_de": "Magenta Glasscheibe",
-      "fr_fr": "Vitre magenta"
-    }
-  },
-  {
     "id": "magenta_terracotta",
     "up": "block/magenta_terracotta",
     "north": "block/magenta_terracotta",
@@ -4935,6 +3180,21 @@
     }
   },
   {
+    "id": "magenta_wool",
+    "up": "block/magenta_wool",
+    "north": "block/magenta_wool",
+    "east": "block/magenta_wool",
+    "name": {
+      "zh_cn": "品红色羊毛",
+      "en_us": "Magenta Wool",
+      "zh_tw": "洋紅色羊毛",
+      "ja_jp": "赤紫色の羊毛",
+      "ko_kr": "자홍색 양털",
+      "de_de": "Magenta Wolle",
+      "fr_fr": "Laine magenta"
+    }
+  },
+  {
     "id": "magma_block",
     "up": "block/magma",
     "north": "block/magma",
@@ -4947,36 +3207,6 @@
       "ko_kr": "마그마 블록",
       "de_de": "Magmablock",
       "fr_fr": "Bloc de magma"
-    }
-  },
-  {
-    "id": "mangrove_button",
-    "up": "block/mangrove_planks",
-    "north": "block/mangrove_planks",
-    "east": "block/mangrove_planks",
-    "name": {
-      "zh_cn": "红树木按钮",
-      "en_us": "Mangrove Button",
-      "zh_tw": "紅樹林木按鈕",
-      "ja_jp": "マングローブのボタン",
-      "ko_kr": "맹그로브나무 버튼",
-      "de_de": "Mangrovenholzknopf",
-      "fr_fr": "Bouton en palétuvier"
-    }
-  },
-  {
-    "id": "mangrove_hanging_sign",
-    "up": "block/mangrove_hanging_sign",
-    "north": "block/mangrove_hanging_sign",
-    "east": "block/mangrove_hanging_sign",
-    "name": {
-      "zh_cn": "悬挂式红树木告示牌",
-      "en_us": "Mangrove Hanging Sign",
-      "zh_tw": "懸掛式紅樹林木告示牌",
-      "ja_jp": "マングローブの吊り看板",
-      "ko_kr": "맹그로브나무 매다는 표지판",
-      "de_de": "Mangrovenholzhängeschild",
-      "fr_fr": "Pancarte suspendue en palétuvier"
     }
   },
   {
@@ -5010,63 +3240,18 @@
     }
   },
   {
-    "id": "mangrove_roots",
-    "up": "block/mangrove_roots_top",
-    "north": "block/mangrove_roots_side",
-    "east": "block/mangrove_roots_side",
+    "id": "mangrove_planks",
+    "up": "block/mangrove_planks",
+    "north": "block/mangrove_planks",
+    "east": "block/mangrove_planks",
     "name": {
-      "zh_cn": "红树根",
-      "en_us": "Mangrove Roots",
-      "zh_tw": "紅樹林木根",
-      "ja_jp": "マングローブの根",
-      "ko_kr": "맹그로브나무 뿌리",
-      "de_de": "Mangrovenwurzeln",
-      "fr_fr": "Racines de palétuvier"
-    }
-  },
-  {
-    "id": "mangrove_shelf",
-    "up": "block/mangrove_shelf",
-    "north": "block/mangrove_shelf",
-    "east": "block/mangrove_shelf",
-    "name": {
-      "zh_cn": "红树木展示架",
-      "en_us": "Mangrove Shelf",
-      "zh_tw": "紅樹林木展示架",
-      "ja_jp": "マングローブの棚",
-      "ko_kr": "맹그로브나무 선반",
-      "de_de": "Mangrovenholzregal",
-      "fr_fr": "Étagère en palétuvier"
-    }
-  },
-  {
-    "id": "mangrove_sign",
-    "up": "block/mangrove_sign",
-    "north": "block/mangrove_sign",
-    "east": "block/mangrove_sign",
-    "name": {
-      "zh_cn": "红树木告示牌",
-      "en_us": "Mangrove Sign",
-      "zh_tw": "紅樹林木告示牌",
-      "ja_jp": "マングローブの看板",
-      "ko_kr": "맹그로브나무 표지판",
-      "de_de": "Mangrovenholzschild",
-      "fr_fr": "Pancarte en palétuvier"
-    }
-  },
-  {
-    "id": "mangrove_trapdoor",
-    "up": "block/mangrove_trapdoor",
-    "north": "block/mangrove_trapdoor",
-    "east": "block/mangrove_trapdoor",
-    "name": {
-      "zh_cn": "红树木活板门",
-      "en_us": "Mangrove Trapdoor",
-      "zh_tw": "紅樹林木地板門",
-      "ja_jp": "マングローブのトラップドア",
-      "ko_kr": "맹그로브나무 다락문",
-      "de_de": "Mangrovenholzfalltür",
-      "fr_fr": "Trappe en palétuvier"
+      "zh_cn": "红树木板",
+      "en_us": "Mangrove Planks",
+      "zh_tw": "紅樹林木材",
+      "ja_jp": "マングローブの板材",
+      "ko_kr": "맹그로브나무 판자",
+      "de_de": "Mangrovenholzbretter",
+      "fr_fr": "Planches de palétuvier"
     }
   },
   {
@@ -5145,18 +3330,18 @@
     }
   },
   {
-    "id": "mud_brick_slab",
+    "id": "mud_bricks",
     "up": "block/mud_bricks",
     "north": "block/mud_bricks",
     "east": "block/mud_bricks",
     "name": {
-      "zh_cn": "泥砖台阶",
-      "en_us": "Mud Brick Slab",
-      "zh_tw": "泥磚半磚",
-      "ja_jp": "泥レンガのハーフブロック",
-      "ko_kr": "진흙 벽돌 반 블록",
-      "de_de": "Schlammziegelstufe",
-      "fr_fr": "Dalle de briques de terre crue"
+      "zh_cn": "泥砖",
+      "en_us": "Mud Bricks",
+      "zh_tw": "泥磚",
+      "ja_jp": "泥レンガ",
+      "ko_kr": "진흙 벽돌",
+      "de_de": "Schlammziegel",
+      "fr_fr": "Briques de terre crue"
     }
   },
   {
@@ -5190,18 +3375,18 @@
     }
   },
   {
-    "id": "nether_brick_fence",
+    "id": "nether_bricks",
     "up": "block/nether_bricks",
     "north": "block/nether_bricks",
     "east": "block/nether_bricks",
     "name": {
-      "zh_cn": "下界砖栅栏",
-      "en_us": "Nether Brick Fence",
-      "zh_tw": "地獄磚柵欄",
-      "ja_jp": "ネザーレンガのフェンス",
-      "ko_kr": "네더 벽돌 울타리",
-      "de_de": "Netherziegelzaun",
-      "fr_fr": "Barrière en briques du Nether"
+      "zh_cn": "下界砖块",
+      "en_us": "Nether Bricks",
+      "zh_tw": "地獄磚",
+      "ja_jp": "ネザーレンガ",
+      "ko_kr": "네더 벽돌",
+      "de_de": "Netherziegel",
+      "fr_fr": "Briques du Nether"
     }
   },
   {
@@ -5295,36 +3480,6 @@
     }
   },
   {
-    "id": "oak_button",
-    "up": "block/oak_planks",
-    "north": "block/oak_planks",
-    "east": "block/oak_planks",
-    "name": {
-      "zh_cn": "橡木按钮",
-      "en_us": "Oak Button",
-      "zh_tw": "橡木按鈕",
-      "ja_jp": "オークのボタン",
-      "ko_kr": "참나무 버튼",
-      "de_de": "Eichenholzknopf",
-      "fr_fr": "Bouton en chêne"
-    }
-  },
-  {
-    "id": "oak_hanging_sign",
-    "up": "block/oak_hanging_sign",
-    "north": "block/oak_hanging_sign",
-    "east": "block/oak_hanging_sign",
-    "name": {
-      "zh_cn": "悬挂式橡木告示牌",
-      "en_us": "Oak Hanging Sign",
-      "zh_tw": "懸掛式橡木告示牌",
-      "ja_jp": "オークの吊り看板",
-      "ko_kr": "참나무 매다는 표지판",
-      "de_de": "Eichenholzhängeschild",
-      "fr_fr": "Pancarte suspendue en chêne"
-    }
-  },
-  {
     "id": "oak_leaves",
     "up": "block/oak_leaves",
     "north": "block/oak_leaves",
@@ -5355,48 +3510,18 @@
     }
   },
   {
-    "id": "oak_shelf",
-    "up": "block/oak_shelf",
-    "north": "block/oak_shelf",
-    "east": "block/oak_shelf",
+    "id": "oak_planks",
+    "up": "block/oak_planks",
+    "north": "block/oak_planks",
+    "east": "block/oak_planks",
     "name": {
-      "zh_cn": "橡木展示架",
-      "en_us": "Oak Shelf",
-      "zh_tw": "橡木展示架",
-      "ja_jp": "オークの棚",
-      "ko_kr": "참나무 선반",
-      "de_de": "Eichenholzregal",
-      "fr_fr": "Étagère en chêne"
-    }
-  },
-  {
-    "id": "oak_sign",
-    "up": "block/oak_sign",
-    "north": "block/oak_sign",
-    "east": "block/oak_sign",
-    "name": {
-      "zh_cn": "橡木告示牌",
-      "en_us": "Oak Sign",
-      "zh_tw": "橡木告示牌",
-      "ja_jp": "オークの看板",
-      "ko_kr": "참나무 표지판",
-      "de_de": "Eichenholzschild",
-      "fr_fr": "Pancarte en chêne"
-    }
-  },
-  {
-    "id": "oak_trapdoor",
-    "up": "block/oak_trapdoor",
-    "north": "block/oak_trapdoor",
-    "east": "block/oak_trapdoor",
-    "name": {
-      "zh_cn": "橡木活板门",
-      "en_us": "Oak Trapdoor",
-      "zh_tw": "橡木地板門",
-      "ja_jp": "オークのトラップドア",
-      "ko_kr": "참나무 다락문",
-      "de_de": "Eichenholzfalltür",
-      "fr_fr": "Trappe en chêne"
+      "zh_cn": "橡木木板",
+      "en_us": "Oak Planks",
+      "zh_tw": "橡木材",
+      "ja_jp": "オークの板材",
+      "ko_kr": "참나무 판자",
+      "de_de": "Eichenholzbretter",
+      "fr_fr": "Planches de chêne"
     }
   },
   {
@@ -5460,51 +3585,6 @@
     }
   },
   {
-    "id": "orange_bed",
-    "up": "block/orange_bed_foot_up",
-    "north": "block/orange_bed_foot_west",
-    "east": "block/orange_bed_foot_east",
-    "name": {
-      "zh_cn": "橙色床",
-      "en_us": "Orange Bed",
-      "zh_tw": "橙色床",
-      "ja_jp": "橙色のベッド",
-      "ko_kr": "주황색 침대",
-      "de_de": "Oranges Bett",
-      "fr_fr": "Lit orange"
-    }
-  },
-  {
-    "id": "orange_candle",
-    "up": "block/orange_candle",
-    "north": "block/orange_candle",
-    "east": "block/orange_candle",
-    "name": {
-      "zh_cn": "橙色蜡烛",
-      "en_us": "Orange Candle",
-      "zh_tw": "橙色蠟燭",
-      "ja_jp": "橙色のろうそく",
-      "ko_kr": "주황색 초",
-      "de_de": "Orange Kerze",
-      "fr_fr": "Bougie orange"
-    }
-  },
-  {
-    "id": "orange_carpet",
-    "up": "block/orange_wool",
-    "north": "block/orange_wool",
-    "east": "block/orange_wool",
-    "name": {
-      "zh_cn": "橙色地毯",
-      "en_us": "Orange Carpet",
-      "zh_tw": "橙色地毯",
-      "ja_jp": "橙色のカーペット",
-      "ko_kr": "주황색 양탄자",
-      "de_de": "Oranger Teppich",
-      "fr_fr": "Tapis orange"
-    }
-  },
-  {
     "id": "orange_concrete",
     "up": "block/orange_concrete",
     "north": "block/orange_concrete",
@@ -5565,21 +3645,6 @@
     }
   },
   {
-    "id": "orange_stained_glass_pane",
-    "up": "block/orange_stained_glass_pane_top",
-    "north": "block/orange_stained_glass_pane_top",
-    "east": "block/orange_stained_glass_pane_top",
-    "name": {
-      "zh_cn": "橙色染色玻璃板",
-      "en_us": "Orange Stained Glass Pane",
-      "zh_tw": "橙色玻璃片",
-      "ja_jp": "橙色の色付きガラス板",
-      "ko_kr": "주황색 색유리 판",
-      "de_de": "Orange Glasscheibe",
-      "fr_fr": "Vitre orange"
-    }
-  },
-  {
     "id": "orange_terracotta",
     "up": "block/orange_terracotta",
     "north": "block/orange_terracotta",
@@ -5592,6 +3657,21 @@
       "ko_kr": "주황색 테라코타",
       "de_de": "Orange Keramik",
       "fr_fr": "Terre cuite orange"
+    }
+  },
+  {
+    "id": "orange_wool",
+    "up": "block/orange_wool",
+    "north": "block/orange_wool",
+    "east": "block/orange_wool",
+    "name": {
+      "zh_cn": "橙色羊毛",
+      "en_us": "Orange Wool",
+      "zh_tw": "橙色羊毛",
+      "ja_jp": "橙色の羊毛",
+      "ko_kr": "주황색 양털",
+      "de_de": "Orange Wolle",
+      "fr_fr": "Laine orange"
     }
   },
   {
@@ -5625,21 +3705,6 @@
     }
   },
   {
-    "id": "oxidized_copper_bars",
-    "up": "block/oxidized_copper_bars",
-    "north": "block/oxidized_copper_bars",
-    "east": "block/oxidized_copper_bars",
-    "name": {
-      "zh_cn": "氧化的铜栏杆",
-      "en_us": "Oxidized Copper Bars",
-      "zh_tw": "氧化的銅柵欄",
-      "ja_jp": "酸化した銅格子",
-      "ko_kr": "산화된 구리 창살",
-      "de_de": "Oxidiertes Kupfergitter",
-      "fr_fr": "Barreaux de cuivre oxydé"
-    }
-  },
-  {
     "id": "oxidized_copper_bulb",
     "up": "block/oxidized_copper_bulb",
     "north": "block/oxidized_copper_bulb",
@@ -5670,36 +3735,6 @@
     }
   },
   {
-    "id": "oxidized_copper_lantern",
-    "up": "block/oxidized_copper_lantern",
-    "north": "block/oxidized_copper_lantern",
-    "east": "block/oxidized_copper_lantern",
-    "name": {
-      "zh_cn": "氧化的铜灯笼",
-      "en_us": "Oxidized Copper Lantern",
-      "zh_tw": "氧化的銅燈籠",
-      "ja_jp": "酸化した銅のランタン",
-      "ko_kr": "산화된 구리 랜턴",
-      "de_de": "Oxidierte Kupferlaterne",
-      "fr_fr": "Lanterne en cuivre oxydé"
-    }
-  },
-  {
-    "id": "oxidized_copper_trapdoor",
-    "up": "block/oxidized_copper_trapdoor",
-    "north": "block/oxidized_copper_trapdoor",
-    "east": "block/oxidized_copper_trapdoor",
-    "name": {
-      "zh_cn": "氧化的铜活板门",
-      "en_us": "Oxidized Copper Trapdoor",
-      "zh_tw": "氧化的銅地板門",
-      "ja_jp": "酸化した銅のトラップドア",
-      "ko_kr": "산화된 구리 다락문",
-      "de_de": "Oxidierte Kupferfalltür",
-      "fr_fr": "Trappe en cuivre oxydé"
-    }
-  },
-  {
     "id": "oxidized_cut_copper",
     "up": "block/oxidized_cut_copper",
     "north": "block/oxidized_cut_copper",
@@ -5712,21 +3747,6 @@
       "ko_kr": "산화된 깎인 구리",
       "de_de": "Oxidierter geschnittener Kupferblock",
       "fr_fr": "Cuivre taillé oxydé"
-    }
-  },
-  {
-    "id": "oxidized_lightning_rod",
-    "up": "block/oxidized_lightning_rod",
-    "north": "block/oxidized_lightning_rod",
-    "east": "block/oxidized_lightning_rod",
-    "name": {
-      "zh_cn": "氧化的避雷针",
-      "en_us": "Oxidized Lightning Rod",
-      "zh_tw": "氧化的避雷針",
-      "ja_jp": "酸化した避雷針",
-      "ko_kr": "산화된 피뢰침",
-      "de_de": "Oxidierter Blitzableiter",
-      "fr_fr": "Paratonnerre oxydé"
     }
   },
   {
@@ -5775,51 +3795,6 @@
     }
   },
   {
-    "id": "pale_moss_carpet",
-    "up": "block/pale_moss_carpet",
-    "north": "block/pale_moss_carpet",
-    "east": "block/pale_moss_carpet",
-    "name": {
-      "zh_cn": "苍白覆地苔藓",
-      "en_us": "Pale Moss Carpet",
-      "zh_tw": "蒼白覆地苔蘚",
-      "ja_jp": "色あせた苔のカーペット",
-      "ko_kr": "창백한 이끼 바닥",
-      "de_de": "Blassmoosteppich",
-      "fr_fr": "Tapis de mousse pâle"
-    }
-  },
-  {
-    "id": "pale_oak_button",
-    "up": "block/pale_oak_planks",
-    "north": "block/pale_oak_planks",
-    "east": "block/pale_oak_planks",
-    "name": {
-      "zh_cn": "苍白橡木按钮",
-      "en_us": "Pale Oak Button",
-      "zh_tw": "蒼白橡木按鈕",
-      "ja_jp": "ペールオークのボタン",
-      "ko_kr": "창백한 참나무 버튼",
-      "de_de": "Blasseichenholzknopf",
-      "fr_fr": "Bouton en chêne pâle"
-    }
-  },
-  {
-    "id": "pale_oak_hanging_sign",
-    "up": "block/pale_oak_hanging_sign",
-    "north": "block/pale_oak_hanging_sign",
-    "east": "block/pale_oak_hanging_sign",
-    "name": {
-      "zh_cn": "悬挂式苍白橡木告示牌",
-      "en_us": "Pale Oak Hanging Sign",
-      "zh_tw": "懸掛式蒼白橡木告示牌",
-      "ja_jp": "ペールオークの吊り看板",
-      "ko_kr": "창백한 참나무 매다는 표지판",
-      "de_de": "Blasseichenholzhängeschild",
-      "fr_fr": "Pancarte suspendue en chêne pâle"
-    }
-  },
-  {
     "id": "pale_oak_leaves",
     "up": "block/pale_oak_leaves",
     "north": "block/pale_oak_leaves",
@@ -5850,48 +3825,18 @@
     }
   },
   {
-    "id": "pale_oak_shelf",
-    "up": "block/pale_oak_shelf",
-    "north": "block/pale_oak_shelf",
-    "east": "block/pale_oak_shelf",
+    "id": "pale_oak_planks",
+    "up": "block/pale_oak_planks",
+    "north": "block/pale_oak_planks",
+    "east": "block/pale_oak_planks",
     "name": {
-      "zh_cn": "苍白橡木展示架",
-      "en_us": "Pale Oak Shelf",
-      "zh_tw": "蒼白橡木展示架",
-      "ja_jp": "ペールオークの棚",
-      "ko_kr": "창백한 참나무 선반",
-      "de_de": "Blasseichenholzregal",
-      "fr_fr": "Étagère en chêne pâle"
-    }
-  },
-  {
-    "id": "pale_oak_sign",
-    "up": "block/pale_oak_sign",
-    "north": "block/pale_oak_sign",
-    "east": "block/pale_oak_sign",
-    "name": {
-      "zh_cn": "苍白橡木告示牌",
-      "en_us": "Pale Oak Sign",
-      "zh_tw": "蒼白橡木告示牌",
-      "ja_jp": "ペールオークの看板",
-      "ko_kr": "창백한 참나무 표지판",
-      "de_de": "Blasseichenholzschild",
-      "fr_fr": "Pancarte en chêne pâle"
-    }
-  },
-  {
-    "id": "pale_oak_trapdoor",
-    "up": "block/pale_oak_trapdoor",
-    "north": "block/pale_oak_trapdoor",
-    "east": "block/pale_oak_trapdoor",
-    "name": {
-      "zh_cn": "苍白橡木活板门",
-      "en_us": "Pale Oak Trapdoor",
-      "zh_tw": "蒼白橡木地板門",
-      "ja_jp": "ペールオークのトラップドア",
-      "ko_kr": "창백한 참나무 다락문",
-      "de_de": "Blasseichenholzfalltür",
-      "fr_fr": "Trappe en chêne pâle"
+      "zh_cn": "苍白橡木木板",
+      "en_us": "Pale Oak Planks",
+      "zh_tw": "蒼白橡木材",
+      "ja_jp": "ペールオークの板材",
+      "ko_kr": "창백한 참나무 판자",
+      "de_de": "Blasseichenholzbretter",
+      "fr_fr": "Planches de chêne pâle"
     }
   },
   {
@@ -5922,51 +3867,6 @@
       "ko_kr": "진줏빛 개구리불",
       "de_de": "Perlmutternes Froschlicht",
       "fr_fr": "Grelampe nacrée"
-    }
-  },
-  {
-    "id": "pink_bed",
-    "up": "block/pink_bed_foot_up",
-    "north": "block/pink_bed_foot_west",
-    "east": "block/pink_bed_foot_east",
-    "name": {
-      "zh_cn": "粉红色床",
-      "en_us": "Pink Bed",
-      "zh_tw": "粉紅色床",
-      "ja_jp": "桃色のベッド",
-      "ko_kr": "분홍색 침대",
-      "de_de": "Rosa Bett",
-      "fr_fr": "Lit rose"
-    }
-  },
-  {
-    "id": "pink_candle",
-    "up": "block/pink_candle",
-    "north": "block/pink_candle",
-    "east": "block/pink_candle",
-    "name": {
-      "zh_cn": "粉红色蜡烛",
-      "en_us": "Pink Candle",
-      "zh_tw": "粉紅色蠟燭",
-      "ja_jp": "桃色のろうそく",
-      "ko_kr": "분홍색 초",
-      "de_de": "Rosa Kerze",
-      "fr_fr": "Bougie rose"
-    }
-  },
-  {
-    "id": "pink_carpet",
-    "up": "block/pink_wool",
-    "north": "block/pink_wool",
-    "east": "block/pink_wool",
-    "name": {
-      "zh_cn": "粉红色地毯",
-      "en_us": "Pink Carpet",
-      "zh_tw": "粉紅色地毯",
-      "ja_jp": "桃色のカーペット",
-      "ko_kr": "분홍색 양탄자",
-      "de_de": "Rosa Teppich",
-      "fr_fr": "Tapis rose"
     }
   },
   {
@@ -6015,21 +3915,6 @@
     }
   },
   {
-    "id": "pink_petals",
-    "up": "block/pink_petals",
-    "north": "block/pink_petals_stem",
-    "east": "block/pink_petals_stem",
-    "name": {
-      "zh_cn": "粉红色花簇",
-      "en_us": "Pink Petals",
-      "zh_tw": "粉瓣花",
-      "ja_jp": "桜色の花びら",
-      "ko_kr": "분홍 꽃잎",
-      "de_de": "Rosa Blütenblätter",
-      "fr_fr": "Pétales roses"
-    }
-  },
-  {
     "id": "pink_stained_glass",
     "up": "block/pink_stained_glass",
     "north": "block/pink_stained_glass",
@@ -6042,21 +3927,6 @@
       "ko_kr": "분홍색 색유리",
       "de_de": "Rosa Glas",
       "fr_fr": "Verre rose"
-    }
-  },
-  {
-    "id": "pink_stained_glass_pane",
-    "up": "block/pink_stained_glass_pane_top",
-    "north": "block/pink_stained_glass_pane_top",
-    "east": "block/pink_stained_glass_pane_top",
-    "name": {
-      "zh_cn": "粉红色染色玻璃板",
-      "en_us": "Pink Stained Glass Pane",
-      "zh_tw": "粉紅色玻璃片",
-      "ja_jp": "桃色の色付きガラス板",
-      "ko_kr": "분홍색 색유리 판",
-      "de_de": "Rosa Glasscheibe",
-      "fr_fr": "Vitre rose"
     }
   },
   {
@@ -6075,6 +3945,21 @@
     }
   },
   {
+    "id": "pink_wool",
+    "up": "block/pink_wool",
+    "north": "block/pink_wool",
+    "east": "block/pink_wool",
+    "name": {
+      "zh_cn": "粉红色羊毛",
+      "en_us": "Pink Wool",
+      "zh_tw": "粉紅色羊毛",
+      "ja_jp": "桃色の羊毛",
+      "ko_kr": "분홍색 양털",
+      "de_de": "Rosa Wolle",
+      "fr_fr": "Laine rose"
+    }
+  },
+  {
     "id": "piston",
     "up": "block/piston_side",
     "north": "block/piston_top",
@@ -6087,36 +3972,6 @@
       "ko_kr": "피스톤",
       "de_de": "Kolben",
       "fr_fr": "Piston"
-    }
-  },
-  {
-    "id": "pitcher_crop",
-    "up": "block/pitcher_crop_top",
-    "north": "block/pitcher_crop_side",
-    "east": "block/pitcher_crop_side",
-    "name": {
-      "zh_cn": "瓶子草植株",
-      "en_us": "Pitcher Crop",
-      "zh_tw": "瓶子草植株",
-      "ja_jp": "ウツボカズラ",
-      "ko_kr": "벌레잡이풀 작물",
-      "de_de": "Kannenpflanzentrieb",
-      "fr_fr": "Plant de planturne"
-    }
-  },
-  {
-    "id": "pitcher_plant",
-    "up": "block/pitcher_crop_bottom_stage_4",
-    "north": "block/pitcher_crop_bottom_stage_4",
-    "east": "block/pitcher_crop_bottom_stage_4",
-    "name": {
-      "zh_cn": "瓶子草",
-      "en_us": "Pitcher Plant",
-      "zh_tw": "瓶子草",
-      "ja_jp": "ウツボカズラ",
-      "ko_kr": "벌레잡이풀",
-      "de_de": "Kannenpflanze",
-      "fr_fr": "Planturne"
     }
   },
   {
@@ -6180,18 +4035,18 @@
     }
   },
   {
-    "id": "polished_blackstone_brick_slab",
+    "id": "polished_blackstone_bricks",
     "up": "block/polished_blackstone_bricks",
     "north": "block/polished_blackstone_bricks",
     "east": "block/polished_blackstone_bricks",
     "name": {
-      "zh_cn": "磨制黑石砖台阶",
-      "en_us": "Polished Blackstone Brick Slab",
-      "zh_tw": "拋光黑石磚半磚",
-      "ja_jp": "磨かれたブラックストーンレンガのハーフブロック",
-      "ko_kr": "윤나는 흑암 벽돌 반 블록",
-      "de_de": "Polierte Schwarzsteinziegelstufe",
-      "fr_fr": "Dalle de pierre noire taillée"
+      "zh_cn": "磨制黑石砖",
+      "en_us": "Polished Blackstone Bricks",
+      "zh_tw": "拋光黑石磚",
+      "ja_jp": "磨かれたブラックストーンレンガ",
+      "ko_kr": "윤나는 흑암 벽돌",
+      "de_de": "Polierte Schwarzsteinziegel",
+      "fr_fr": "Pierre noire taillée"
     }
   },
   {
@@ -6300,51 +4155,6 @@
     }
   },
   {
-    "id": "potted_mangrove_propagule",
-    "up": "block/flower_pot",
-    "north": "block/mangrove_propagule",
-    "east": "block/mangrove_propagule",
-    "name": {
-      "zh_cn": "红树胎生苗盆栽",
-      "en_us": "Potted Mangrove Propagule",
-      "zh_tw": "紅樹林木胎生苗盆栽",
-      "ja_jp": "マングローブの芽入り植木鉢",
-      "ko_kr": "화분에 심은 맹그로브나무 주아",
-      "de_de": "Eingetopfter Mangroven-Keimling",
-      "fr_fr": "Propagule de palétuvier en pot"
-    }
-  },
-  {
-    "id": "powder_snow",
-    "up": "block/powder_snow",
-    "north": "block/powder_snow",
-    "east": "block/powder_snow",
-    "name": {
-      "zh_cn": "细雪",
-      "en_us": "Powder Snow",
-      "zh_tw": "粉雪",
-      "ja_jp": "粉雪",
-      "ko_kr": "가루눈",
-      "de_de": "Pulverschnee",
-      "fr_fr": "Neige poudreuse"
-    }
-  },
-  {
-    "id": "powered_rail",
-    "up": "block/powered_rail",
-    "north": "block/powered_rail",
-    "east": "block/powered_rail",
-    "name": {
-      "zh_cn": "动力铁轨",
-      "en_us": "Powered Rail",
-      "zh_tw": "動力鐵軌",
-      "ja_jp": "パワードレール",
-      "ko_kr": "동력 레일",
-      "de_de": "Antriebsschiene",
-      "fr_fr": "Rails de propulsion"
-    }
-  },
-  {
     "id": "prismarine",
     "up": "block/prismarine",
     "north": "block/prismarine",
@@ -6360,18 +4170,18 @@
     }
   },
   {
-    "id": "prismarine_brick_slab",
+    "id": "prismarine_bricks",
     "up": "block/prismarine_bricks",
     "north": "block/prismarine_bricks",
     "east": "block/prismarine_bricks",
     "name": {
-      "zh_cn": "海晶石砖台阶",
-      "en_us": "Prismarine Brick Slab",
-      "zh_tw": "海磷石磚半磚",
-      "ja_jp": "プリズマリンレンガのハーフブロック",
-      "ko_kr": "프리즈머린 벽돌 반 블록",
-      "de_de": "Prismarinziegelstufe",
-      "fr_fr": "Dalle de briques de prismarine"
+      "zh_cn": "海晶石砖",
+      "en_us": "Prismarine Bricks",
+      "zh_tw": "海磷石磚",
+      "ja_jp": "プリズマリンレンガ",
+      "ko_kr": "프리즈머린 벽돌",
+      "de_de": "Prismarinziegel",
+      "fr_fr": "Briques de prismarine"
     }
   },
   {
@@ -6387,51 +4197,6 @@
       "ko_kr": "호박",
       "de_de": "Kürbis",
       "fr_fr": "Citrouille"
-    }
-  },
-  {
-    "id": "purple_bed",
-    "up": "block/purple_bed_foot_up",
-    "north": "block/purple_bed_foot_west",
-    "east": "block/purple_bed_foot_east",
-    "name": {
-      "zh_cn": "紫色床",
-      "en_us": "Purple Bed",
-      "zh_tw": "紫色床",
-      "ja_jp": "紫色のベッド",
-      "ko_kr": "보라색 침대",
-      "de_de": "Violettes Bett",
-      "fr_fr": "Lit violet"
-    }
-  },
-  {
-    "id": "purple_candle",
-    "up": "block/purple_candle",
-    "north": "block/purple_candle",
-    "east": "block/purple_candle",
-    "name": {
-      "zh_cn": "紫色蜡烛",
-      "en_us": "Purple Candle",
-      "zh_tw": "紫色蠟燭",
-      "ja_jp": "紫色のろうそく",
-      "ko_kr": "보라색 초",
-      "de_de": "Violette Kerze",
-      "fr_fr": "Bougie violette"
-    }
-  },
-  {
-    "id": "purple_carpet",
-    "up": "block/purple_wool",
-    "north": "block/purple_wool",
-    "east": "block/purple_wool",
-    "name": {
-      "zh_cn": "紫色地毯",
-      "en_us": "Purple Carpet",
-      "zh_tw": "紫色地毯",
-      "ja_jp": "紫色のカーペット",
-      "ko_kr": "보라색 양탄자",
-      "de_de": "Violetter Teppich",
-      "fr_fr": "Tapis violet"
     }
   },
   {
@@ -6495,21 +4260,6 @@
     }
   },
   {
-    "id": "purple_stained_glass_pane",
-    "up": "block/purple_stained_glass_pane_top",
-    "north": "block/purple_stained_glass_pane_top",
-    "east": "block/purple_stained_glass_pane_top",
-    "name": {
-      "zh_cn": "紫色染色玻璃板",
-      "en_us": "Purple Stained Glass Pane",
-      "zh_tw": "紫色玻璃片",
-      "ja_jp": "紫色の色付きガラス板",
-      "ko_kr": "보라색 색유리 판",
-      "de_de": "Violette Glasscheibe",
-      "fr_fr": "Vitre violette"
-    }
-  },
-  {
     "id": "purple_terracotta",
     "up": "block/purple_terracotta",
     "north": "block/purple_terracotta",
@@ -6522,6 +4272,21 @@
       "ko_kr": "보라색 테라코타",
       "de_de": "Violette Keramik",
       "fr_fr": "Terre cuite violette"
+    }
+  },
+  {
+    "id": "purple_wool",
+    "up": "block/purple_wool",
+    "north": "block/purple_wool",
+    "east": "block/purple_wool",
+    "name": {
+      "zh_cn": "紫色羊毛",
+      "en_us": "Purple Wool",
+      "zh_tw": "紫色羊毛",
+      "ja_jp": "紫色の羊毛",
+      "ko_kr": "보라색 양털",
+      "de_de": "Violette Wolle",
+      "fr_fr": "Laine violette"
     }
   },
   {
@@ -6600,21 +4365,6 @@
     }
   },
   {
-    "id": "rail",
-    "up": "block/rail",
-    "north": "block/rail",
-    "east": "block/rail",
-    "name": {
-      "zh_cn": "铁轨",
-      "en_us": "Rail",
-      "zh_tw": "鐵軌",
-      "ja_jp": "レール",
-      "ko_kr": "레일",
-      "de_de": "Schiene",
-      "fr_fr": "Rails"
-    }
-  },
-  {
     "id": "raw_copper_block",
     "up": "block/raw_copper_block",
     "north": "block/raw_copper_block",
@@ -6657,51 +4407,6 @@
       "ko_kr": "철 원석 블록",
       "de_de": "Roheisenblock",
       "fr_fr": "Bloc de fer brut"
-    }
-  },
-  {
-    "id": "red_bed",
-    "up": "block/red_bed_foot_up",
-    "north": "block/red_bed_foot_west",
-    "east": "block/red_bed_foot_east",
-    "name": {
-      "zh_cn": "红色床",
-      "en_us": "Red Bed",
-      "zh_tw": "紅色床",
-      "ja_jp": "赤色のベッド",
-      "ko_kr": "빨간색 침대",
-      "de_de": "Rotes Bett",
-      "fr_fr": "Lit rouge"
-    }
-  },
-  {
-    "id": "red_candle",
-    "up": "block/red_candle",
-    "north": "block/red_candle",
-    "east": "block/red_candle",
-    "name": {
-      "zh_cn": "红色蜡烛",
-      "en_us": "Red Candle",
-      "zh_tw": "紅色蠟燭",
-      "ja_jp": "赤色のろうそく",
-      "ko_kr": "빨간색 초",
-      "de_de": "Rote Kerze",
-      "fr_fr": "Bougie rouge"
-    }
-  },
-  {
-    "id": "red_carpet",
-    "up": "block/red_wool",
-    "north": "block/red_wool",
-    "east": "block/red_wool",
-    "name": {
-      "zh_cn": "红色地毯",
-      "en_us": "Red Carpet",
-      "zh_tw": "紅色地毯",
-      "ja_jp": "赤色のカーペット",
-      "ko_kr": "빨간색 양탄자",
-      "de_de": "Roter Teppich",
-      "fr_fr": "Tapis rouge"
     }
   },
   {
@@ -6750,18 +4455,18 @@
     }
   },
   {
-    "id": "red_nether_brick_slab",
+    "id": "red_nether_bricks",
     "up": "block/red_nether_bricks",
     "north": "block/red_nether_bricks",
     "east": "block/red_nether_bricks",
     "name": {
-      "zh_cn": "红色下界砖台阶",
-      "en_us": "Red Nether Brick Slab",
-      "zh_tw": "紅地獄磚半磚",
-      "ja_jp": "赤いネザーレンガのハーフブロック",
-      "ko_kr": "붉은 네더 벽돌 반 블록",
-      "de_de": "Rote Netherziegelstufe",
-      "fr_fr": "Dalle de briques rouges du Nether"
+      "zh_cn": "红色下界砖块",
+      "en_us": "Red Nether Bricks",
+      "zh_tw": "紅地獄磚",
+      "ja_jp": "赤いネザーレンガ",
+      "ko_kr": "붉은 네더 벽돌",
+      "de_de": "Rote Netherziegel",
+      "fr_fr": "Briques rouges du Nether"
     }
   },
   {
@@ -6795,21 +4500,6 @@
     }
   },
   {
-    "id": "red_sandstone_wall",
-    "up": "block/red_sandstone",
-    "north": "block/red_sandstone",
-    "east": "block/red_sandstone",
-    "name": {
-      "zh_cn": "红砂岩墙",
-      "en_us": "Red Sandstone Wall",
-      "zh_tw": "紅砂岩牆",
-      "ja_jp": "赤い砂岩の塀",
-      "ko_kr": "붉은 사암 담장",
-      "de_de": "Rote Sandsteinmauer",
-      "fr_fr": "Muret de grès rouge"
-    }
-  },
-  {
     "id": "red_stained_glass",
     "up": "block/red_stained_glass",
     "north": "block/red_stained_glass",
@@ -6825,21 +4515,6 @@
     }
   },
   {
-    "id": "red_stained_glass_pane",
-    "up": "block/red_stained_glass_pane_top",
-    "north": "block/red_stained_glass_pane_top",
-    "east": "block/red_stained_glass_pane_top",
-    "name": {
-      "zh_cn": "红色染色玻璃板",
-      "en_us": "Red Stained Glass Pane",
-      "zh_tw": "紅色玻璃片",
-      "ja_jp": "赤色の色付きガラス板",
-      "ko_kr": "빨간색 색유리 판",
-      "de_de": "Rote Glasscheibe",
-      "fr_fr": "Vitre rouge"
-    }
-  },
-  {
     "id": "red_terracotta",
     "up": "block/red_terracotta",
     "north": "block/red_terracotta",
@@ -6852,6 +4527,21 @@
       "ko_kr": "빨간색 테라코타",
       "de_de": "Rote Keramik",
       "fr_fr": "Terre cuite rouge"
+    }
+  },
+  {
+    "id": "red_wool",
+    "up": "block/red_wool",
+    "north": "block/red_wool",
+    "east": "block/red_wool",
+    "name": {
+      "zh_cn": "红色羊毛",
+      "en_us": "Red Wool",
+      "zh_tw": "紅色羊毛",
+      "ja_jp": "赤色の羊毛",
+      "ko_kr": "빨간색 양털",
+      "de_de": "Rote Wolle",
+      "fr_fr": "Laine rouge"
     }
   },
   {
@@ -6900,36 +4590,6 @@
     }
   },
   {
-    "id": "redstone_torch",
-    "up": "block/redstone_torch_off",
-    "north": "block/redstone_torch_off",
-    "east": "block/redstone_torch_off",
-    "name": {
-      "zh_cn": "红石火把",
-      "en_us": "Redstone Torch",
-      "zh_tw": "紅石火把",
-      "ja_jp": "レッドストーントーチ",
-      "ko_kr": "레드스톤 횃불",
-      "de_de": "Redstone-Fackel",
-      "fr_fr": "Torche de redstone"
-    }
-  },
-  {
-    "id": "redstone_wire",
-    "up": "block/redstone_dust_dot",
-    "north": "block/redstone_dust_dot",
-    "east": "block/redstone_dust_dot",
-    "name": {
-      "zh_cn": "红石线",
-      "en_us": "Redstone Wire",
-      "zh_tw": "紅石線",
-      "ja_jp": "レッドストーンワイヤー",
-      "ko_kr": "레드스톤 선",
-      "de_de": "Redstone-Leitung",
-      "fr_fr": "Câble de redstone"
-    }
-  },
-  {
     "id": "reinforced_deepslate",
     "up": "block/reinforced_deepslate_top",
     "north": "block/reinforced_deepslate_side",
@@ -6942,21 +4602,6 @@
       "ko_kr": "보강된 심층암",
       "de_de": "Verstärkter Tiefenschiefer",
       "fr_fr": "Ardoise des abîmes renforcée"
-    }
-  },
-  {
-    "id": "repeater",
-    "up": "block/repeater",
-    "north": "block/smooth_stone",
-    "east": "block/smooth_stone",
-    "name": {
-      "zh_cn": "红石中继器",
-      "en_us": "Redstone Repeater",
-      "zh_tw": "紅石中繼器",
-      "ja_jp": "レッドストーンリピーター",
-      "ko_kr": "레드스톤 중계기",
-      "de_de": "Redstone-Verstärker",
-      "fr_fr": "Répéteur de redstone"
     }
   },
   {
@@ -6990,18 +4635,18 @@
     }
   },
   {
-    "id": "resin_brick_slab",
+    "id": "resin_bricks",
     "up": "block/resin_bricks",
     "north": "block/resin_bricks",
     "east": "block/resin_bricks",
     "name": {
-      "zh_cn": "树脂砖台阶",
-      "en_us": "Resin Brick Slab",
-      "zh_tw": "樹脂磚半磚",
-      "ja_jp": "樹脂レンガのハーフブロック",
-      "ko_kr": "수지 벽돌 반 블록",
-      "de_de": "Harzziegelstufe",
-      "fr_fr": "Dalle de briques de résine"
+      "zh_cn": "树脂砖块",
+      "en_us": "Resin Bricks",
+      "zh_tw": "樹脂磚",
+      "ja_jp": "樹脂レンガ",
+      "ko_kr": "수지 벽돌",
+      "de_de": "Harzziegel",
+      "fr_fr": "Briques de résine"
     }
   },
   {
@@ -7065,36 +4710,6 @@
     }
   },
   {
-    "id": "sandstone_wall",
-    "up": "block/sandstone",
-    "north": "block/sandstone",
-    "east": "block/sandstone",
-    "name": {
-      "zh_cn": "砂岩墙",
-      "en_us": "Sandstone Wall",
-      "zh_tw": "砂岩牆",
-      "ja_jp": "砂岩の塀",
-      "ko_kr": "사암 담장",
-      "de_de": "Sandsteinmauer",
-      "fr_fr": "Muret de grès"
-    }
-  },
-  {
-    "id": "scaffolding",
-    "up": "block/scaffolding_top",
-    "north": "block/scaffolding_side",
-    "east": "block/scaffolding_side",
-    "name": {
-      "zh_cn": "脚手架",
-      "en_us": "Scaffolding",
-      "zh_tw": "鷹架",
-      "ja_jp": "足場",
-      "ko_kr": "비계",
-      "de_de": "Gerüst",
-      "fr_fr": "Échafaudage"
-    }
-  },
-  {
     "id": "sculk",
     "up": "block/sculk",
     "north": "block/sculk",
@@ -7125,36 +4740,6 @@
     }
   },
   {
-    "id": "sculk_sensor",
-    "up": "block/sculk_sensor_top",
-    "north": "block/sculk_sensor_side",
-    "east": "block/sculk_sensor_side",
-    "name": {
-      "zh_cn": "幽匿感测体",
-      "en_us": "Sculk Sensor",
-      "zh_tw": "伏聆振測器",
-      "ja_jp": "スカルクセンサー",
-      "ko_kr": "스컬크 감지체",
-      "de_de": "Sculk-Sensor",
-      "fr_fr": "Capteur sculk"
-    }
-  },
-  {
-    "id": "sculk_shrieker",
-    "up": "block/sculk_shrieker_inner_top",
-    "north": "block/sculk_shrieker_side",
-    "east": "block/sculk_shrieker_side",
-    "name": {
-      "zh_cn": "幽匿尖啸体",
-      "en_us": "Sculk Shrieker",
-      "zh_tw": "伏聆嘯口",
-      "ja_jp": "スカルクシュリーカー",
-      "ko_kr": "스컬크 비명체",
-      "de_de": "Sculk-Kreischer",
-      "fr_fr": "Hurleur sculk"
-    }
-  },
-  {
     "id": "sea_lantern",
     "up": "block/sea_lantern",
     "north": "block/sea_lantern",
@@ -7167,21 +4752,6 @@
       "ko_kr": "바다 랜턴",
       "de_de": "Seelaterne",
       "fr_fr": "Lanterne aquatique"
-    }
-  },
-  {
-    "id": "sea_pickle",
-    "up": "block/sea_pickle",
-    "north": "block/sea_pickle",
-    "east": "block/sea_pickle",
-    "name": {
-      "zh_cn": "海泡菜",
-      "en_us": "Sea Pickle",
-      "zh_tw": "海鞘",
-      "ja_jp": "シーピクルス",
-      "ko_kr": "불우렁쉥이",
-      "de_de": "Meeresgurke",
-      "fr_fr": "Cornichon de mer"
     }
   },
   {
@@ -7320,63 +4890,18 @@
     }
   },
   {
-    "id": "smooth_stone_slab",
-    "up": "block/smooth_stone",
-    "north": "block/smooth_stone_slab_side",
-    "east": "block/smooth_stone_slab_side",
-    "name": {
-      "zh_cn": "平滑石头台阶",
-      "en_us": "Smooth Stone Slab",
-      "zh_tw": "平滑石半磚",
-      "ja_jp": "滑らかな石のハーフブロック",
-      "ko_kr": "매끄러운 돌 반 블록",
-      "de_de": "Glatte Steinstufe",
-      "fr_fr": "Dalle de roche lisse"
-    }
-  },
-  {
-    "id": "sniffer_egg",
-    "up": "block/sniffer_egg_not_cracked_top",
-    "north": "block/sniffer_egg_not_cracked_north",
-    "east": "block/sniffer_egg_not_cracked_east",
-    "name": {
-      "zh_cn": "嗅探兽蛋",
-      "en_us": "Sniffer Egg",
-      "zh_tw": "嗅探獸蛋",
-      "ja_jp": "スニッファーの卵",
-      "ko_kr": "스니퍼 알",
-      "de_de": "Schnüffler-Ei",
-      "fr_fr": "Oeuf de renifleur"
-    }
-  },
-  {
-    "id": "snow",
+    "id": "snow_block",
     "up": "block/snow",
     "north": "block/snow",
     "east": "block/snow",
     "name": {
-      "zh_cn": "雪",
-      "en_us": "Snow",
-      "zh_tw": "雪",
-      "ja_jp": "雪",
-      "ko_kr": "눈",
-      "de_de": "Schnee",
-      "fr_fr": "Neige"
-    }
-  },
-  {
-    "id": "soul_lantern",
-    "up": "block/soul_lantern",
-    "north": "block/soul_lantern",
-    "east": "block/soul_lantern",
-    "name": {
-      "zh_cn": "灵魂灯笼",
-      "en_us": "Soul Lantern",
-      "zh_tw": "靈魂燈籠",
-      "ja_jp": "魂のランタン",
-      "ko_kr": "영혼 랜턴",
-      "de_de": "Seelenlaterne",
-      "fr_fr": "Lanterne des âmes"
+      "zh_cn": "雪块",
+      "en_us": "Snow Block",
+      "zh_tw": "雪塊",
+      "ja_jp": "雪ブロック",
+      "ko_kr": "눈 블록",
+      "de_de": "Schneeblock",
+      "fr_fr": "Bloc de neige"
     }
   },
   {
@@ -7410,21 +4935,6 @@
     }
   },
   {
-    "id": "soul_torch",
-    "up": "block/soul_torch",
-    "north": "block/soul_torch",
-    "east": "block/soul_torch",
-    "name": {
-      "zh_cn": "灵魂火把",
-      "en_us": "Soul Torch",
-      "zh_tw": "靈魂火把",
-      "ja_jp": "魂の松明",
-      "ko_kr": "영혼 횃불",
-      "de_de": "Seelenfackel",
-      "fr_fr": "Torche des âmes"
-    }
-  },
-  {
     "id": "spawner",
     "up": "block/spawner",
     "north": "block/spawner",
@@ -7452,51 +4962,6 @@
       "ko_kr": "스펀지",
       "de_de": "Schwamm",
       "fr_fr": "Éponge"
-    }
-  },
-  {
-    "id": "spore_blossom",
-    "up": "block/spore_blossom_base",
-    "north": "block/spore_blossom_base",
-    "east": "block/spore_blossom_base",
-    "name": {
-      "zh_cn": "孢子花",
-      "en_us": "Spore Blossom",
-      "zh_tw": "孢子花",
-      "ja_jp": "胞子の花",
-      "ko_kr": "포자 꽃",
-      "de_de": "Sporenblüte",
-      "fr_fr": "Fleur sporifère"
-    }
-  },
-  {
-    "id": "spruce_button",
-    "up": "block/spruce_planks",
-    "north": "block/spruce_planks",
-    "east": "block/spruce_planks",
-    "name": {
-      "zh_cn": "云杉木按钮",
-      "en_us": "Spruce Button",
-      "zh_tw": "杉木按鈕",
-      "ja_jp": "トウヒのボタン",
-      "ko_kr": "가문비나무 버튼",
-      "de_de": "Fichtenholzknopf",
-      "fr_fr": "Bouton en sapin"
-    }
-  },
-  {
-    "id": "spruce_hanging_sign",
-    "up": "block/spruce_hanging_sign",
-    "north": "block/spruce_hanging_sign",
-    "east": "block/spruce_hanging_sign",
-    "name": {
-      "zh_cn": "悬挂式云杉木告示牌",
-      "en_us": "Spruce Hanging Sign",
-      "zh_tw": "懸掛式杉木告示牌",
-      "ja_jp": "トウヒの吊り看板",
-      "ko_kr": "가문비나무 매다는 표지판",
-      "de_de": "Fichtenholzhängeschild",
-      "fr_fr": "Pancarte suspendue en sapin"
     }
   },
   {
@@ -7530,48 +4995,18 @@
     }
   },
   {
-    "id": "spruce_shelf",
-    "up": "block/spruce_shelf",
-    "north": "block/spruce_shelf",
-    "east": "block/spruce_shelf",
+    "id": "spruce_planks",
+    "up": "block/spruce_planks",
+    "north": "block/spruce_planks",
+    "east": "block/spruce_planks",
     "name": {
-      "zh_cn": "云杉木展示架",
-      "en_us": "Spruce Shelf",
-      "zh_tw": "杉木展示架",
-      "ja_jp": "トウヒの棚",
-      "ko_kr": "가문비나무 선반",
-      "de_de": "Fichtenholzregal",
-      "fr_fr": "Étagère en sapin"
-    }
-  },
-  {
-    "id": "spruce_sign",
-    "up": "block/spruce_sign",
-    "north": "block/spruce_sign",
-    "east": "block/spruce_sign",
-    "name": {
-      "zh_cn": "云杉木告示牌",
-      "en_us": "Spruce Sign",
-      "zh_tw": "杉木告示牌",
-      "ja_jp": "トウヒの看板",
-      "ko_kr": "가문비나무 표지판",
-      "de_de": "Fichtenholzschild",
-      "fr_fr": "Pancarte en sapin"
-    }
-  },
-  {
-    "id": "spruce_trapdoor",
-    "up": "block/spruce_trapdoor",
-    "north": "block/spruce_trapdoor",
-    "east": "block/spruce_trapdoor",
-    "name": {
-      "zh_cn": "云杉木活板门",
-      "en_us": "Spruce Trapdoor",
-      "zh_tw": "杉木地板門",
-      "ja_jp": "トウヒのトラップドア",
-      "ko_kr": "가문비나무 다락문",
-      "de_de": "Fichtenholzfalltür",
-      "fr_fr": "Trappe en sapin"
+      "zh_cn": "云杉木板",
+      "en_us": "Spruce Planks",
+      "zh_tw": "杉木材",
+      "ja_jp": "トウヒの板材",
+      "ko_kr": "가문비나무 판자",
+      "de_de": "Fichtenholzbretter",
+      "fr_fr": "Planches de sapin"
     }
   },
   {
@@ -7602,21 +5037,6 @@
       "ko_kr": "끈끈이 피스톤",
       "de_de": "Klebriger Kolben",
       "fr_fr": "Piston collant"
-    }
-  },
-  {
-    "id": "stonecutter",
-    "up": "block/stonecutter_top",
-    "north": "block/stonecutter_side",
-    "east": "block/stonecutter_side",
-    "name": {
-      "zh_cn": "切石机",
-      "en_us": "Stonecutter",
-      "zh_tw": "切石機",
-      "ja_jp": "石切台",
-      "ko_kr": "석재 절단기",
-      "de_de": "Steinsäge",
-      "fr_fr": "Tailleur de pierre"
     }
   },
   {
@@ -7995,18 +5415,18 @@
     }
   },
   {
-    "id": "sulfur_brick_slab",
+    "id": "sulfur_bricks",
     "up": "block/sulfur_bricks",
     "north": "block/sulfur_bricks",
     "east": "block/sulfur_bricks",
     "name": {
-      "zh_cn": "硫黄砖台阶",
-      "en_us": "Sulfur Brick Slab",
-      "zh_tw": "硫磺磚半磚",
-      "ja_jp": "硫黄レンガのハーフブロック",
-      "ko_kr": "유황 벽돌 반 블록",
-      "de_de": "Schwefelziegelstufe",
-      "fr_fr": "Dalle de soufre taillé"
+      "zh_cn": "硫黄砖",
+      "en_us": "Sulfur Bricks",
+      "zh_tw": "硫磺磚",
+      "ja_jp": "硫黄レンガ",
+      "ko_kr": "유황 벽돌",
+      "de_de": "Schwefelziegel",
+      "fr_fr": "Soufre taillé"
     }
   },
   {
@@ -8130,21 +5550,6 @@
     }
   },
   {
-    "id": "torch",
-    "up": "block/torch",
-    "north": "block/torch",
-    "east": "block/torch",
-    "name": {
-      "zh_cn": "火把",
-      "en_us": "Torch",
-      "zh_tw": "火把",
-      "ja_jp": "松明",
-      "ko_kr": "횃불",
-      "de_de": "Fackel",
-      "fr_fr": "Torche"
-    }
-  },
-  {
     "id": "trial_spawner",
     "up": "block/trial_spawner_top_active",
     "north": "block/trial_spawner_side_active",
@@ -8157,36 +5562,6 @@
       "ko_kr": "시련 생성기",
       "de_de": "Prüfungs-Spawner",
       "fr_fr": "Générateur des épreuves"
-    }
-  },
-  {
-    "id": "tripwire",
-    "up": "block/tripwire",
-    "north": "block/tripwire",
-    "east": "block/tripwire",
-    "name": {
-      "zh_cn": "绊线",
-      "en_us": "Tripwire",
-      "zh_tw": "絆線",
-      "ja_jp": "トリップワイヤー",
-      "ko_kr": "철사 덫",
-      "de_de": "Stolperdraht",
-      "fr_fr": "Fil de déclenchement"
-    }
-  },
-  {
-    "id": "tripwire_hook",
-    "up": "block/tripwire_hook",
-    "north": "block/tripwire_hook",
-    "east": "block/tripwire_hook",
-    "name": {
-      "zh_cn": "绊线钩",
-      "en_us": "Tripwire Hook",
-      "zh_tw": "絆線鉤",
-      "ja_jp": "トリップワイヤーフック",
-      "ko_kr": "철사 덫 갈고리",
-      "de_de": "Haken",
-      "fr_fr": "Crochet"
     }
   },
   {
@@ -8205,21 +5580,6 @@
     }
   },
   {
-    "id": "tube_coral_fan",
-    "up": "block/tube_coral_fan",
-    "north": "block/tube_coral_fan",
-    "east": "block/tube_coral_fan",
-    "name": {
-      "zh_cn": "管珊瑚扇",
-      "en_us": "Tube Coral Fan",
-      "zh_tw": "扇狀管珊瑚",
-      "ja_jp": "クダウチワサンゴ",
-      "ko_kr": "부채형 관 산호",
-      "de_de": "Orgelkorallenfächer",
-      "fr_fr": "Gorgone de corail tubulaire"
-    }
-  },
-  {
     "id": "tuff",
     "up": "block/tuff",
     "north": "block/tuff",
@@ -8235,33 +5595,18 @@
     }
   },
   {
-    "id": "tuff_brick_slab",
+    "id": "tuff_bricks",
     "up": "block/tuff_bricks",
     "north": "block/tuff_bricks",
     "east": "block/tuff_bricks",
     "name": {
-      "zh_cn": "凝灰岩砖台阶",
-      "en_us": "Tuff Brick Slab",
-      "zh_tw": "凝灰岩磚半磚",
-      "ja_jp": "凝灰岩レンガのハーフブロック",
-      "ko_kr": "응회암 벽돌 반 블록",
-      "de_de": "Tuffsteinziegelstufe",
-      "fr_fr": "Dalle de tuf taillé"
-    }
-  },
-  {
-    "id": "turtle_egg",
-    "up": "block/turtle_egg",
-    "north": "block/turtle_egg",
-    "east": "block/turtle_egg",
-    "name": {
-      "zh_cn": "海龟蛋",
-      "en_us": "Turtle Egg",
-      "zh_tw": "海龜蛋",
-      "ja_jp": "カメの卵",
-      "ko_kr": "거북알",
-      "de_de": "Schildkrötenei",
-      "fr_fr": "Oeuf de tortue"
+      "zh_cn": "凝灰岩砖",
+      "en_us": "Tuff Bricks",
+      "zh_tw": "凝灰岩磚",
+      "ja_jp": "凝灰岩レンガ",
+      "ko_kr": "응회암 벽돌",
+      "de_de": "Tuffsteinziegel",
+      "fr_fr": "Tuf taillé"
     }
   },
   {
@@ -8295,36 +5640,6 @@
     }
   },
   {
-    "id": "warped_button",
-    "up": "block/warped_planks",
-    "north": "block/warped_planks",
-    "east": "block/warped_planks",
-    "name": {
-      "zh_cn": "诡异木按钮",
-      "en_us": "Warped Button",
-      "zh_tw": "扭曲蕈木按鈕",
-      "ja_jp": "歪んだボタン",
-      "ko_kr": "뒤틀린 버튼",
-      "de_de": "Wirrknopf",
-      "fr_fr": "Bouton biscornu"
-    }
-  },
-  {
-    "id": "warped_hanging_sign",
-    "up": "block/warped_hanging_sign",
-    "north": "block/warped_hanging_sign",
-    "east": "block/warped_hanging_sign",
-    "name": {
-      "zh_cn": "悬挂式诡异木告示牌",
-      "en_us": "Warped Hanging Sign",
-      "zh_tw": "懸掛式扭曲蕈木告示牌",
-      "ja_jp": "歪んだ吊り看板",
-      "ko_kr": "뒤틀린 매다는 표지판",
-      "de_de": "Wirrhängeschild",
-      "fr_fr": "Pancarte suspendue biscornue"
-    }
-  },
-  {
     "id": "warped_hyphae",
     "up": "block/warped_stem",
     "north": "block/warped_stem",
@@ -8355,33 +5670,18 @@
     }
   },
   {
-    "id": "warped_shelf",
-    "up": "block/warped_shelf",
-    "north": "block/warped_shelf",
-    "east": "block/warped_shelf",
+    "id": "warped_planks",
+    "up": "block/warped_planks",
+    "north": "block/warped_planks",
+    "east": "block/warped_planks",
     "name": {
-      "zh_cn": "诡异木展示架",
-      "en_us": "Warped Shelf",
-      "zh_tw": "扭曲蕈木展示架",
-      "ja_jp": "歪んだ棚",
-      "ko_kr": "뒤틀린 선반",
-      "de_de": "Wirrregal",
-      "fr_fr": "Étagère biscornue"
-    }
-  },
-  {
-    "id": "warped_sign",
-    "up": "block/warped_sign",
-    "north": "block/warped_sign",
-    "east": "block/warped_sign",
-    "name": {
-      "zh_cn": "诡异木告示牌",
-      "en_us": "Warped Sign",
-      "zh_tw": "扭曲蕈木告示牌",
-      "ja_jp": "歪んだ看板",
-      "ko_kr": "뒤틀린 표지판",
-      "de_de": "Wirrschild",
-      "fr_fr": "Pancarte biscornue"
+      "zh_cn": "诡异木板",
+      "en_us": "Warped Planks",
+      "zh_tw": "扭曲蕈木材",
+      "ja_jp": "歪んだ板材",
+      "ko_kr": "뒤틀린 판자",
+      "de_de": "Wirrbretter",
+      "fr_fr": "Planches biscornues"
     }
   },
   {
@@ -8397,21 +5697,6 @@
       "ko_kr": "뒤틀린 자루",
       "de_de": "Wirrstiel",
       "fr_fr": "Tige biscornue"
-    }
-  },
-  {
-    "id": "warped_trapdoor",
-    "up": "block/warped_trapdoor",
-    "north": "block/warped_trapdoor",
-    "east": "block/warped_trapdoor",
-    "name": {
-      "zh_cn": "诡异木活板门",
-      "en_us": "Warped Trapdoor",
-      "zh_tw": "扭曲蕈木地板門",
-      "ja_jp": "歪んだトラップドア",
-      "ko_kr": "뒤틀린 다락문",
-      "de_de": "Wirrfalltür",
-      "fr_fr": "Trappe biscornue"
     }
   },
   {
@@ -8460,21 +5745,6 @@
     }
   },
   {
-    "id": "waxed_weathered_copper_bars",
-    "up": "block/weathered_copper_bars",
-    "north": "block/weathered_copper_bars",
-    "east": "block/weathered_copper_bars",
-    "name": {
-      "zh_cn": "涂蜡的锈蚀铜栏杆",
-      "en_us": "Waxed Weathered Copper Bars",
-      "zh_tw": "上蠟的風化銅柵欄",
-      "ja_jp": "錆止めされた錆びた銅格子",
-      "ko_kr": "밀랍칠한 녹슨 구리 창살",
-      "de_de": "Gewachstes verwittertes Kupfergitter",
-      "fr_fr": "Barreaux de cuivre érodé ciré"
-    }
-  },
-  {
     "id": "waxed_weathered_copper_bulb",
     "up": "block/weathered_copper_bulb",
     "north": "block/weathered_copper_bulb",
@@ -8505,36 +5775,6 @@
     }
   },
   {
-    "id": "waxed_weathered_copper_lantern",
-    "up": "block/weathered_copper_lantern",
-    "north": "block/weathered_copper_lantern",
-    "east": "block/weathered_copper_lantern",
-    "name": {
-      "zh_cn": "涂蜡的锈蚀铜灯笼",
-      "en_us": "Waxed Weathered Copper Lantern",
-      "zh_tw": "上蠟的風化銅燈籠",
-      "ja_jp": "錆止めされた錆びた銅のランタン",
-      "ko_kr": "밀랍칠한 녹슨 구리 랜턴",
-      "de_de": "Gewachste verwitterte Kupferlaterne",
-      "fr_fr": "Lanterne en cuivre érodé ciré"
-    }
-  },
-  {
-    "id": "waxed_weathered_copper_trapdoor",
-    "up": "block/weathered_copper_trapdoor",
-    "north": "block/weathered_copper_trapdoor",
-    "east": "block/weathered_copper_trapdoor",
-    "name": {
-      "zh_cn": "涂蜡的锈蚀铜活板门",
-      "en_us": "Waxed Weathered Copper Trapdoor",
-      "zh_tw": "上蠟的風化銅地板門",
-      "ja_jp": "錆止めされた錆びた銅のトラップドア",
-      "ko_kr": "밀랍칠한 녹슨 구리 다락문",
-      "de_de": "Gewachste verwitterte Kupferfalltür",
-      "fr_fr": "Trappe en cuivre érodé ciré"
-    }
-  },
-  {
     "id": "waxed_weathered_cut_copper",
     "up": "block/weathered_cut_copper",
     "north": "block/weathered_cut_copper",
@@ -8550,21 +5790,6 @@
     }
   },
   {
-    "id": "waxed_weathered_lightning_rod",
-    "up": "block/weathered_lightning_rod",
-    "north": "block/weathered_lightning_rod",
-    "east": "block/weathered_lightning_rod",
-    "name": {
-      "zh_cn": "涂蜡的锈蚀避雷针",
-      "en_us": "Waxed Weathered Lightning Rod",
-      "zh_tw": "上蠟的風化避雷針",
-      "ja_jp": "錆止めされた錆びた避雷針",
-      "ko_kr": "밀랍칠한 녹슨 피뢰침",
-      "de_de": "Gewachster verwitterter Blitzableiter",
-      "fr_fr": "Paratonnerre érodé ciré"
-    }
-  },
-  {
     "id": "wet_sponge",
     "up": "block/wet_sponge",
     "north": "block/wet_sponge",
@@ -8577,51 +5802,6 @@
       "ko_kr": "젖은 스펀지",
       "de_de": "Nasser Schwamm",
       "fr_fr": "Éponge mouillée"
-    }
-  },
-  {
-    "id": "white_bed",
-    "up": "block/white_bed_foot_up",
-    "north": "block/white_bed_foot_west",
-    "east": "block/white_bed_foot_east",
-    "name": {
-      "zh_cn": "白色床",
-      "en_us": "White Bed",
-      "zh_tw": "白色床",
-      "ja_jp": "白色のベッド",
-      "ko_kr": "하얀색 침대",
-      "de_de": "Weißes Bett",
-      "fr_fr": "Lit blanc"
-    }
-  },
-  {
-    "id": "white_candle",
-    "up": "block/white_candle",
-    "north": "block/white_candle",
-    "east": "block/white_candle",
-    "name": {
-      "zh_cn": "白色蜡烛",
-      "en_us": "White Candle",
-      "zh_tw": "白色蠟燭",
-      "ja_jp": "白色のろうそく",
-      "ko_kr": "하얀색 초",
-      "de_de": "Weiße Kerze",
-      "fr_fr": "Bougie blanche"
-    }
-  },
-  {
-    "id": "white_carpet",
-    "up": "block/white_wool",
-    "north": "block/white_wool",
-    "east": "block/white_wool",
-    "name": {
-      "zh_cn": "白色地毯",
-      "en_us": "White Carpet",
-      "zh_tw": "白色地毯",
-      "ja_jp": "白色のカーペット",
-      "ko_kr": "하얀색 양탄자",
-      "de_de": "Weißer Teppich",
-      "fr_fr": "Tapis blanc"
     }
   },
   {
@@ -8685,21 +5865,6 @@
     }
   },
   {
-    "id": "white_stained_glass_pane",
-    "up": "block/white_stained_glass_pane_top",
-    "north": "block/white_stained_glass_pane_top",
-    "east": "block/white_stained_glass_pane_top",
-    "name": {
-      "zh_cn": "白色染色玻璃板",
-      "en_us": "White Stained Glass Pane",
-      "zh_tw": "白色玻璃片",
-      "ja_jp": "白色の色付きガラス板",
-      "ko_kr": "하얀색 색유리 판",
-      "de_de": "Weiße Glasscheibe",
-      "fr_fr": "Vitre blanche"
-    }
-  },
-  {
     "id": "white_terracotta",
     "up": "block/white_terracotta",
     "north": "block/white_terracotta",
@@ -8715,63 +5880,18 @@
     }
   },
   {
-    "id": "wildflowers",
-    "up": "block/wildflowers",
-    "north": "block/wildflowers_stem",
-    "east": "block/wildflowers_stem",
+    "id": "white_wool",
+    "up": "block/white_wool",
+    "north": "block/white_wool",
+    "east": "block/white_wool",
     "name": {
-      "zh_cn": "野花簇",
-      "en_us": "Wildflowers",
-      "zh_tw": "野花簇",
-      "ja_jp": "野花",
-      "ko_kr": "들꽃",
-      "de_de": "Wildblumen",
-      "fr_fr": "Fleurs sauvages"
-    }
-  },
-  {
-    "id": "yellow_bed",
-    "up": "block/yellow_bed_foot_up",
-    "north": "block/yellow_bed_foot_west",
-    "east": "block/yellow_bed_foot_east",
-    "name": {
-      "zh_cn": "黄色床",
-      "en_us": "Yellow Bed",
-      "zh_tw": "黃色床",
-      "ja_jp": "黄色のベッド",
-      "ko_kr": "노란색 침대",
-      "de_de": "Gelbes Bett",
-      "fr_fr": "Lit jaune"
-    }
-  },
-  {
-    "id": "yellow_candle",
-    "up": "block/yellow_candle",
-    "north": "block/yellow_candle",
-    "east": "block/yellow_candle",
-    "name": {
-      "zh_cn": "黄色蜡烛",
-      "en_us": "Yellow Candle",
-      "zh_tw": "黃色蠟燭",
-      "ja_jp": "黄色のろうそく",
-      "ko_kr": "노란색 초",
-      "de_de": "Gelbe Kerze",
-      "fr_fr": "Bougie jaune"
-    }
-  },
-  {
-    "id": "yellow_carpet",
-    "up": "block/yellow_wool",
-    "north": "block/yellow_wool",
-    "east": "block/yellow_wool",
-    "name": {
-      "zh_cn": "黄色地毯",
-      "en_us": "Yellow Carpet",
-      "zh_tw": "黃色地毯",
-      "ja_jp": "黄色のカーペット",
-      "ko_kr": "노란색 양탄자",
-      "de_de": "Gelber Teppich",
-      "fr_fr": "Tapis jaune"
+      "zh_cn": "白色羊毛",
+      "en_us": "White Wool",
+      "zh_tw": "白色羊毛",
+      "ja_jp": "白色の羊毛",
+      "ko_kr": "하얀색 양털",
+      "de_de": "Weiße Wolle",
+      "fr_fr": "Laine blanche"
     }
   },
   {
@@ -8835,21 +5955,6 @@
     }
   },
   {
-    "id": "yellow_stained_glass_pane",
-    "up": "block/yellow_stained_glass_pane_top",
-    "north": "block/yellow_stained_glass_pane_top",
-    "east": "block/yellow_stained_glass_pane_top",
-    "name": {
-      "zh_cn": "黄色染色玻璃板",
-      "en_us": "Yellow Stained Glass Pane",
-      "zh_tw": "黃色玻璃片",
-      "ja_jp": "黄色の色付きガラス板",
-      "ko_kr": "노란색 색유리 판",
-      "de_de": "Gelbe Glasscheibe",
-      "fr_fr": "Vitre jaune"
-    }
-  },
-  {
     "id": "yellow_terracotta",
     "up": "block/yellow_terracotta",
     "north": "block/yellow_terracotta",
@@ -8862,6 +5967,21 @@
       "ko_kr": "노란색 테라코타",
       "de_de": "Gelbe Keramik",
       "fr_fr": "Terre cuite jaune"
+    }
+  },
+  {
+    "id": "yellow_wool",
+    "up": "block/yellow_wool",
+    "north": "block/yellow_wool",
+    "east": "block/yellow_wool",
+    "name": {
+      "zh_cn": "黄色羊毛",
+      "en_us": "Yellow Wool",
+      "zh_tw": "黃色羊毛",
+      "ja_jp": "黄色の羊毛",
+      "ko_kr": "노란색 양털",
+      "de_de": "Gelbe Wolle",
+      "fr_fr": "Laine jaune"
     }
   }
 ]

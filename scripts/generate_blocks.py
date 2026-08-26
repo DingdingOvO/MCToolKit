@@ -76,6 +76,19 @@ def resolve_model(name, visited=None):
     return merged
 
 
+def is_full_cube(resolved):
+    """Check if resolved model has at least one full-cube element [0,0,0]->[16,16,16]."""
+    elements = resolved.get('elements', [])
+    if not elements:
+        return False
+    for elem in elements:
+        fr = elem.get('from', [])
+        to = elem.get('to', [])
+        if fr == [0, 0, 0] and to == [16, 16, 16]:
+            return True
+    return False
+
+
 def resolve_tex(tex, textures):
     if not tex:
         return None
@@ -126,6 +139,7 @@ print('Processing blockstates...')
 blocks = []
 skipped_no_tex = 0
 skipped_no_translate = 0
+skipped_not_cube = 0
 
 if os.path.isdir(BLOCKSTATE_DIR):
     for f in sorted(os.listdir(BLOCKSTATE_DIR)):
@@ -165,6 +179,11 @@ if os.path.isdir(BLOCKSTATE_DIR):
         if not resolved:
             continue
 
+        # Only include blocks with a full 16x16x16 cube element
+        if not is_full_cube(resolved):
+            skipped_not_cube += 1
+            continue
+
         up_raw = get_face_tex(resolved, 'up')
         north_raw = get_face_tex(resolved, 'north')
         east_raw = get_face_tex(resolved, 'east')
@@ -196,7 +215,7 @@ if os.path.isdir(BLOCKSTATE_DIR):
             'name': name,
         })
 
-print(f'Total: {len(blocks)} (skipped {skipped_no_translate} no trans, {skipped_no_tex} no tex)')
+print(f'Total: {len(blocks)} (skipped {skipped_no_translate} no trans, {skipped_no_tex} no tex, {skipped_not_cube} not full cube)')
 
 # Deduplicate by texture combo
 seen = set()
