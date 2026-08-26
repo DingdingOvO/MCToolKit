@@ -1,17 +1,35 @@
 #!/usr/bin/env python3
-"""
-Parse MC block models + blockstates → generate blocks.json with face textures.
-For each block: resolve parent chain, extract textures for up/north/east faces.
-"""
+"""Parse MC block models + blockstates + lang files -> blocks.json."""
 import json, os
 
-BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE = '/home/z/my-project/MCToolKit'
 MODEL_DIR = os.path.join(BASE, 'assets', 'extracted', 'assets', 'minecraft', 'models', 'block')
 BLOCKSTATE_DIR = os.path.join(BASE, 'assets', 'extracted', 'assets', 'minecraft', 'blockstates')
-TEX_DIR = os.path.join(BASE, 'public', 'textures')  # texture files are under block/
+LANG_DIR = os.path.join(BASE, 'assets', 'extracted', 'assets', 'minecraft', 'lang')
+TEX_DIR = os.path.join(BASE, 'public', 'textures')
 OUTPUT = os.path.join(BASE, 'src', 'data', 'blocks.json')
 
-# ── Load all models ────────────────────────────────────────────────────
+SUPPORTED_LANGS = ['zh_cn', 'en_us', 'zh_tw', 'ja_jp', 'ko_kr', 'de_de', 'fr_fr']
+
+# -- Load lang files --
+print('Loading lang files...')
+lang_data = {}
+for lc in SUPPORTED_LANGS:
+    lpath = os.path.join(LANG_DIR, f'{lc}.json')
+    if not os.path.isfile(lpath):
+        print(f'  {lc}: FILE NOT FOUND')
+        continue
+    with open(lpath, encoding='utf-8') as fh:
+        raw = json.load(fh)
+    mapped = {}
+    PREFIX = 'block.minecraft.'
+    for key, val in raw.items():
+        if key.startswith(PREFIX):
+            mapped[key[len(PREFIX):]] = val
+    lang_data[lc] = mapped
+    print(f'  {lc}: {len(mapped)} block translations')
+
+# -- Load all models --
 print('Loading block models...')
 model_data = {}
 model_parent = {}
@@ -22,45 +40,43 @@ for f in os.listdir(MODEL_DIR):
     name = f[:-5]
     with open(os.path.join(MODEL_DIR, f)) as fh:
         model_data[name] = json.load(fh)
-    parent = model_data[name].get('parent', '').replace('minecraft:block/', '').replace('block/', '')
-    model_parent[name] = parent
+    model_parent[name] = model_data[name].get('parent', '').replace('minecraft:block/', '').replace('block/', '')
 
-# ── Resolve parent chain ───────────────────────────────────────────────
-_resolved_cache = {}
+# -- Resolve model chain --
+_cache = {}
 
 def resolve_model(name, visited=None):
-    if name in _resolved_cache:
-        return _resolved_cache[name]
+    if name in _cache:
+        return _cache[name]
     if visited is None:
         visited = set()
     if name in visited or name not in model_data:
         return None
     visited.add(name)
     data = model_data[name]
-    parent_name = model_parent.get(name, '')
-    if not parent_name:
-        _resolved_cache[name] = data
+    pname = model_parent.get(name, '')
+    if not pname:
+        _cache[name] = data
         return data
-    parent_data = resolve_model(parent_name, visited)
-    if parent_data is None:
-        _resolved_cache[name] = data
+    pdata = resolve_model(pname, visited)
+    if pdata is None:
+        _cache[name] = data
         return data
-    merged = dict(parent_data)
+    merged = dict(pdata)
     merged.update({k: v for k, v in data.items() if k != 'textures'})
-    if 'textures' in parent_data and 'textures' in data:
-        mt = dict(parent_data['textures'])
+    if 'textures' in pdata and 'textures' in data:
+        mt = dict(pdata['textures'])
         mt.update(data['textures'])
         merged['textures'] = mt
     elif 'textures' in data:
         merged['textures'] = data['textures']
     if 'elements' in data:
         merged['elements'] = data['elements']
-    _resolved_cache[name] = merged
+    _cache[name] = merged
     return merged
 
 
 def resolve_tex(tex, textures):
-    """Resolve a texture reference to a file path like 'block/stone'."""
     if not tex:
         return None
     if isinstance(tex, dict):
@@ -69,26 +85,20 @@ def resolve_tex(tex, textures):
         return None
     if tex.startswith('#'):
         return resolve_tex(textures.get(tex[1:]), textures)
-    # Strip minecraft namespace, keep block/ prefix
-    tex = tex.replace('minecraft:', '')
-    return tex  # e.g. 'block/stone' or 'block/oak_planks'
+    return tex.replace('minecraft:', '')
 
 
 def tex_exists(tex_name):
-    """Check if a resolved texture file exists."""
     if not tex_name:
         return False, None
-    path = os.path.join(TEX_DIR, f'{tex_name}.png')
-    return os.path.isfile(path), tex_name
+    fpath = os.path.join(TEX_DIR, f'{tex_name}.png')
+    return os.path.isfile(fpath), tex_name
 
 
 def get_face_tex(resolved, face):
-    """Get the texture path for a face (up/down/north/south/east/west)."""
     textures = resolved.get('textures', {})
     elements = resolved.get('elements', [])
-    
     if not elements:
-        # No own elements — resolve from texture variable names
         if 'all' in textures:
             return resolve_tex(textures['all'], textures)
         if face in ('up', 'down'):
@@ -100,8 +110,6 @@ def get_face_tex(resolved, face):
                 if k in textures:
                     return resolve_tex(textures[k], textures)
         return None
-    
-    # Get texture from first element that has this face
     for elem in elements:
         faces = elem.get('faces', {})
         if face in faces:
@@ -113,19 +121,28 @@ def get_face_tex(resolved, face):
     return None
 
 
-# ── Process blockstates ────────────────────────────────────────────────
+# -- Process blockstates --
 print('Processing blockstates...')
 blocks = []
+skipped_no_tex = 0
+skipped_no_translate = 0
 
 if os.path.isdir(BLOCKSTATE_DIR):
     for f in sorted(os.listdir(BLOCKSTATE_DIR)):
         if not f.endswith('.json'):
             continue
         block_id = f[:-5]
+
+        if block_id not in lang_data.get('zh_cn', {}):
+            skipped_no_translate += 1
+            continue
+        if block_id not in lang_data.get('en_us', {}):
+            skipped_no_translate += 1
+            continue
+
         with open(os.path.join(BLOCKSTATE_DIR, f)) as fh:
             bs = json.load(fh)
 
-        # Pick the first variant's first model
         model_name = None
         if 'variants' in bs:
             variants = bs['variants']
@@ -152,12 +169,10 @@ if os.path.isdir(BLOCKSTATE_DIR):
         north_raw = get_face_tex(resolved, 'north')
         east_raw = get_face_tex(resolved, 'east')
 
-        # Check existence
         up_ok, up_path = tex_exists(up_raw)
         n_ok, n_path = tex_exists(north_raw)
         e_ok, e_path = tex_exists(east_raw)
 
-        # Fallback: if north/east missing (cube_all), copy up
         if not n_ok and up_ok:
             n_path = up_path
             n_ok = True
@@ -165,17 +180,25 @@ if os.path.isdir(BLOCKSTATE_DIR):
             e_path = n_path
             e_ok = True
 
-        if not (up_ok or n_ok or e_ok):
+        if not (up_ok and n_ok and e_ok):
+            skipped_no_tex += 1
             continue
+
+        name = {}
+        for lc in SUPPORTED_LANGS:
+            name[lc] = lang_data.get(lc, {}).get(block_id, block_id)
 
         blocks.append({
             'id': block_id,
             'up': up_path,
             'north': n_path,
             'east': e_path,
+            'name': name,
         })
 
-# Deduplicate by (up, north, east) texture combo
+print(f'Total: {len(blocks)} (skipped {skipped_no_translate} no trans, {skipped_no_tex} no tex)')
+
+# Deduplicate by texture combo
 seen = set()
 unique = []
 for b in blocks:
@@ -184,9 +207,8 @@ for b in blocks:
         seen.add(key)
         unique.append(b)
 
-print(f'From blockstates: {len(blocks)}, unique combos: {len(unique)}')
+print(f'Unique combos: {len(unique)}')
 
 with open(OUTPUT, 'w', encoding='utf-8') as f:
     json.dump(unique, f, ensure_ascii=False, indent=2)
-
-print(f'Wrote {OUTPUT} ({len(unique)} blocks)')
+print(f'Wrote {OUTPUT}')

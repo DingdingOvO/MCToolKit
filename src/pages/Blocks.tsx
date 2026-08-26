@@ -19,11 +19,13 @@ export default function Blocks() {
     if (!blocks.length) return []
     if (!search.trim()) return blocks
     const q = search.toLowerCase().trim()
-    return blocks.filter(b => b.id.includes(q))
+    return blocks.filter(b =>
+      b.id.includes(q) ||
+      Object.values(b.name).some(n => n.toLowerCase().includes(q))
+    )
   }, [search, blocks])
 
   const dl = useCallback((block: Block) => {
-    // Download the primary texture (north or up)
     const tex = block.north || block.up
     if (!tex) return
     const a = document.createElement('a')
@@ -34,7 +36,6 @@ export default function Blocks() {
 
   return (
     <div className='max-w-5xl mx-auto px-5 py-4'>
-      {/* Toolbar */}
       <div className='flex items-center gap-3 mb-4'>
         <div className='relative flex-1 max-w-sm'>
           <svg className='absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-gray-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
@@ -49,7 +50,7 @@ export default function Blocks() {
           />
         </div>
         <span className='text-xs text-gray-300 tabular-nums'>
-          {s.blockCount.replace('{count}', String(filtered.length)).replace('{total}', String(blocks.length || 713))}
+          {s.blockCount.replace('{count}', String(filtered.length)).replace('{total}', String(blocks.length || 591))}
         </span>
         {search && filtered.length > 0 && (
           <button
@@ -61,42 +62,42 @@ export default function Blocks() {
         )}
       </div>
 
-      {/* Grid */}
       {!blocks.length ? (
         <div className='text-center py-20 text-sm text-gray-300'>...</div>
       ) : (
-        <div className='grid grid-cols-[repeat(auto-fill,minmax(64px,1fr))] gap-2'>
+        <div className='grid grid-cols-[repeat(auto-fill,minmax(72px,1fr))] gap-1.5'>
           {filtered.map(block => (
             <button
               key={block.id}
               onClick={() => setSelected(selected?.id === block.id ? null : block)}
-              className={`flex flex-col items-center gap-1 p-2 rounded-lg transition-colors hover:bg-gray-100 ${
+              className={`flex flex-col items-center gap-0.5 p-1.5 rounded-lg transition-colors hover:bg-gray-100 ${
                 selected?.id === block.id ? 'bg-gray-100 ring-1 ring-blue-400' : ''
               }`}
             >
               <BlockIcon block={block} size={24} />
               <span className='text-[9px] text-gray-400 leading-tight text-center line-clamp-2 w-full'>
-                {block.id}
+                {block.name[lang] || block.id}
               </span>
             </button>
           ))}
         </div>
       )}
 
-      {/* Detail Modal */}
       {selected && (
         <div className='fixed inset-0 z-[100] flex items-center justify-center bg-black/20 backdrop-blur-sm' onClick={() => setSelected(null)}>
           <div className='bg-white rounded-xl border border-gray-200 p-5 w-80 shadow-xl' onClick={e => e.stopPropagation()}>
             <div className='flex gap-4 mb-4'>
               <div className='w-20 h-20 bg-gray-50 rounded-lg flex items-center justify-center shrink-0'>
-                <BlockIcon block={selected} size={40} />
+                <BlockIcon block={selected} size={48} />
               </div>
-              <div className='min-w-0'>
-                <h3 className='text-sm font-semibold text-gray-900 break-all'>{selected.id}</h3>
-                <div className='mt-1.5 space-y-0.5 text-[11px] text-gray-300 font-mono'>
-                  {selected.up && <p>top: {selected.up.replace('block/', '')}</p>}
-                  {selected.north && <p>side: {selected.north.replace('block/', '')}</p>}
-                  {(selected.east && selected.east !== selected.north) && <p>east: {selected.east.replace('block/', '')}</p>}
+              <div className='min-w-0 flex-1'>
+                <h3 className='text-sm font-semibold text-gray-900'>{selected.name[lang] || selected.id}</h3>
+                <p className='text-[11px] text-gray-300 font-mono mt-0.5'>{selected.id}</p>
+                <div className='mt-1 space-y-0 text-[10px] text-gray-300'>
+                  {selected.up !== selected.north && (
+                    <p>top: {selected.up.replace('block/', '')}</p>
+                  )}
+                  <p>side: {selected.north.replace('block/', '')}</p>
                 </div>
               </div>
             </div>

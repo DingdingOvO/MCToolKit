@@ -6,9 +6,10 @@ export interface Item {
 
 export interface Block {
   id: string
-  up: string | null     // texture path like 'block/stone'
-  north: string | null   // front face
-  east: string | null    // right face
+  up: string
+  north: string
+  east: string
+  name: Record<string, string>
 }
 
 export interface Sound {
