@@ -9,18 +9,12 @@ const BASE = '/MCToolKit/textures'
 
 /**
  * CSS 3D isometric Minecraft block renderer.
- * Uses transform-style: preserve-3d with proper face transforms.
+ * Uses transform-style: preserve-3d.
  *
- * Isometric angles: rotateX(-35.264deg) rotateY(-45deg)
- *   - 35.264° = arctan(1/√2) gives true isometric projection
- *   - rotateY(-45deg) so east/right face is on the right side
+ * Key: NO filter/brightness on face divs — filter breaks 3D rendering.
+ * Instead, overlay a semi-transparent div for MC-style directional shading.
  *
- * Visible faces:
- *   - Top  (y=0 plane, normal -Y)  → rotateX(-90deg) translateZ(s/2)
- *   - Front (z=s/2 plane, normal +Z) → translateZ(s/2)
- *   - Right (x=s plane, normal +X)  → rotateY(90deg) translateZ(s/2)
- *
- * Projected bounding box: ~1.414s × ~1.633s
+ * Isometric: rotateX(-35.264deg) rotateY(-45deg)
  */
 export default function BlockIcon({ block, size = 32 }: Props) {
   const s = size
@@ -28,14 +22,22 @@ export default function BlockIcon({ block, size = 32 }: Props) {
   const w = Math.ceil(s * 1.42)
   const h = Math.ceil(s * 1.64)
 
-  const face: React.CSSProperties = {
+  const faceBase: React.CSSProperties = {
     position: 'absolute',
     top: 0, left: 0,
     width: s, height: s,
     backgroundSize: 'cover',
     imageRendering: 'pixelated' as const,
-    backfaceVisibility: 'hidden' as const,
   }
+
+  // Overlay for MC-style directional lighting
+  const overlay = (opacity: number): React.CSSProperties => ({
+    position: 'absolute',
+    top: 0, left: 0,
+    width: s, height: s,
+    backgroundColor: `rgba(0, 0, 0, ${opacity})`,
+    pointerEvents: 'none',
+  })
 
   return (
     <div style={{ width: w, height: h, position: 'relative' }}>
@@ -47,26 +49,28 @@ export default function BlockIcon({ block, size = 32 }: Props) {
         transformStyle: 'preserve-3d',
         transform: 'rotateX(-35.264deg) rotateY(-45deg)',
       }}>
-        {/* Top face — brightest */}
+        {/* Top face — brightest, no overlay */}
         <div style={{
-          ...face,
+          ...faceBase,
           transform: `rotateX(-90deg) translateZ(${half}px)`,
           backgroundImage: `url(${BASE}/${block.up}.png)`,
         }} />
-        {/* Front/north face — medium (appears as left side) */}
+        {/* Front/north face — medium shade */}
         <div style={{
-          ...face,
+          ...faceBase,
           transform: `translateZ(${half}px)`,
           backgroundImage: `url(${BASE}/${block.north}.png)`,
-          filter: 'brightness(0.85)',
-        }} />
+        }}>
+          <div style={overlay(0.15)} />
+        </div>
         {/* Right/east face — darkest */}
         <div style={{
-          ...face,
+          ...faceBase,
           transform: `rotateY(90deg) translateZ(${half}px)`,
           backgroundImage: `url(${BASE}/${block.east}.png)`,
-          filter: 'brightness(0.7)',
-        }} />
+        }}>
+          <div style={overlay(0.30)} />
+        </div>
       </div>
     </div>
   )

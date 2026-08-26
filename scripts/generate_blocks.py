@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Parse MC block models + blockstates + lang files -> blocks.json."""
+"""Parse MC block models + blockstates + lang files -> blocks.json.
+
+Only includes blocks that have at least one full-cube model variant
+(from=[0,0,0] to=[16,16,16]). Scans ALL variants, not just the first.
+"""
 import json, os
 
 BASE = '/home/z/my-project/MCToolKit'
@@ -134,6 +138,35 @@ def get_face_tex(resolved, face):
     return None
 
 
+def collect_model_names(bs):
+    """Extract all model names from a blockstate JSON."""
+    names = []
+    if 'variants' in bs:
+        for key, val in bs['variants'].items():
+            if isinstance(val, list):
+                for v in val:
+                    mn = v.get('model', '').replace('minecraft:block/', '')
+                    if mn:
+                        names.append(mn)
+            else:
+                mn = val.get('model', '').replace('minecraft:block/', '')
+                if mn:
+                    names.append(mn)
+    elif 'multipart' in bs:
+        for case in bs['multipart']:
+            apply = case.get('apply', [])
+            if isinstance(apply, list):
+                for a in apply:
+                    mn = a.get('model', '').replace('minecraft:block/', '')
+                    if mn:
+                        names.append(mn)
+            elif isinstance(apply, dict):
+                mn = apply.get('model', '').replace('minecraft:block/', '')
+                if mn:
+                    names.append(mn)
+    return names
+
+
 # -- Process blockstates --
 print('Processing blockstates...')
 blocks = []
@@ -147,46 +180,38 @@ if os.path.isdir(BLOCKSTATE_DIR):
             continue
         block_id = f[:-5]
 
+        # Require at least zh_cn translation
         if block_id not in lang_data.get('zh_cn', {}):
-            skipped_no_translate += 1
-            continue
-        if block_id not in lang_data.get('en_us', {}):
             skipped_no_translate += 1
             continue
 
         with open(os.path.join(BLOCKSTATE_DIR, f)) as fh:
             bs = json.load(fh)
 
-        model_name = None
-        if 'variants' in bs:
-            variants = bs['variants']
-            first = next(iter(variants.values()))
-            if isinstance(first, list):
-                first = first[0]
-            model_name = first.get('model', '').replace('minecraft:block/', '')
-        elif 'multipart' in bs:
-            for case in bs['multipart']:
-                apply = case.get('apply', [])
-                if apply:
-                    first = apply[0] if isinstance(apply, list) else apply
-                    model_name = first.get('model', '').replace('minecraft:block/', '')
-                    break
-
-        if not model_name or model_name not in model_data:
+        # Collect ALL model names from all variants/multipart cases
+        model_names = collect_model_names(bs)
+        if not model_names:
             continue
 
-        resolved = resolve_model(model_name)
-        if not resolved:
-            continue
+        # Find the first model that resolves to a full cube
+        cube_model_name = None
+        cube_resolved = None
+        for mn in model_names:
+            if mn not in model_data:
+                continue
+            resolved = resolve_model(mn)
+            if resolved and is_full_cube(resolved):
+                cube_model_name = mn
+                cube_resolved = resolved
+                break
 
-        # Only include blocks with a full 16x16x16 cube element
-        if not is_full_cube(resolved):
+        if not cube_resolved:
             skipped_not_cube += 1
             continue
 
-        up_raw = get_face_tex(resolved, 'up')
-        north_raw = get_face_tex(resolved, 'north')
-        east_raw = get_face_tex(resolved, 'east')
+        up_raw = get_face_tex(cube_resolved, 'up')
+        north_raw = get_face_tex(cube_resolved, 'north')
+        east_raw = get_face_tex(cube_resolved, 'east')
 
         up_ok, up_path = tex_exists(up_raw)
         n_ok, n_path = tex_exists(north_raw)
@@ -217,17 +242,6 @@ if os.path.isdir(BLOCKSTATE_DIR):
 
 print(f'Total: {len(blocks)} (skipped {skipped_no_translate} no trans, {skipped_no_tex} no tex, {skipped_not_cube} not full cube)')
 
-# Deduplicate by texture combo
-seen = set()
-unique = []
-for b in blocks:
-    key = (b['up'], b['north'], b['east'])
-    if key not in seen:
-        seen.add(key)
-        unique.append(b)
-
-print(f'Unique combos: {len(unique)}')
-
 with open(OUTPUT, 'w', encoding='utf-8') as f:
-    json.dump(unique, f, ensure_ascii=False, indent=2)
+    json.dump(blocks, f, ensure_ascii=False, indent=2)
 print(f'Wrote {OUTPUT}')

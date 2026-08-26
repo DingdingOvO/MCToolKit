@@ -45,6 +45,21 @@
     }
   },
   {
+    "id": "acacia_slab",
+    "up": "block/acacia_planks",
+    "north": "block/acacia_planks",
+    "east": "block/acacia_planks",
+    "name": {
+      "zh_cn": "金合欢木台阶",
+      "en_us": "Acacia Slab",
+      "zh_tw": "相思木半磚",
+      "ja_jp": "アカシアのハーフブロック",
+      "ko_kr": "아카시아나무 반 블록",
+      "de_de": "Akazienholzstufe",
+      "fr_fr": "Dalle en acacia"
+    }
+  },
+  {
     "id": "acacia_wood",
     "up": "block/acacia_log",
     "north": "block/acacia_log",
@@ -105,6 +120,21 @@
     }
   },
   {
+    "id": "andesite_slab",
+    "up": "block/andesite",
+    "north": "block/andesite",
+    "east": "block/andesite",
+    "name": {
+      "zh_cn": "安山岩台阶",
+      "en_us": "Andesite Slab",
+      "zh_tw": "安山岩半磚",
+      "ja_jp": "安山岩のハーフブロック",
+      "ko_kr": "안산암 반 블록",
+      "de_de": "Andesitstufe",
+      "fr_fr": "Dalle d'andésite"
+    }
+  },
+  {
     "id": "azalea_leaves",
     "up": "block/azalea_leaves",
     "north": "block/azalea_leaves",
@@ -150,6 +180,21 @@
     }
   },
   {
+    "id": "bamboo_mosaic_slab",
+    "up": "block/bamboo_mosaic",
+    "north": "block/bamboo_mosaic",
+    "east": "block/bamboo_mosaic",
+    "name": {
+      "zh_cn": "竹马赛克台阶",
+      "en_us": "Bamboo Mosaic Slab",
+      "zh_tw": "竹拼半磚",
+      "ja_jp": "竹細工のハーフブロック",
+      "ko_kr": "대나무 모자이크 반 블록",
+      "de_de": "Bambusmosaikstufe",
+      "fr_fr": "Dalle de mosaïque de bambou"
+    }
+  },
+  {
     "id": "bamboo_planks",
     "up": "block/bamboo_planks",
     "north": "block/bamboo_planks",
@@ -162,6 +207,21 @@
       "ko_kr": "대나무 판자",
       "de_de": "Bambusbretter",
       "fr_fr": "Planches de bambou"
+    }
+  },
+  {
+    "id": "bamboo_slab",
+    "up": "block/bamboo_planks",
+    "north": "block/bamboo_planks",
+    "east": "block/bamboo_planks",
+    "name": {
+      "zh_cn": "竹台阶",
+      "en_us": "Bamboo Slab",
+      "zh_tw": "竹半磚",
+      "ja_jp": "竹のハーフブロック",
+      "ko_kr": "대나무 반 블록",
+      "de_de": "Bambusstufe",
+      "fr_fr": "Dalle en bambou"
     }
   },
   {
@@ -300,6 +360,21 @@
     }
   },
   {
+    "id": "birch_slab",
+    "up": "block/birch_planks",
+    "north": "block/birch_planks",
+    "east": "block/birch_planks",
+    "name": {
+      "zh_cn": "白桦木台阶",
+      "en_us": "Birch Slab",
+      "zh_tw": "樺木半磚",
+      "ja_jp": "シラカバのハーフブロック",
+      "ko_kr": "자작나무 반 블록",
+      "de_de": "Birkenholzstufe",
+      "fr_fr": "Dalle en bouleau"
+    }
+  },
+  {
     "id": "birch_wood",
     "up": "block/birch_log",
     "north": "block/birch_log",
@@ -417,6 +492,21 @@
       "ko_kr": "흑암",
       "de_de": "Schwarzstein",
       "fr_fr": "Roche noire"
+    }
+  },
+  {
+    "id": "blackstone_slab",
+    "up": "block/blackstone_top",
+    "north": "block/blackstone",
+    "east": "block/blackstone",
+    "name": {
+      "zh_cn": "黑石台阶",
+      "en_us": "Blackstone Slab",
+      "zh_tw": "黑石半磚",
+      "ja_jp": "ブラックストーンのハーフブロック",
+      "ko_kr": "흑암 반 블록",
+      "de_de": "Schwarzsteinstufe",
+      "fr_fr": "Dalle de roche noire"
     }
   },
   {
@@ -582,6 +672,21 @@
       "ko_kr": "뇌 산호 블록",
       "de_de": "Hirnkorallenblock",
       "fr_fr": "Bloc de corail cerveau"
+    }
+  },
+  {
+    "id": "brick_slab",
+    "up": "block/bricks",
+    "north": "block/bricks",
+    "east": "block/bricks",
+    "name": {
+      "zh_cn": "红砖台阶",
+      "en_us": "Brick Slab",
+      "zh_tw": "紅磚半磚",
+      "ja_jp": "レンガのハーフブロック",
+      "ko_kr": "벽돌 반 블록",
+      "de_de": "Ziegelstufe",
+      "fr_fr": "Dalle de briques"
     }
   },
   {
@@ -840,6 +945,21 @@
     }
   },
   {
+    "id": "cherry_slab",
+    "up": "block/cherry_planks",
+    "north": "block/cherry_planks",
+    "east": "block/cherry_planks",
+    "name": {
+      "zh_cn": "樱花木台阶",
+      "en_us": "Cherry Slab",
+      "zh_tw": "櫻花木半磚",
+      "ja_jp": "サクラのハーフブロック",
+      "ko_kr": "벚나무 반 블록",
+      "de_de": "Kirschholzstufe",
+      "fr_fr": "Dalle en cerisier"
+    }
+  },
+  {
     "id": "cherry_wood",
     "up": "block/cherry_log",
     "north": "block/cherry_log",
@@ -1080,6 +1200,21 @@
     }
   },
   {
+    "id": "cinnabar_brick_slab",
+    "up": "block/cinnabar_bricks",
+    "north": "block/cinnabar_bricks",
+    "east": "block/cinnabar_bricks",
+    "name": {
+      "zh_cn": "朱砂砖台阶",
+      "en_us": "Cinnabar Brick Slab",
+      "zh_tw": "硃砂磚半磚",
+      "ja_jp": "辰砂レンガのハーフブロック",
+      "ko_kr": "진사 벽돌 반 블록",
+      "de_de": "Zinnoberziegelstufe",
+      "fr_fr": "Dalle de cinabre taillé"
+    }
+  },
+  {
     "id": "cinnabar_bricks",
     "up": "block/cinnabar_bricks",
     "north": "block/cinnabar_bricks",
@@ -1092,6 +1227,21 @@
       "ko_kr": "진사 벽돌",
       "de_de": "Zinnoberziegel",
       "fr_fr": "Cinabre taillé"
+    }
+  },
+  {
+    "id": "cinnabar_slab",
+    "up": "block/cinnabar",
+    "north": "block/cinnabar",
+    "east": "block/cinnabar",
+    "name": {
+      "zh_cn": "朱砂台阶",
+      "en_us": "Cinnabar Slab",
+      "zh_tw": "硃砂半磚",
+      "ja_jp": "辰砂のハーフブロック",
+      "ko_kr": "진사 반 블록",
+      "de_de": "Zinnoberstufe",
+      "fr_fr": "Dalle de cinabre"
     }
   },
   {
@@ -1170,6 +1320,21 @@
     }
   },
   {
+    "id": "cobbled_deepslate_slab",
+    "up": "block/cobbled_deepslate",
+    "north": "block/cobbled_deepslate",
+    "east": "block/cobbled_deepslate",
+    "name": {
+      "zh_cn": "深板岩圆石台阶",
+      "en_us": "Cobbled Deepslate Slab",
+      "zh_tw": "碎深板岩半磚",
+      "ja_jp": "深層岩の丸石のハーフブロック",
+      "ko_kr": "심층암 조약돌 반 블록",
+      "de_de": "Bruchtiefenschieferstufe",
+      "fr_fr": "Dalle de pierres des abîmes"
+    }
+  },
+  {
     "id": "cobblestone",
     "up": "block/cobblestone",
     "north": "block/cobblestone",
@@ -1182,6 +1347,21 @@
       "ko_kr": "조약돌",
       "de_de": "Bruchstein",
       "fr_fr": "Pierres"
+    }
+  },
+  {
+    "id": "cobblestone_slab",
+    "up": "block/cobblestone",
+    "north": "block/cobblestone",
+    "east": "block/cobblestone",
+    "name": {
+      "zh_cn": "圆石台阶",
+      "en_us": "Cobblestone Slab",
+      "zh_tw": "鵝卵石半磚",
+      "ja_jp": "丸石のハーフブロック",
+      "ko_kr": "조약돌 반 블록",
+      "de_de": "Bruchsteinstufe",
+      "fr_fr": "Dalle de pierres"
     }
   },
   {
@@ -1425,6 +1605,21 @@
     }
   },
   {
+    "id": "crimson_slab",
+    "up": "block/crimson_planks",
+    "north": "block/crimson_planks",
+    "east": "block/crimson_planks",
+    "name": {
+      "zh_cn": "绯红木台阶",
+      "en_us": "Crimson Slab",
+      "zh_tw": "緋紅蕈木半磚",
+      "ja_jp": "真紅のハーフブロック",
+      "ko_kr": "진홍빛 반 블록",
+      "de_de": "Karmesinstufe",
+      "fr_fr": "Dalle carmin"
+    }
+  },
+  {
     "id": "crimson_stem",
     "up": "block/crimson_stem_top",
     "north": "block/crimson_stem",
@@ -1470,6 +1665,21 @@
     }
   },
   {
+    "id": "cut_copper_slab",
+    "up": "block/cut_copper",
+    "north": "block/cut_copper",
+    "east": "block/cut_copper",
+    "name": {
+      "zh_cn": "切制铜台阶",
+      "en_us": "Cut Copper Slab",
+      "zh_tw": "切製銅半磚",
+      "ja_jp": "切り込み入りの銅のハーフブロック",
+      "ko_kr": "깎인 구리 반 블록",
+      "de_de": "Geschnittene Kupferstufe",
+      "fr_fr": "Dalle de cuivre taillé"
+    }
+  },
+  {
     "id": "cut_red_sandstone",
     "up": "block/red_sandstone_top",
     "north": "block/cut_red_sandstone",
@@ -1485,6 +1695,21 @@
     }
   },
   {
+    "id": "cut_red_sandstone_slab",
+    "up": "block/red_sandstone_top",
+    "north": "block/cut_red_sandstone",
+    "east": "block/cut_red_sandstone",
+    "name": {
+      "zh_cn": "切制红砂岩台阶",
+      "en_us": "Cut Red Sandstone Slab",
+      "zh_tw": "切製紅砂岩半磚",
+      "ja_jp": "研がれた赤い砂岩のハーフブロック",
+      "ko_kr": "깎인 붉은 사암 반 블록",
+      "de_de": "Geschnittene rote Sandsteinstufe",
+      "fr_fr": "Dalle de grès rouge taillé"
+    }
+  },
+  {
     "id": "cut_sandstone",
     "up": "block/sandstone_top",
     "north": "block/cut_sandstone",
@@ -1497,6 +1722,21 @@
       "ko_kr": "깎인 사암",
       "de_de": "Geschnittener Sandstein",
       "fr_fr": "Grès taillé"
+    }
+  },
+  {
+    "id": "cut_sandstone_slab",
+    "up": "block/sandstone_top",
+    "north": "block/cut_sandstone",
+    "east": "block/cut_sandstone",
+    "name": {
+      "zh_cn": "切制砂岩台阶",
+      "en_us": "Cut Sandstone Slab",
+      "zh_tw": "切製砂岩半磚",
+      "ja_jp": "研がれた砂岩のハーフブロック",
+      "ko_kr": "깎인 사암 반 블록",
+      "de_de": "Geschnittene Sandsteinstufe",
+      "fr_fr": "Dalle de grès taillé"
     }
   },
   {
@@ -1635,6 +1875,21 @@
     }
   },
   {
+    "id": "dark_oak_slab",
+    "up": "block/dark_oak_planks",
+    "north": "block/dark_oak_planks",
+    "east": "block/dark_oak_planks",
+    "name": {
+      "zh_cn": "深色橡木台阶",
+      "en_us": "Dark Oak Slab",
+      "zh_tw": "黑橡木半磚",
+      "ja_jp": "ダークオークのハーフブロック",
+      "ko_kr": "짙은 참나무 반 블록",
+      "de_de": "Schwarzeichenholzstufe",
+      "fr_fr": "Dalle en chêne noir"
+    }
+  },
+  {
     "id": "dark_oak_wood",
     "up": "block/dark_oak_log",
     "north": "block/dark_oak_log",
@@ -1662,6 +1917,21 @@
       "ko_kr": "짙은 프리즈머린",
       "de_de": "Dunkler Prismarin",
       "fr_fr": "Prismarine sombre"
+    }
+  },
+  {
+    "id": "dark_prismarine_slab",
+    "up": "block/dark_prismarine",
+    "north": "block/dark_prismarine",
+    "east": "block/dark_prismarine",
+    "name": {
+      "zh_cn": "暗海晶石台阶",
+      "en_us": "Dark Prismarine Slab",
+      "zh_tw": "暗海磷石半磚",
+      "ja_jp": "ダークプリズマリンのハーフブロック",
+      "ko_kr": "짙은 프리즈머린 반 블록",
+      "de_de": "Dunkle Prismarinstufe",
+      "fr_fr": "Dalle de prismarine sombre"
     }
   },
   {
@@ -1752,6 +2022,21 @@
       "ko_kr": "심층암",
       "de_de": "Tiefenschiefer",
       "fr_fr": "Ardoise des abîmes"
+    }
+  },
+  {
+    "id": "deepslate_brick_slab",
+    "up": "block/deepslate_bricks",
+    "north": "block/deepslate_bricks",
+    "east": "block/deepslate_bricks",
+    "name": {
+      "zh_cn": "深板岩砖台阶",
+      "en_us": "Deepslate Brick Slab",
+      "zh_tw": "深板岩磚半磚",
+      "ja_jp": "深層岩レンガのハーフブロック",
+      "ko_kr": "심층암 벽돌 반 블록",
+      "de_de": "Tiefenschieferziegelstufe",
+      "fr_fr": "Dalle d'ardoise des abîmes taillée"
     }
   },
   {
@@ -1890,6 +2175,21 @@
     }
   },
   {
+    "id": "deepslate_tile_slab",
+    "up": "block/deepslate_tiles",
+    "north": "block/deepslate_tiles",
+    "east": "block/deepslate_tiles",
+    "name": {
+      "zh_cn": "深板岩瓦台阶",
+      "en_us": "Deepslate Tile Slab",
+      "zh_tw": "深板岩磚瓦半磚",
+      "ja_jp": "深層岩タイルのハーフブロック",
+      "ko_kr": "심층암 타일 반 블록",
+      "de_de": "Tiefenschieferfliesenstufe",
+      "fr_fr": "Dalle d'ardoise des abîmes carrelée"
+    }
+  },
+  {
     "id": "deepslate_tiles",
     "up": "block/deepslate_tiles",
     "north": "block/deepslate_tiles",
@@ -1947,6 +2247,21 @@
       "ko_kr": "섬록암",
       "de_de": "Diorit",
       "fr_fr": "Diorite"
+    }
+  },
+  {
+    "id": "diorite_slab",
+    "up": "block/diorite",
+    "north": "block/diorite",
+    "east": "block/diorite",
+    "name": {
+      "zh_cn": "闪长岩台阶",
+      "en_us": "Diorite Slab",
+      "zh_tw": "閃長岩半磚",
+      "ja_jp": "閃緑岩のハーフブロック",
+      "ko_kr": "섬록암 반 블록",
+      "de_de": "Dioritstufe",
+      "fr_fr": "Dalle de diorite"
     }
   },
   {
@@ -2070,6 +2385,21 @@
     }
   },
   {
+    "id": "end_stone_brick_slab",
+    "up": "block/end_stone_bricks",
+    "north": "block/end_stone_bricks",
+    "east": "block/end_stone_bricks",
+    "name": {
+      "zh_cn": "末地石砖台阶",
+      "en_us": "End Stone Brick Slab",
+      "zh_tw": "終界石磚半磚",
+      "ja_jp": "エンドストーンレンガのハーフブロック",
+      "ko_kr": "엔드 석재 벽돌 반 블록",
+      "de_de": "Endsteinziegelstufe",
+      "fr_fr": "Dalle de pierre taillée de l'End"
+    }
+  },
+  {
     "id": "end_stone_bricks",
     "up": "block/end_stone_bricks",
     "north": "block/end_stone_bricks",
@@ -2157,6 +2487,21 @@
       "ko_kr": "약간 녹슨 깎인 구리",
       "de_de": "Angelaufener geschnittener Kupferblock",
       "fr_fr": "Cuivre taillé exposé"
+    }
+  },
+  {
+    "id": "exposed_cut_copper_slab",
+    "up": "block/exposed_cut_copper",
+    "north": "block/exposed_cut_copper",
+    "east": "block/exposed_cut_copper",
+    "name": {
+      "zh_cn": "斑驳的切制铜台阶",
+      "en_us": "Exposed Cut Copper Slab",
+      "zh_tw": "斑駁的切製銅半磚",
+      "ja_jp": "風化した切り込み入りの銅のハーフブロック",
+      "ko_kr": "약간 녹슨 깎인 구리 반 블록",
+      "de_de": "Angelaufene geschnittene Kupferstufe",
+      "fr_fr": "Dalle de cuivre taillé exposé"
     }
   },
   {
@@ -2250,6 +2595,21 @@
     }
   },
   {
+    "id": "glass",
+    "up": "block/glass",
+    "north": "block/glass",
+    "east": "block/glass",
+    "name": {
+      "zh_cn": "玻璃",
+      "en_us": "Glass",
+      "zh_tw": "玻璃",
+      "ja_jp": "ガラス",
+      "ko_kr": "유리",
+      "de_de": "Glas",
+      "fr_fr": "Verre"
+    }
+  },
+  {
     "id": "glowstone",
     "up": "block/glowstone",
     "north": "block/glowstone",
@@ -2307,6 +2667,21 @@
       "ko_kr": "화강암",
       "de_de": "Granit",
       "fr_fr": "Granite"
+    }
+  },
+  {
+    "id": "granite_slab",
+    "up": "block/granite",
+    "north": "block/granite",
+    "east": "block/granite",
+    "name": {
+      "zh_cn": "花岗岩台阶",
+      "en_us": "Granite Slab",
+      "zh_tw": "花崗岩半磚",
+      "ja_jp": "花崗岩のハーフブロック",
+      "ko_kr": "화강암 반 블록",
+      "de_de": "Granitstufe",
+      "fr_fr": "Dalle de granite"
     }
   },
   {
@@ -2595,6 +2970,66 @@
     }
   },
   {
+    "id": "infested_chiseled_stone_bricks",
+    "up": "block/chiseled_stone_bricks",
+    "north": "block/chiseled_stone_bricks",
+    "east": "block/chiseled_stone_bricks",
+    "name": {
+      "zh_cn": "虫蚀雕纹石砖",
+      "en_us": "Infested Chiseled Stone Bricks",
+      "zh_tw": "蛀蝕的浮雕石磚",
+      "ja_jp": "模様入りの虫食い石レンガ",
+      "ko_kr": "벌레 먹은 조각된 석재 벽돌",
+      "de_de": "Befallene gemeißelte Steinziegel",
+      "fr_fr": "Pierre sculptée infestée"
+    }
+  },
+  {
+    "id": "infested_cobblestone",
+    "up": "block/cobblestone",
+    "north": "block/cobblestone",
+    "east": "block/cobblestone",
+    "name": {
+      "zh_cn": "虫蚀圆石",
+      "en_us": "Infested Cobblestone",
+      "zh_tw": "蛀蝕的鵝卵石",
+      "ja_jp": "虫食い丸石",
+      "ko_kr": "벌레 먹은 조약돌",
+      "de_de": "Befallener Bruchstein",
+      "fr_fr": "Pierres infestées"
+    }
+  },
+  {
+    "id": "infested_cracked_stone_bricks",
+    "up": "block/cracked_stone_bricks",
+    "north": "block/cracked_stone_bricks",
+    "east": "block/cracked_stone_bricks",
+    "name": {
+      "zh_cn": "虫蚀裂纹石砖",
+      "en_us": "Infested Cracked Stone Bricks",
+      "zh_tw": "蛀蝕的裂紋石磚",
+      "ja_jp": "ひび割れた虫食い石レンガ",
+      "ko_kr": "벌레 먹은 금 간 석재 벽돌",
+      "de_de": "Befallene rissige Steinziegel",
+      "fr_fr": "Pierre taillée craquelée infestée"
+    }
+  },
+  {
+    "id": "infested_deepslate",
+    "up": "block/deepslate_top",
+    "north": "block/deepslate",
+    "east": "block/deepslate",
+    "name": {
+      "zh_cn": "虫蚀深板岩",
+      "en_us": "Infested Deepslate",
+      "zh_tw": "蛀蝕的深板岩",
+      "ja_jp": "虫食い深層岩",
+      "ko_kr": "벌레 먹은 심층암",
+      "de_de": "Befallener Tiefenschiefer",
+      "fr_fr": "Ardoise des abîmes infestée"
+    }
+  },
+  {
     "id": "infested_mossy_stone_bricks",
     "up": "block/mossy_stone_bricks",
     "north": "block/mossy_stone_bricks",
@@ -2757,6 +3192,21 @@
       "ko_kr": "정글나무 판자",
       "de_de": "Tropenholzbretter",
       "fr_fr": "Planches d'acajou"
+    }
+  },
+  {
+    "id": "jungle_slab",
+    "up": "block/jungle_planks",
+    "north": "block/jungle_planks",
+    "east": "block/jungle_planks",
+    "name": {
+      "zh_cn": "丛林木台阶",
+      "en_us": "Jungle Slab",
+      "zh_tw": "叢林木半磚",
+      "ja_jp": "ジャングルのハーフブロック",
+      "ko_kr": "정글나무 반 블록",
+      "de_de": "Tropenholzstufe",
+      "fr_fr": "Dalle en acajou"
     }
   },
   {
@@ -3255,6 +3705,21 @@
     }
   },
   {
+    "id": "mangrove_slab",
+    "up": "block/mangrove_planks",
+    "north": "block/mangrove_planks",
+    "east": "block/mangrove_planks",
+    "name": {
+      "zh_cn": "红树木台阶",
+      "en_us": "Mangrove Slab",
+      "zh_tw": "紅樹林木半磚",
+      "ja_jp": "マングローブのハーフブロック",
+      "ko_kr": "맹그로브나무 반 블록",
+      "de_de": "Mangrovenholzstufe",
+      "fr_fr": "Dalle en palétuvier"
+    }
+  },
+  {
     "id": "mangrove_wood",
     "up": "block/mangrove_log",
     "north": "block/mangrove_log",
@@ -3315,6 +3780,51 @@
     }
   },
   {
+    "id": "mossy_cobblestone_slab",
+    "up": "block/mossy_cobblestone",
+    "north": "block/mossy_cobblestone",
+    "east": "block/mossy_cobblestone",
+    "name": {
+      "zh_cn": "苔石台阶",
+      "en_us": "Mossy Cobblestone Slab",
+      "zh_tw": "青苔鵝卵石半磚",
+      "ja_jp": "苔むした丸石のハーフブロック",
+      "ko_kr": "이끼 낀 조약돌 반 블록",
+      "de_de": "Bemooste Bruchsteinstufe",
+      "fr_fr": "Dalle de pierres moussues"
+    }
+  },
+  {
+    "id": "mossy_stone_brick_slab",
+    "up": "block/mossy_stone_bricks",
+    "north": "block/mossy_stone_bricks",
+    "east": "block/mossy_stone_bricks",
+    "name": {
+      "zh_cn": "苔石砖台阶",
+      "en_us": "Mossy Stone Brick Slab",
+      "zh_tw": "青苔石磚半磚",
+      "ja_jp": "苔むした石レンガのハーフブロック",
+      "ko_kr": "이끼 낀 석재 벽돌 반 블록",
+      "de_de": "Bemooste Steinziegelstufe",
+      "fr_fr": "Dalle de pierre taillée moussue"
+    }
+  },
+  {
+    "id": "mossy_stone_bricks",
+    "up": "block/mossy_stone_bricks",
+    "north": "block/mossy_stone_bricks",
+    "east": "block/mossy_stone_bricks",
+    "name": {
+      "zh_cn": "苔石砖",
+      "en_us": "Mossy Stone Bricks",
+      "zh_tw": "青苔石磚",
+      "ja_jp": "苔むした石レンガ",
+      "ko_kr": "이끼 낀 석재 벽돌",
+      "de_de": "Bemooste Steinziegel",
+      "fr_fr": "Pierre taillée moussue"
+    }
+  },
+  {
     "id": "mud",
     "up": "block/mud",
     "north": "block/mud",
@@ -3327,6 +3837,21 @@
       "ko_kr": "진흙",
       "de_de": "Schlamm",
       "fr_fr": "Boue"
+    }
+  },
+  {
+    "id": "mud_brick_slab",
+    "up": "block/mud_bricks",
+    "north": "block/mud_bricks",
+    "east": "block/mud_bricks",
+    "name": {
+      "zh_cn": "泥砖台阶",
+      "en_us": "Mud Brick Slab",
+      "zh_tw": "泥磚半磚",
+      "ja_jp": "泥レンガのハーフブロック",
+      "ko_kr": "진흙 벽돌 반 블록",
+      "de_de": "Schlammziegelstufe",
+      "fr_fr": "Dalle de briques de terre crue"
     }
   },
   {
@@ -3372,6 +3897,21 @@
       "ko_kr": "균사체",
       "de_de": "Myzel",
       "fr_fr": "Mycélium"
+    }
+  },
+  {
+    "id": "nether_brick_slab",
+    "up": "block/nether_bricks",
+    "north": "block/nether_bricks",
+    "east": "block/nether_bricks",
+    "name": {
+      "zh_cn": "下界砖台阶",
+      "en_us": "Nether Brick Slab",
+      "zh_tw": "地獄磚半磚",
+      "ja_jp": "ネザーレンガのハーフブロック",
+      "ko_kr": "네더 벽돌 반 블록",
+      "de_de": "Netherziegelstufe",
+      "fr_fr": "Dalle de briques du Nether"
     }
   },
   {
@@ -3522,6 +4062,21 @@
       "ko_kr": "참나무 판자",
       "de_de": "Eichenholzbretter",
       "fr_fr": "Planches de chêne"
+    }
+  },
+  {
+    "id": "oak_slab",
+    "up": "block/oak_planks",
+    "north": "block/oak_planks",
+    "east": "block/oak_planks",
+    "name": {
+      "zh_cn": "橡木台阶",
+      "en_us": "Oak Slab",
+      "zh_tw": "橡木半磚",
+      "ja_jp": "オークのハーフブロック",
+      "ko_kr": "참나무 반 블록",
+      "de_de": "Eichenholzstufe",
+      "fr_fr": "Dalle en chêne"
     }
   },
   {
@@ -3750,6 +4305,21 @@
     }
   },
   {
+    "id": "oxidized_cut_copper_slab",
+    "up": "block/oxidized_cut_copper",
+    "north": "block/oxidized_cut_copper",
+    "east": "block/oxidized_cut_copper",
+    "name": {
+      "zh_cn": "氧化的切制铜台阶",
+      "en_us": "Oxidized Cut Copper Slab",
+      "zh_tw": "氧化的切製銅半磚",
+      "ja_jp": "酸化した切り込み入りの銅のハーフブロック",
+      "ko_kr": "산화된 깎인 구리 반 블록",
+      "de_de": "Oxidierte geschnittene Kupferstufe",
+      "fr_fr": "Dalle de cuivre taillé oxydé"
+    }
+  },
+  {
     "id": "packed_ice",
     "up": "block/packed_ice",
     "north": "block/packed_ice",
@@ -3840,6 +4410,21 @@
     }
   },
   {
+    "id": "pale_oak_slab",
+    "up": "block/pale_oak_planks",
+    "north": "block/pale_oak_planks",
+    "east": "block/pale_oak_planks",
+    "name": {
+      "zh_cn": "苍白橡木台阶",
+      "en_us": "Pale Oak Slab",
+      "zh_tw": "蒼白橡木半磚",
+      "ja_jp": "ペールオークのハーフブロック",
+      "ko_kr": "창백한 참나무 반 블록",
+      "de_de": "Blasseichenholzstufe",
+      "fr_fr": "Dalle en chêne pâle"
+    }
+  },
+  {
     "id": "pale_oak_wood",
     "up": "block/pale_oak_log",
     "north": "block/pale_oak_log",
@@ -3867,6 +4452,21 @@
       "ko_kr": "진줏빛 개구리불",
       "de_de": "Perlmutternes Froschlicht",
       "fr_fr": "Grelampe nacrée"
+    }
+  },
+  {
+    "id": "petrified_oak_slab",
+    "up": "block/oak_planks",
+    "north": "block/oak_planks",
+    "east": "block/oak_planks",
+    "name": {
+      "zh_cn": "石化橡木台阶",
+      "en_us": "Petrified Oak Slab",
+      "zh_tw": "石化橡木半磚",
+      "ja_jp": "石化したオークのハーフブロック",
+      "ko_kr": "규화한 참나무 반 블록",
+      "de_de": "Versteinerte Eichenholzstufe",
+      "fr_fr": "Dalle en chêne pétrifiée"
     }
   },
   {
@@ -4005,6 +4605,21 @@
     }
   },
   {
+    "id": "polished_andesite_slab",
+    "up": "block/polished_andesite",
+    "north": "block/polished_andesite",
+    "east": "block/polished_andesite",
+    "name": {
+      "zh_cn": "磨制安山岩台阶",
+      "en_us": "Polished Andesite Slab",
+      "zh_tw": "拋光安山岩半磚",
+      "ja_jp": "磨かれた安山岩のハーフブロック",
+      "ko_kr": "윤나는 안산암 반 블록",
+      "de_de": "Polierte Andesitstufe",
+      "fr_fr": "Dalle d'andésite polie"
+    }
+  },
+  {
     "id": "polished_basalt",
     "up": "block/polished_basalt_top",
     "north": "block/polished_basalt_side",
@@ -4035,6 +4650,21 @@
     }
   },
   {
+    "id": "polished_blackstone_brick_slab",
+    "up": "block/polished_blackstone_bricks",
+    "north": "block/polished_blackstone_bricks",
+    "east": "block/polished_blackstone_bricks",
+    "name": {
+      "zh_cn": "磨制黑石砖台阶",
+      "en_us": "Polished Blackstone Brick Slab",
+      "zh_tw": "拋光黑石磚半磚",
+      "ja_jp": "磨かれたブラックストーンレンガのハーフブロック",
+      "ko_kr": "윤나는 흑암 벽돌 반 블록",
+      "de_de": "Polierte Schwarzsteinziegelstufe",
+      "fr_fr": "Dalle de pierre noire taillée"
+    }
+  },
+  {
     "id": "polished_blackstone_bricks",
     "up": "block/polished_blackstone_bricks",
     "north": "block/polished_blackstone_bricks",
@@ -4047,6 +4677,21 @@
       "ko_kr": "윤나는 흑암 벽돌",
       "de_de": "Polierte Schwarzsteinziegel",
       "fr_fr": "Pierre noire taillée"
+    }
+  },
+  {
+    "id": "polished_blackstone_slab",
+    "up": "block/polished_blackstone",
+    "north": "block/polished_blackstone",
+    "east": "block/polished_blackstone",
+    "name": {
+      "zh_cn": "磨制黑石台阶",
+      "en_us": "Polished Blackstone Slab",
+      "zh_tw": "拋光黑石半磚",
+      "ja_jp": "磨かれたブラックストーンのハーフブロック",
+      "ko_kr": "윤나는 흑암 반 블록",
+      "de_de": "Polierte Schwarzsteinstufe",
+      "fr_fr": "Dalle de pierre noire"
     }
   },
   {
@@ -4065,6 +4710,21 @@
     }
   },
   {
+    "id": "polished_cinnabar_slab",
+    "up": "block/polished_cinnabar",
+    "north": "block/polished_cinnabar",
+    "east": "block/polished_cinnabar",
+    "name": {
+      "zh_cn": "磨制朱砂台阶",
+      "en_us": "Polished Cinnabar Slab",
+      "zh_tw": "拋光硃砂半磚",
+      "ja_jp": "磨かれた辰砂のハーフブロック",
+      "ko_kr": "윤나는 진사 반 블록",
+      "de_de": "Polierte Zinnoberstufe",
+      "fr_fr": "Dalle de cinabre poli"
+    }
+  },
+  {
     "id": "polished_deepslate",
     "up": "block/polished_deepslate",
     "north": "block/polished_deepslate",
@@ -4077,6 +4737,21 @@
       "ko_kr": "윤나는 심층암",
       "de_de": "Polierter Tiefenschiefer",
       "fr_fr": "Ardoise des abîmes polie"
+    }
+  },
+  {
+    "id": "polished_deepslate_slab",
+    "up": "block/polished_deepslate",
+    "north": "block/polished_deepslate",
+    "east": "block/polished_deepslate",
+    "name": {
+      "zh_cn": "磨制深板岩台阶",
+      "en_us": "Polished Deepslate Slab",
+      "zh_tw": "拋光深板岩半磚",
+      "ja_jp": "磨かれた深層岩のハーフブロック",
+      "ko_kr": "윤나는 심층암 반 블록",
+      "de_de": "Polierte Tiefenschieferstufe",
+      "fr_fr": "Dalle d'ardoise des abîmes polie"
     }
   },
   {
@@ -4095,6 +4770,21 @@
     }
   },
   {
+    "id": "polished_diorite_slab",
+    "up": "block/polished_diorite",
+    "north": "block/polished_diorite",
+    "east": "block/polished_diorite",
+    "name": {
+      "zh_cn": "磨制闪长岩台阶",
+      "en_us": "Polished Diorite Slab",
+      "zh_tw": "拋光閃長岩半磚",
+      "ja_jp": "磨かれた閃緑岩のハーフブロック",
+      "ko_kr": "윤나는 섬록암 반 블록",
+      "de_de": "Polierte Dioritstufe",
+      "fr_fr": "Dalle de diorite polie"
+    }
+  },
+  {
     "id": "polished_granite",
     "up": "block/polished_granite",
     "north": "block/polished_granite",
@@ -4107,6 +4797,21 @@
       "ko_kr": "윤나는 화강암",
       "de_de": "Polierter Granit",
       "fr_fr": "Granite poli"
+    }
+  },
+  {
+    "id": "polished_granite_slab",
+    "up": "block/polished_granite",
+    "north": "block/polished_granite",
+    "east": "block/polished_granite",
+    "name": {
+      "zh_cn": "磨制花岗岩台阶",
+      "en_us": "Polished Granite Slab",
+      "zh_tw": "拋光花崗岩半磚",
+      "ja_jp": "磨かれた花崗岩のハーフブロック",
+      "ko_kr": "윤나는 화강암 반 블록",
+      "de_de": "Polierte Granitstufe",
+      "fr_fr": "Dalle de granite poli"
     }
   },
   {
@@ -4125,6 +4830,21 @@
     }
   },
   {
+    "id": "polished_sulfur_slab",
+    "up": "block/polished_sulfur",
+    "north": "block/polished_sulfur",
+    "east": "block/polished_sulfur",
+    "name": {
+      "zh_cn": "磨制硫黄台阶",
+      "en_us": "Polished Sulfur Slab",
+      "zh_tw": "拋光硫磺半磚",
+      "ja_jp": "磨かれた硫黄のハーフブロック",
+      "ko_kr": "윤나는 유황 반 블록",
+      "de_de": "Polierte Schwefelstufe",
+      "fr_fr": "Dalle de soufre poli"
+    }
+  },
+  {
     "id": "polished_tuff",
     "up": "block/polished_tuff",
     "north": "block/polished_tuff",
@@ -4137,6 +4857,21 @@
       "ko_kr": "윤나는 응회암",
       "de_de": "Polierter Tuffstein",
       "fr_fr": "Tuf poli"
+    }
+  },
+  {
+    "id": "polished_tuff_slab",
+    "up": "block/polished_tuff",
+    "north": "block/polished_tuff",
+    "east": "block/polished_tuff",
+    "name": {
+      "zh_cn": "磨制凝灰岩台阶",
+      "en_us": "Polished Tuff Slab",
+      "zh_tw": "拋光凝灰岩半磚",
+      "ja_jp": "磨かれた凝灰岩のハーフブロック",
+      "ko_kr": "윤나는 응회암 반 블록",
+      "de_de": "Polierte Tuffsteinstufe",
+      "fr_fr": "Dalle de tuf poli"
     }
   },
   {
@@ -4170,6 +4905,21 @@
     }
   },
   {
+    "id": "prismarine_brick_slab",
+    "up": "block/prismarine_bricks",
+    "north": "block/prismarine_bricks",
+    "east": "block/prismarine_bricks",
+    "name": {
+      "zh_cn": "海晶石砖台阶",
+      "en_us": "Prismarine Brick Slab",
+      "zh_tw": "海磷石磚半磚",
+      "ja_jp": "プリズマリンレンガのハーフブロック",
+      "ko_kr": "프리즈머린 벽돌 반 블록",
+      "de_de": "Prismarinziegelstufe",
+      "fr_fr": "Dalle de briques de prismarine"
+    }
+  },
+  {
     "id": "prismarine_bricks",
     "up": "block/prismarine_bricks",
     "north": "block/prismarine_bricks",
@@ -4182,6 +4932,21 @@
       "ko_kr": "프리즈머린 벽돌",
       "de_de": "Prismarinziegel",
       "fr_fr": "Briques de prismarine"
+    }
+  },
+  {
+    "id": "prismarine_slab",
+    "up": "block/prismarine",
+    "north": "block/prismarine",
+    "east": "block/prismarine",
+    "name": {
+      "zh_cn": "海晶石台阶",
+      "en_us": "Prismarine Slab",
+      "zh_tw": "海磷石半磚",
+      "ja_jp": "プリズマリンのハーフブロック",
+      "ko_kr": "프리즈머린 반 블록",
+      "de_de": "Prismarinstufe",
+      "fr_fr": "Dalle de prismarine"
     }
   },
   {
@@ -4320,6 +5085,21 @@
     }
   },
   {
+    "id": "purpur_slab",
+    "up": "block/purpur_block",
+    "north": "block/purpur_block",
+    "east": "block/purpur_block",
+    "name": {
+      "zh_cn": "紫珀台阶",
+      "en_us": "Purpur Slab",
+      "zh_tw": "紫珀半磚",
+      "ja_jp": "プルプァのハーフブロック",
+      "ko_kr": "퍼퍼 반 블록",
+      "de_de": "Purpurstufe",
+      "fr_fr": "Dalle de purpur"
+    }
+  },
+  {
     "id": "quartz_block",
     "up": "block/quartz_block_top",
     "north": "block/quartz_block_side",
@@ -4362,6 +5142,21 @@
       "ko_kr": "석영 기둥",
       "de_de": "Quarzsäule",
       "fr_fr": "Pilier de quartz"
+    }
+  },
+  {
+    "id": "quartz_slab",
+    "up": "block/quartz_block_top",
+    "north": "block/quartz_block_side",
+    "east": "block/quartz_block_side",
+    "name": {
+      "zh_cn": "石英台阶",
+      "en_us": "Quartz Slab",
+      "zh_tw": "石英半磚",
+      "ja_jp": "クォーツのハーフブロック",
+      "ko_kr": "석영 반 블록",
+      "de_de": "Quarzstufe",
+      "fr_fr": "Dalle de quartz"
     }
   },
   {
@@ -4455,6 +5250,21 @@
     }
   },
   {
+    "id": "red_nether_brick_slab",
+    "up": "block/red_nether_bricks",
+    "north": "block/red_nether_bricks",
+    "east": "block/red_nether_bricks",
+    "name": {
+      "zh_cn": "红色下界砖台阶",
+      "en_us": "Red Nether Brick Slab",
+      "zh_tw": "紅地獄磚半磚",
+      "ja_jp": "赤いネザーレンガのハーフブロック",
+      "ko_kr": "붉은 네더 벽돌 반 블록",
+      "de_de": "Rote Netherziegelstufe",
+      "fr_fr": "Dalle de briques rouges du Nether"
+    }
+  },
+  {
     "id": "red_nether_bricks",
     "up": "block/red_nether_bricks",
     "north": "block/red_nether_bricks",
@@ -4497,6 +5307,21 @@
       "ko_kr": "붉은 사암",
       "de_de": "Roter Sandstein",
       "fr_fr": "Grès rouge"
+    }
+  },
+  {
+    "id": "red_sandstone_slab",
+    "up": "block/red_sandstone_top",
+    "north": "block/red_sandstone",
+    "east": "block/red_sandstone",
+    "name": {
+      "zh_cn": "红砂岩台阶",
+      "en_us": "Red Sandstone Slab",
+      "zh_tw": "紅砂岩半磚",
+      "ja_jp": "赤い砂岩のハーフブロック",
+      "ko_kr": "붉은 사암 반 블록",
+      "de_de": "Rote Sandsteinstufe",
+      "fr_fr": "Dalle de grès rouge"
     }
   },
   {
@@ -4635,6 +5460,21 @@
     }
   },
   {
+    "id": "resin_brick_slab",
+    "up": "block/resin_bricks",
+    "north": "block/resin_bricks",
+    "east": "block/resin_bricks",
+    "name": {
+      "zh_cn": "树脂砖台阶",
+      "en_us": "Resin Brick Slab",
+      "zh_tw": "樹脂磚半磚",
+      "ja_jp": "樹脂レンガのハーフブロック",
+      "ko_kr": "수지 벽돌 반 블록",
+      "de_de": "Harzziegelstufe",
+      "fr_fr": "Dalle de briques de résine"
+    }
+  },
+  {
     "id": "resin_bricks",
     "up": "block/resin_bricks",
     "north": "block/resin_bricks",
@@ -4707,6 +5547,21 @@
       "ko_kr": "사암",
       "de_de": "Sandstein",
       "fr_fr": "Grès"
+    }
+  },
+  {
+    "id": "sandstone_slab",
+    "up": "block/sandstone_top",
+    "north": "block/sandstone",
+    "east": "block/sandstone",
+    "name": {
+      "zh_cn": "砂岩台阶",
+      "en_us": "Sandstone Slab",
+      "zh_tw": "砂岩半磚",
+      "ja_jp": "砂岩のハーフブロック",
+      "ko_kr": "사암 반 블록",
+      "de_de": "Sandsteinstufe",
+      "fr_fr": "Dalle de grès"
     }
   },
   {
@@ -4845,6 +5700,21 @@
     }
   },
   {
+    "id": "smooth_quartz_slab",
+    "up": "block/quartz_block_bottom",
+    "north": "block/quartz_block_bottom",
+    "east": "block/quartz_block_bottom",
+    "name": {
+      "zh_cn": "平滑石英台阶",
+      "en_us": "Smooth Quartz Slab",
+      "zh_tw": "平滑石英半磚",
+      "ja_jp": "滑らかなクォーツのハーフブロック",
+      "ko_kr": "매끄러운 석영 반 블록",
+      "de_de": "Glatte Quarzstufe",
+      "fr_fr": "Dalle de quartz lisse"
+    }
+  },
+  {
     "id": "smooth_red_sandstone",
     "up": "block/red_sandstone_top",
     "north": "block/red_sandstone_top",
@@ -4857,6 +5727,21 @@
       "ko_kr": "매끄러운 붉은 사암",
       "de_de": "Glatter roter Sandstein",
       "fr_fr": "Grès rouge lisse"
+    }
+  },
+  {
+    "id": "smooth_red_sandstone_slab",
+    "up": "block/red_sandstone_top",
+    "north": "block/red_sandstone_top",
+    "east": "block/red_sandstone_top",
+    "name": {
+      "zh_cn": "平滑红砂岩台阶",
+      "en_us": "Smooth Red Sandstone Slab",
+      "zh_tw": "平滑紅砂岩半磚",
+      "ja_jp": "滑らかな赤い砂岩のハーフブロック",
+      "ko_kr": "매끄러운 붉은 사암 반 블록",
+      "de_de": "Glatte rote Sandsteinstufe",
+      "fr_fr": "Dalle de grès rouge lisse"
     }
   },
   {
@@ -4875,6 +5760,21 @@
     }
   },
   {
+    "id": "smooth_sandstone_slab",
+    "up": "block/sandstone_top",
+    "north": "block/sandstone_top",
+    "east": "block/sandstone_top",
+    "name": {
+      "zh_cn": "平滑砂岩台阶",
+      "en_us": "Smooth Sandstone Slab",
+      "zh_tw": "平滑砂岩半磚",
+      "ja_jp": "滑らかな砂岩のハーフブロック",
+      "ko_kr": "매끄러운 사암 반 블록",
+      "de_de": "Glatte Sandsteinstufe",
+      "fr_fr": "Dalle de grès lisse"
+    }
+  },
+  {
     "id": "smooth_stone",
     "up": "block/smooth_stone",
     "north": "block/smooth_stone",
@@ -4887,6 +5787,36 @@
       "ko_kr": "매끄러운 돌",
       "de_de": "Glatter Stein",
       "fr_fr": "Roche lisse"
+    }
+  },
+  {
+    "id": "smooth_stone_slab",
+    "up": "block/smooth_stone",
+    "north": "block/smooth_stone_slab_side",
+    "east": "block/smooth_stone_slab_side",
+    "name": {
+      "zh_cn": "平滑石头台阶",
+      "en_us": "Smooth Stone Slab",
+      "zh_tw": "平滑石半磚",
+      "ja_jp": "滑らかな石のハーフブロック",
+      "ko_kr": "매끄러운 돌 반 블록",
+      "de_de": "Glatte Steinstufe",
+      "fr_fr": "Dalle de roche lisse"
+    }
+  },
+  {
+    "id": "snow",
+    "up": "block/snow",
+    "north": "block/snow",
+    "east": "block/snow",
+    "name": {
+      "zh_cn": "雪",
+      "en_us": "Snow",
+      "zh_tw": "雪",
+      "ja_jp": "雪",
+      "ko_kr": "눈",
+      "de_de": "Schnee",
+      "fr_fr": "Neige"
     }
   },
   {
@@ -5010,6 +5940,21 @@
     }
   },
   {
+    "id": "spruce_slab",
+    "up": "block/spruce_planks",
+    "north": "block/spruce_planks",
+    "east": "block/spruce_planks",
+    "name": {
+      "zh_cn": "云杉木台阶",
+      "en_us": "Spruce Slab",
+      "zh_tw": "杉木半磚",
+      "ja_jp": "トウヒのハーフブロック",
+      "ko_kr": "가문비나무 반 블록",
+      "de_de": "Fichtenholzstufe",
+      "fr_fr": "Dalle en sapin"
+    }
+  },
+  {
     "id": "spruce_wood",
     "up": "block/spruce_log",
     "north": "block/spruce_log",
@@ -5037,6 +5982,66 @@
       "ko_kr": "끈끈이 피스톤",
       "de_de": "Klebriger Kolben",
       "fr_fr": "Piston collant"
+    }
+  },
+  {
+    "id": "stone",
+    "up": "block/stone",
+    "north": "block/stone",
+    "east": "block/stone",
+    "name": {
+      "zh_cn": "石头",
+      "en_us": "Stone",
+      "zh_tw": "石頭",
+      "ja_jp": "石",
+      "ko_kr": "돌",
+      "de_de": "Stein",
+      "fr_fr": "Roche"
+    }
+  },
+  {
+    "id": "stone_brick_slab",
+    "up": "block/stone_bricks",
+    "north": "block/stone_bricks",
+    "east": "block/stone_bricks",
+    "name": {
+      "zh_cn": "石砖台阶",
+      "en_us": "Stone Brick Slab",
+      "zh_tw": "石磚半磚",
+      "ja_jp": "石レンガのハーフブロック",
+      "ko_kr": "석재 벽돌 반 블록",
+      "de_de": "Steinziegelstufe",
+      "fr_fr": "Dalle de pierre taillée"
+    }
+  },
+  {
+    "id": "stone_bricks",
+    "up": "block/stone_bricks",
+    "north": "block/stone_bricks",
+    "east": "block/stone_bricks",
+    "name": {
+      "zh_cn": "石砖",
+      "en_us": "Stone Bricks",
+      "zh_tw": "石磚",
+      "ja_jp": "石レンガ",
+      "ko_kr": "석재 벽돌",
+      "de_de": "Steinziegel",
+      "fr_fr": "Pierre taillée"
+    }
+  },
+  {
+    "id": "stone_slab",
+    "up": "block/stone",
+    "north": "block/stone",
+    "east": "block/stone",
+    "name": {
+      "zh_cn": "石头台阶",
+      "en_us": "Stone Slab",
+      "zh_tw": "石半磚",
+      "ja_jp": "石のハーフブロック",
+      "ko_kr": "돌 반 블록",
+      "de_de": "Steinstufe",
+      "fr_fr": "Dalle de roche"
     }
   },
   {
@@ -5415,6 +6420,21 @@
     }
   },
   {
+    "id": "sulfur_brick_slab",
+    "up": "block/sulfur_bricks",
+    "north": "block/sulfur_bricks",
+    "east": "block/sulfur_bricks",
+    "name": {
+      "zh_cn": "硫黄砖台阶",
+      "en_us": "Sulfur Brick Slab",
+      "zh_tw": "硫磺磚半磚",
+      "ja_jp": "硫黄レンガのハーフブロック",
+      "ko_kr": "유황 벽돌 반 블록",
+      "de_de": "Schwefelziegelstufe",
+      "fr_fr": "Dalle de soufre taillé"
+    }
+  },
+  {
     "id": "sulfur_bricks",
     "up": "block/sulfur_bricks",
     "north": "block/sulfur_bricks",
@@ -5427,6 +6447,21 @@
       "ko_kr": "유황 벽돌",
       "de_de": "Schwefelziegel",
       "fr_fr": "Soufre taillé"
+    }
+  },
+  {
+    "id": "sulfur_slab",
+    "up": "block/sulfur",
+    "north": "block/sulfur",
+    "east": "block/sulfur",
+    "name": {
+      "zh_cn": "硫黄台阶",
+      "en_us": "Sulfur Slab",
+      "zh_tw": "硫磺半磚",
+      "ja_jp": "硫黄のハーフブロック",
+      "ko_kr": "유황 반 블록",
+      "de_de": "Schwefelstufe",
+      "fr_fr": "Dalle de soufre"
     }
   },
   {
@@ -5595,6 +6630,21 @@
     }
   },
   {
+    "id": "tuff_brick_slab",
+    "up": "block/tuff_bricks",
+    "north": "block/tuff_bricks",
+    "east": "block/tuff_bricks",
+    "name": {
+      "zh_cn": "凝灰岩砖台阶",
+      "en_us": "Tuff Brick Slab",
+      "zh_tw": "凝灰岩磚半磚",
+      "ja_jp": "凝灰岩レンガのハーフブロック",
+      "ko_kr": "응회암 벽돌 반 블록",
+      "de_de": "Tuffsteinziegelstufe",
+      "fr_fr": "Dalle de tuf taillé"
+    }
+  },
+  {
     "id": "tuff_bricks",
     "up": "block/tuff_bricks",
     "north": "block/tuff_bricks",
@@ -5607,6 +6657,21 @@
       "ko_kr": "응회암 벽돌",
       "de_de": "Tuffsteinziegel",
       "fr_fr": "Tuf taillé"
+    }
+  },
+  {
+    "id": "tuff_slab",
+    "up": "block/tuff",
+    "north": "block/tuff",
+    "east": "block/tuff",
+    "name": {
+      "zh_cn": "凝灰岩台阶",
+      "en_us": "Tuff Slab",
+      "zh_tw": "凝灰岩半磚",
+      "ja_jp": "凝灰岩のハーフブロック",
+      "ko_kr": "응회암 반 블록",
+      "de_de": "Tuffsteinstufe",
+      "fr_fr": "Dalle de tuf"
     }
   },
   {
@@ -5685,6 +6750,21 @@
     }
   },
   {
+    "id": "warped_slab",
+    "up": "block/warped_planks",
+    "north": "block/warped_planks",
+    "east": "block/warped_planks",
+    "name": {
+      "zh_cn": "诡异木台阶",
+      "en_us": "Warped Slab",
+      "zh_tw": "扭曲蕈木半磚",
+      "ja_jp": "歪んだハーフブロック",
+      "ko_kr": "뒤틀린 반 블록",
+      "de_de": "Wirrstufe",
+      "fr_fr": "Dalle biscornue"
+    }
+  },
+  {
     "id": "warped_stem",
     "up": "block/warped_stem_top",
     "north": "block/warped_stem",
@@ -5712,6 +6792,276 @@
       "ko_kr": "뒤틀린 사마귀 블록",
       "de_de": "Wirrwarzenblock",
       "fr_fr": "Bloc de verrues biscornues"
+    }
+  },
+  {
+    "id": "waxed_chiseled_copper",
+    "up": "block/chiseled_copper",
+    "north": "block/chiseled_copper",
+    "east": "block/chiseled_copper",
+    "name": {
+      "zh_cn": "涂蜡的雕纹铜块",
+      "en_us": "Waxed Chiseled Copper",
+      "zh_tw": "上蠟的浮雕銅方塊",
+      "ja_jp": "錆止めされた模様入りの銅",
+      "ko_kr": "밀랍칠한 조각된 구리",
+      "de_de": "Gewachster gemeißelter Kupferblock",
+      "fr_fr": "Cuivre sculpté ciré"
+    }
+  },
+  {
+    "id": "waxed_copper_block",
+    "up": "block/copper_block",
+    "north": "block/copper_block",
+    "east": "block/copper_block",
+    "name": {
+      "zh_cn": "涂蜡的铜块",
+      "en_us": "Waxed Block of Copper",
+      "zh_tw": "上蠟的銅方塊",
+      "ja_jp": "錆止めされた銅ブロック",
+      "ko_kr": "밀랍칠한 구리 블록",
+      "de_de": "Gewachster Kupferblock",
+      "fr_fr": "Bloc de cuivre ciré"
+    }
+  },
+  {
+    "id": "waxed_copper_bulb",
+    "up": "block/copper_bulb",
+    "north": "block/copper_bulb",
+    "east": "block/copper_bulb",
+    "name": {
+      "zh_cn": "涂蜡的铜灯",
+      "en_us": "Waxed Copper Bulb",
+      "zh_tw": "上蠟的銅燈",
+      "ja_jp": "錆止めされた銅の電球",
+      "ko_kr": "밀랍칠한 구리 전구",
+      "de_de": "Gewachste Kupferleuchte",
+      "fr_fr": "Ampoule en cuivre ciré"
+    }
+  },
+  {
+    "id": "waxed_copper_grate",
+    "up": "block/copper_grate",
+    "north": "block/copper_grate",
+    "east": "block/copper_grate",
+    "name": {
+      "zh_cn": "涂蜡的铜格栅",
+      "en_us": "Waxed Copper Grate",
+      "zh_tw": "上蠟的銅格柵",
+      "ja_jp": "錆止めされた銅の金網",
+      "ko_kr": "밀랍칠한 구리 격자",
+      "de_de": "Gewachster Kupferrost",
+      "fr_fr": "Grille en cuivre ciré"
+    }
+  },
+  {
+    "id": "waxed_cut_copper",
+    "up": "block/cut_copper",
+    "north": "block/cut_copper",
+    "east": "block/cut_copper",
+    "name": {
+      "zh_cn": "涂蜡的切制铜块",
+      "en_us": "Waxed Cut Copper",
+      "zh_tw": "上蠟的切製銅方塊",
+      "ja_jp": "錆止めされた切り込み入りの銅",
+      "ko_kr": "밀랍칠한 깎인 구리",
+      "de_de": "Gewachster geschnittener Kupferblock",
+      "fr_fr": "Cuivre taillé ciré"
+    }
+  },
+  {
+    "id": "waxed_cut_copper_slab",
+    "up": "block/cut_copper",
+    "north": "block/cut_copper",
+    "east": "block/cut_copper",
+    "name": {
+      "zh_cn": "涂蜡的切制铜台阶",
+      "en_us": "Waxed Cut Copper Slab",
+      "zh_tw": "上蠟的切製銅半磚",
+      "ja_jp": "錆止めされた切り込み入りの銅のハーフブロック",
+      "ko_kr": "밀랍칠한 깎인 구리 반 블록",
+      "de_de": "Gewachste geschnittene Kupferstufe",
+      "fr_fr": "Dalle de cuivre taillé ciré"
+    }
+  },
+  {
+    "id": "waxed_exposed_chiseled_copper",
+    "up": "block/exposed_chiseled_copper",
+    "north": "block/exposed_chiseled_copper",
+    "east": "block/exposed_chiseled_copper",
+    "name": {
+      "zh_cn": "涂蜡的斑驳雕纹铜块",
+      "en_us": "Waxed Exposed Chiseled Copper",
+      "zh_tw": "上蠟的斑駁浮雕銅方塊",
+      "ja_jp": "錆止めされた風化した模様入りの銅",
+      "ko_kr": "밀랍칠한 약간 녹슨 조각된 구리",
+      "de_de": "Gewachster angelaufener gemeißelter Kupferblock",
+      "fr_fr": "Cuivre sculpté exposé ciré"
+    }
+  },
+  {
+    "id": "waxed_exposed_copper",
+    "up": "block/exposed_copper",
+    "north": "block/exposed_copper",
+    "east": "block/exposed_copper",
+    "name": {
+      "zh_cn": "涂蜡的斑驳铜块",
+      "en_us": "Waxed Exposed Copper",
+      "zh_tw": "上蠟的斑駁銅方塊",
+      "ja_jp": "錆止めされた風化した銅",
+      "ko_kr": "밀랍칠한 약간 녹슨 구리",
+      "de_de": "Gewachster angelaufener Kupferblock",
+      "fr_fr": "Cuivre exposé ciré"
+    }
+  },
+  {
+    "id": "waxed_exposed_copper_bulb",
+    "up": "block/exposed_copper_bulb",
+    "north": "block/exposed_copper_bulb",
+    "east": "block/exposed_copper_bulb",
+    "name": {
+      "zh_cn": "涂蜡的斑驳铜灯",
+      "en_us": "Waxed Exposed Copper Bulb",
+      "zh_tw": "上蠟的斑駁銅燈",
+      "ja_jp": "錆止めされた風化した銅の電球",
+      "ko_kr": "밀랍칠한 약간 녹슨 구리 전구",
+      "de_de": "Gewachste angelaufene Kupferleuchte",
+      "fr_fr": "Ampoule en cuivre exposé ciré"
+    }
+  },
+  {
+    "id": "waxed_exposed_copper_grate",
+    "up": "block/exposed_copper_grate",
+    "north": "block/exposed_copper_grate",
+    "east": "block/exposed_copper_grate",
+    "name": {
+      "zh_cn": "涂蜡的斑驳铜格栅",
+      "en_us": "Waxed Exposed Copper Grate",
+      "zh_tw": "上蠟的斑駁銅格柵",
+      "ja_jp": "錆止めされた風化した銅の金網",
+      "ko_kr": "밀랍칠한 약간 녹슨 구리 격자",
+      "de_de": "Gewachster angelaufener Kupferrost",
+      "fr_fr": "Grille en cuivre exposé ciré"
+    }
+  },
+  {
+    "id": "waxed_exposed_cut_copper",
+    "up": "block/exposed_cut_copper",
+    "north": "block/exposed_cut_copper",
+    "east": "block/exposed_cut_copper",
+    "name": {
+      "zh_cn": "涂蜡的斑驳切制铜块",
+      "en_us": "Waxed Exposed Cut Copper",
+      "zh_tw": "上蠟的斑駁切製銅方塊",
+      "ja_jp": "錆止めされた風化した切り込み入りの銅",
+      "ko_kr": "밀랍칠한 약간 녹슨 깎인 구리",
+      "de_de": "Gewachster angelaufener geschnittener Kupferblock",
+      "fr_fr": "Cuivre taillé exposé ciré"
+    }
+  },
+  {
+    "id": "waxed_exposed_cut_copper_slab",
+    "up": "block/exposed_cut_copper",
+    "north": "block/exposed_cut_copper",
+    "east": "block/exposed_cut_copper",
+    "name": {
+      "zh_cn": "涂蜡的斑驳切制铜台阶",
+      "en_us": "Waxed Exposed Cut Copper Slab",
+      "zh_tw": "上蠟的斑駁切製銅半磚",
+      "ja_jp": "錆止めされた風化した切り込み入りの銅のハーフブロック",
+      "ko_kr": "밀랍칠한 약간 녹슨 깎인 구리 반 블록",
+      "de_de": "Gewachste angelaufene geschnittene Kupferstufe",
+      "fr_fr": "Dalle de cuivre taillé exposé ciré"
+    }
+  },
+  {
+    "id": "waxed_oxidized_chiseled_copper",
+    "up": "block/oxidized_chiseled_copper",
+    "north": "block/oxidized_chiseled_copper",
+    "east": "block/oxidized_chiseled_copper",
+    "name": {
+      "zh_cn": "涂蜡的氧化雕纹铜块",
+      "en_us": "Waxed Oxidized Chiseled Copper",
+      "zh_tw": "上蠟的氧化浮雕銅方塊",
+      "ja_jp": "錆止めされた酸化した模様入りの銅",
+      "ko_kr": "밀랍칠한 산화된 조각된 구리",
+      "de_de": "Gewachster oxidierter gemeißelter Kupferblock",
+      "fr_fr": "Cuivre sculpté oxydé ciré"
+    }
+  },
+  {
+    "id": "waxed_oxidized_copper",
+    "up": "block/oxidized_copper",
+    "north": "block/oxidized_copper",
+    "east": "block/oxidized_copper",
+    "name": {
+      "zh_cn": "涂蜡的氧化铜块",
+      "en_us": "Waxed Oxidized Copper",
+      "zh_tw": "上蠟的氧化銅方塊",
+      "ja_jp": "錆止めされた酸化した銅",
+      "ko_kr": "밀랍칠한 산화된 구리",
+      "de_de": "Gewachster oxidierter Kupferblock",
+      "fr_fr": "Cuivre oxydé ciré"
+    }
+  },
+  {
+    "id": "waxed_oxidized_copper_bulb",
+    "up": "block/oxidized_copper_bulb",
+    "north": "block/oxidized_copper_bulb",
+    "east": "block/oxidized_copper_bulb",
+    "name": {
+      "zh_cn": "涂蜡的氧化铜灯",
+      "en_us": "Waxed Oxidized Copper Bulb",
+      "zh_tw": "上蠟的氧化銅燈",
+      "ja_jp": "錆止めされた酸化した銅の電球",
+      "ko_kr": "밀랍칠한 산화된 구리 전구",
+      "de_de": "Gewachste oxidierte Kupferleuchte",
+      "fr_fr": "Ampoule en cuivre oxydé ciré"
+    }
+  },
+  {
+    "id": "waxed_oxidized_copper_grate",
+    "up": "block/oxidized_copper_grate",
+    "north": "block/oxidized_copper_grate",
+    "east": "block/oxidized_copper_grate",
+    "name": {
+      "zh_cn": "涂蜡的氧化铜格栅",
+      "en_us": "Waxed Oxidized Copper Grate",
+      "zh_tw": "上蠟的氧化銅格柵",
+      "ja_jp": "錆止めされた酸化した銅の金網",
+      "ko_kr": "밀랍칠한 산화된 구리 격자",
+      "de_de": "Gewachster oxidierter Kupferrost",
+      "fr_fr": "Grille en cuivre oxydé ciré"
+    }
+  },
+  {
+    "id": "waxed_oxidized_cut_copper",
+    "up": "block/oxidized_cut_copper",
+    "north": "block/oxidized_cut_copper",
+    "east": "block/oxidized_cut_copper",
+    "name": {
+      "zh_cn": "涂蜡的氧化切制铜块",
+      "en_us": "Waxed Oxidized Cut Copper",
+      "zh_tw": "上蠟的氧化切製銅方塊",
+      "ja_jp": "錆止めされた酸化した切り込み入りの銅",
+      "ko_kr": "밀랍칠한 산화된 깎인 구리",
+      "de_de": "Gewachster oxidierter geschnittener Kupferblock",
+      "fr_fr": "Cuivre taillé oxydé ciré"
+    }
+  },
+  {
+    "id": "waxed_oxidized_cut_copper_slab",
+    "up": "block/oxidized_cut_copper",
+    "north": "block/oxidized_cut_copper",
+    "east": "block/oxidized_cut_copper",
+    "name": {
+      "zh_cn": "涂蜡的氧化切制铜台阶",
+      "en_us": "Waxed Oxidized Cut Copper Slab",
+      "zh_tw": "上蠟的氧化切製銅半磚",
+      "ja_jp": "錆止めされた酸化した切り込み入りの銅のハーフブロック",
+      "ko_kr": "밀랍칠한 산화된 깎인 구리 반 블록",
+      "de_de": "Gewachste oxidierte geschnittene Kupferstufe",
+      "fr_fr": "Dalle de cuivre taillé oxydé ciré"
     }
   },
   {
@@ -5787,6 +7137,111 @@
       "ko_kr": "밀랍칠한 녹슨 깎인 구리",
       "de_de": "Gewachster verwitterter geschnittener Kupferblock",
       "fr_fr": "Cuivre taillé érodé ciré"
+    }
+  },
+  {
+    "id": "waxed_weathered_cut_copper_slab",
+    "up": "block/weathered_cut_copper",
+    "north": "block/weathered_cut_copper",
+    "east": "block/weathered_cut_copper",
+    "name": {
+      "zh_cn": "涂蜡的锈蚀切制铜台阶",
+      "en_us": "Waxed Weathered Cut Copper Slab",
+      "zh_tw": "上蠟的風化切製銅半磚",
+      "ja_jp": "錆止めされた錆びた切り込み入りの銅のハーフブロック",
+      "ko_kr": "밀랍칠한 녹슨 깎인 구리 반 블록",
+      "de_de": "Gewachste verwitterte geschnittene Kupferstufe",
+      "fr_fr": "Dalle de cuivre taillé érodé ciré"
+    }
+  },
+  {
+    "id": "weathered_chiseled_copper",
+    "up": "block/weathered_chiseled_copper",
+    "north": "block/weathered_chiseled_copper",
+    "east": "block/weathered_chiseled_copper",
+    "name": {
+      "zh_cn": "锈蚀的雕纹铜块",
+      "en_us": "Weathered Chiseled Copper",
+      "zh_tw": "風化的浮雕銅方塊",
+      "ja_jp": "錆びた模様入りの銅",
+      "ko_kr": "녹슨 조각된 구리",
+      "de_de": "Verwitterter gemeißelter Kupferblock",
+      "fr_fr": "Cuivre sculpté érodé"
+    }
+  },
+  {
+    "id": "weathered_copper",
+    "up": "block/weathered_copper",
+    "north": "block/weathered_copper",
+    "east": "block/weathered_copper",
+    "name": {
+      "zh_cn": "锈蚀的铜块",
+      "en_us": "Weathered Copper",
+      "zh_tw": "風化的銅方塊",
+      "ja_jp": "錆びた銅",
+      "ko_kr": "녹슨 구리",
+      "de_de": "Verwitterter Kupferblock",
+      "fr_fr": "Cuivre érodé"
+    }
+  },
+  {
+    "id": "weathered_copper_bulb",
+    "up": "block/weathered_copper_bulb",
+    "north": "block/weathered_copper_bulb",
+    "east": "block/weathered_copper_bulb",
+    "name": {
+      "zh_cn": "锈蚀的铜灯",
+      "en_us": "Weathered Copper Bulb",
+      "zh_tw": "風化的銅燈",
+      "ja_jp": "錆びた銅の電球",
+      "ko_kr": "녹슨 구리 전구",
+      "de_de": "Verwitterte Kupferleuchte",
+      "fr_fr": "Ampoule en cuivre érodé"
+    }
+  },
+  {
+    "id": "weathered_copper_grate",
+    "up": "block/weathered_copper_grate",
+    "north": "block/weathered_copper_grate",
+    "east": "block/weathered_copper_grate",
+    "name": {
+      "zh_cn": "锈蚀的铜格栅",
+      "en_us": "Weathered Copper Grate",
+      "zh_tw": "風化的銅格柵",
+      "ja_jp": "錆びた銅の金網",
+      "ko_kr": "녹슨 구리 격자",
+      "de_de": "Verwitterter Kupferrost",
+      "fr_fr": "Grille en cuivre érodé"
+    }
+  },
+  {
+    "id": "weathered_cut_copper",
+    "up": "block/weathered_cut_copper",
+    "north": "block/weathered_cut_copper",
+    "east": "block/weathered_cut_copper",
+    "name": {
+      "zh_cn": "锈蚀的切制铜块",
+      "en_us": "Weathered Cut Copper",
+      "zh_tw": "風化的切製銅方塊",
+      "ja_jp": "錆びた切り込み入りの銅",
+      "ko_kr": "녹슨 깎인 구리",
+      "de_de": "Verwitterter geschnittener Kupferblock",
+      "fr_fr": "Cuivre taillé érodé"
+    }
+  },
+  {
+    "id": "weathered_cut_copper_slab",
+    "up": "block/weathered_cut_copper",
+    "north": "block/weathered_cut_copper",
+    "east": "block/weathered_cut_copper",
+    "name": {
+      "zh_cn": "锈蚀的切制铜台阶",
+      "en_us": "Weathered Cut Copper Slab",
+      "zh_tw": "風化的切製銅半磚",
+      "ja_jp": "錆びた切り込み入りの銅のハーフブロック",
+      "ko_kr": "녹슨 깎인 구리 반 블록",
+      "de_de": "Verwitterte geschnittene Kupferstufe",
+      "fr_fr": "Dalle de cuivre taillé érodé"
     }
   },
   {
