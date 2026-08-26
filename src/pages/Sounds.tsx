@@ -5,9 +5,9 @@ export default function Sounds() {
   const { lang } = useLang()
   const s = t(lang)
   return (
-    <div className='max-w-6xl mx-auto px-4 py-16 text-center'>
-      <h2 className='text-xl font-semibold text-gray-900 mb-2'>{s.soundResources}</h2>
-      <p className='text-gray-400'>{s.comingSoon} — 4871</p>
+    <div className='max-w-5xl mx-auto px-5 py-16 text-center'>
+      <h2 className='text-lg font-semibold text-gray-900'>{s.soundResources}</h2>
+      <p className='mt-2 text-sm text-gray-300'>{s.comingSoon} — 4871</p>
     </div>
   )
 }

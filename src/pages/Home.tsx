@@ -2,10 +2,13 @@ import { Link } from 'react-router-dom'
 import { useLang } from '../components/LangContext'
 import { t } from '../i18n'
 
-const CARDS = [
-  { to: '/items', icon: 'pick', count: '1222', titleKey: 'itemTextures' as const, descKey: 'itemDesc' as const },
-  { to: '/blocks', icon: 'block', count: '1269', titleKey: 'blockTextures' as const, descKey: 'blockDesc' as const },
-  { to: '/sounds', icon: 'sound', count: '4871', titleKey: 'soundResources' as const, descKey: 'soundDesc' as const },
+type CardKey = 'itemTextures' | 'blockTextures' | 'soundResources'
+type DescKey = 'itemDesc' | 'blockDesc' | 'soundDesc'
+
+const CARDS: { to: string; count: string; titleKey: CardKey; descKey: DescKey }[] = [
+  { to: '/items', count: '703', titleKey: 'itemTextures', descKey: 'itemDesc' },
+  { to: '/blocks', count: '1269', titleKey: 'blockTextures', descKey: 'blockDesc' },
+  { to: '/sounds', count: '4871', titleKey: 'soundResources', descKey: 'soundDesc' },
 ]
 
 export default function Home() {
@@ -13,31 +16,29 @@ export default function Home() {
   const s = t(lang)
 
   return (
-    <div className='max-w-4xl mx-auto px-4 py-16'>
-      <div className='text-center mb-12'>
-        <h1 className='text-3xl font-bold text-gray-900 mb-2'>{s.heroTitle}</h1>
-        <p className='text-gray-500'>{s.heroSubtitle}</p>
+    <div className='max-w-3xl mx-auto px-6 py-20'>
+      <div className='text-center mb-14'>
+        <h1 className='text-4xl font-bold text-gray-900 tracking-tight'>{s.heroTitle}</h1>
+        <p className='mt-3 text-gray-400 text-lg'>{s.heroSubtitle}</p>
       </div>
 
-      <div className='grid sm:grid-cols-3 gap-4'>
+      <div className='grid sm:grid-cols-3 gap-3'>
         {CARDS.map(card => (
           <Link
             key={card.to}
             to={card.to}
-            className='group bg-white border border-gray-200 rounded-xl p-6 hover:border-gray-300 hover:shadow-sm transition-all'
+            className='block bg-white border border-gray-200 rounded-xl p-5 hover:border-gray-300 hover:shadow-md transition-all group'
           >
-            <div className='flex items-center gap-2 mb-3'>
-              <h2 className='text-base font-semibold text-gray-900'>{s[card.titleKey]}</h2>
-              <span className='text-xs text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full font-medium'>
-                {card.count}
-              </span>
-            </div>
-            <p className='text-sm text-gray-400'>{s[card.descKey]}</p>
+            <h2 className='text-sm font-semibold text-gray-900'>{s[card.titleKey]}</h2>
+            <span className='inline-block mt-1.5 text-xs text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full font-medium'>
+              {card.count}
+            </span>
+            <p className='mt-3 text-sm text-gray-400 leading-relaxed'>{s[card.descKey]}</p>
           </Link>
         ))}
       </div>
 
-      <p className='text-center mt-16 text-xs text-gray-300'>{s.footer}</p>
+      <p className='text-center mt-20 text-xs text-gray-300'>{s.footer}</p>
     </div>
   )
 }
