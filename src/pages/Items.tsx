@@ -2,7 +2,7 @@ import { useState, useMemo, useCallback } from 'react'
 import itemsData from '../data/items.json'
 import type { Item } from '../types'
 import { useLang } from '../components/LangContext'
-import { t, LANG_OPTIONS } from '../i18n'
+import { t } from '../i18n'
 
 const ITEMS: Item[] = itemsData as Item[]
 
@@ -83,23 +83,15 @@ export default function Items() {
       {/* Detail */}
       {selected && (
         <div className='fixed inset-0 z-[100] flex items-center justify-center bg-black/20 backdrop-blur-sm' onClick={() => setSelected(null)}>
-          <div className='bg-white rounded-xl border border-gray-200 p-5 w-80 shadow-xl' onClick={e => e.stopPropagation()}>
+          <div className='bg-white rounded-xl border border-gray-200 p-5 w-64 shadow-xl' onClick={e => e.stopPropagation()}>
             <div className='flex gap-3 mb-4'>
-              <div className='w-16 h-16 bg-gray-50 rounded-lg flex items-center justify-center shrink-0'>
-                <img src={`/MCToolKit/textures/${selected.texture}`} alt='' className='item-icon w-12 h-12' />
+              <div className='w-14 h-14 bg-gray-50 rounded-lg flex items-center justify-center shrink-0'>
+                <img src={`/MCToolKit/textures/${selected.texture}`} alt='' className='item-icon w-10 h-10' />
               </div>
               <div className='min-w-0'>
                 <h3 className='text-sm font-semibold text-gray-900 truncate'>{selected.name[lang]}</h3>
                 <p className='text-[11px] text-gray-300 font-mono mt-0.5'>{selected.id}</p>
               </div>
-            </div>
-            <div className='space-y-1 mb-4 text-[12px]'>
-              {LANG_OPTIONS.map(opt => (
-                <div key={opt.code} className='flex gap-2'>
-                  <span className='text-gray-300 w-14 shrink-0'>{opt.label}</span>
-                  <span className='text-gray-600 truncate'>{selected.name[opt.code]}</span>
-                </div>
-              ))}
             </div>
             <div className='flex gap-2'>
               <button onClick={() => dl(selected)} className='flex-1 py-1.5 text-xs font-medium bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-colors'>
