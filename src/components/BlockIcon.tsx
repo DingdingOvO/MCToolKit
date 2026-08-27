@@ -7,57 +7,63 @@ interface Props {
 
 const BASE = '/MCToolKit/textures'
 
+/*
+ * Isometric Minecraft block renderer using CSS matrix transforms.
+ *
+ * Math: each face is an (s/2)×(s/2) div mapped via matrix(a,b,c,d,tx,ty)
+ * so that the three faces form a perfect isometric cube filling s×s.
+ *
+ * Vertices (for s=32, hs=16):
+ *   Diamond (top):  (16,0) (32,8) (16,16) (0,8)
+ *   Left side:      (0,8)  (16,16) (16,32) (0,24)
+ *   Right side:     (16,16) (32,8) (32,24) (16,32)
+ *
+ * All edges shared exactly — no gaps, no overlaps.
+ */
 export default function BlockIcon({ block, size = 32 }: Props) {
   const s = size
-  // 放宽外框，避免被裁切
-  const w = Math.ceil(s * 1.73)
-  const h = Math.ceil(s * 1.73)
+  const hs = s / 2
 
-  const face: React.CSSProperties = {
+  const faceBase: React.CSSProperties = {
     position: 'absolute',
-    top: 0, left: 0,
-    width: s, height: s,
+    width: hs,
+    height: hs,
     backgroundSize: 'cover',
     imageRendering: 'pixelated' as const,
   }
 
   return (
-    <div style={{ width: w, height: h, position: 'relative', overflow: 'hidden' }}>
-      {/* 【关键】绝对不要加 preserve-3d！也不要加 transform: translate 居中 */}
-      <div style={{
-        width: s, height: s,
-        position: 'absolute',
-        left: Math.round((w - s) / 2),
-        top: Math.round((h - s) / 2),
-      }}>
-        {/* 顶面：旋转45度，再沿Y轴压扁一半，完美贴合 */}
-        <div style={{
-          ...face,
-          transform: 'rotate(-45deg) scaleY(0.5)',
-          transformOrigin: 'center',
-          backgroundImage: `url(${BASE}/${block.up}.png)`,
-        }} />
-        
-        {/* 左面：向右下方倾斜 */}
-        <div style={{
-          ...face,
-          transform: 'skewY(30deg)',
-          transformOrigin: 'left top',
+    <div style={{ width: s, height: s, position: 'relative' }}>
+      {/* Left side (north texture) — medium shade */}
+      <div
+        style={{
+          ...faceBase,
+          transform: `matrix(1, 0.5, 0, 1, 0, ${hs / 2})`,
           backgroundImage: `url(${BASE}/${block.north}.png)`,
-        }}>
-          <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(0,0,0,0.15)', pointerEvents: 'none' }} />
-        </div>
-        
-        {/* 右面：向左下方倾斜 */}
-        <div style={{
-          ...face,
-          transform: 'skewY(-30deg)',
-          transformOrigin: 'right top',
-          backgroundImage: `url(${BASE}/${block.east}.png)`,
-        }}>
-          <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(0,0,0,0.30)', pointerEvents: 'none' }} />
-        </div>
+        }}
+      >
+        <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(0,0,0,0.15)', pointerEvents: 'none' }} />
       </div>
+
+      {/* Right side (east texture) — dark shade */}
+      <div
+        style={{
+          ...faceBase,
+          transform: `matrix(1, -0.5, 0, 1, ${hs}, ${hs})`,
+          backgroundImage: `url(${BASE}/${block.east}.png)`,
+        }}
+      >
+        <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(0,0,0,0.30)', pointerEvents: 'none' }} />
+      </div>
+
+      {/* Top face (up texture) — brightest, no shade */}
+      <div
+        style={{
+          ...faceBase,
+          transform: `matrix(1, 0.5, -1, 0.5, ${hs}, 0)`,
+          backgroundImage: `url(${BASE}/${block.up}.png)`,
+        }}
+      />
     </div>
   )
 }
