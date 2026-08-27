@@ -9,29 +9,29 @@ interface Props {
 const BASE = '/MCToolKit/textures'
 
 /*
- * Isometric Minecraft block icon — pure SVG with clipPath.
+ * Isometric Minecraft block icon — SVG with clipPath.
  *
- * Each face is an <image> transformed by a matrix to match the
- * isometric projection, then clipped by a <clipPath> polygon that
- * uses the EXACT SAME vertex coordinates.  Because the clip boundary
- * is a vector operation (not a rasterised div edge), there are no
- * sub-pixel gaps between adjacent faces.
+ * Texture orientation follows Minecraft's standard isometric UV mapping:
+ *   Left  (north): tex-x → X-axis on screen (right-down 30°)
+ *                  tex-y → Y-axis on screen (straight down)
+ *   Right (east):  tex-x → Z-axis on screen (left-down 30°)
+ *                  tex-y → Y-axis on screen (straight down)
+ *   Top   (up):   tex-x → X-axis on screen (right-down 30°)
+ *                  tex-y → Z-axis on screen (left-down 30°)
  *
- * Vertex layout (s = container size, a = s/2 = projected edge length):
- *
- *              top (cx, cy−a)
- *             /    \
- *       left *------* right          cx = s/2, cy = s/2
- *           |\ top /|               d  = s·√3 / 4
- *           | \   / |               a  = s / 2
- *           |  \ /  |
- *           | mid *  |
- *           |  / \  |
- *           | /   \ |
- *           |/ bot \
- *          bl *------* br
- *             \    /
- *              bot (cx, cy+a)
+ *   top (cx, cy-a)
+ *  /    \
+ * left *------* right        cx = s/2, cy = s/2
+ *  |\ top /|                 a  = s/2 (projected edge)
+ *  | \   / |                 d  = s·√3/4
+ *  |  \ /  |
+ *  |  mid*  |
+ *  |  / \  |
+ *  | /   \ |
+ *  |/ bot  \
+ * bl *------* br
+ *  \    /
+ *   bot (cx, cy+a)
  */
 export default function BlockIcon({ block, size = 32 }: Props) {
   const uid = useId()
@@ -40,8 +40,9 @@ export default function BlockIcon({ block, size = 32 }: Props) {
   const cy = s / 2
   const a = s / 2
   const d = s * Math.sqrt(3) / 4
+  const da = d / a /* √3/2 */
 
-  /* ---- compute 7 vertices ONCE, reuse everywhere ---- */
+  /* ---- 7 vertices, computed once ---- */
   const V = {
     top:   [cx,     cy - a],
     left:  [cx - d, cy - a / 2],
@@ -58,23 +59,17 @@ export default function BlockIcon({ block, size = 32 }: Props) {
   const rightPoly = `${pt(V.mid)} ${pt(V.right)} ${pt(V.br)} ${pt(V.bot)}`
   const topPoly   = `${pt(V.top)} ${pt(V.right)} ${pt(V.mid)} ${pt(V.left)}`
 
-  /* matrix coefficients: d/a = √3/2 ≈ 0.866 */
-  const da = d / a
-
   /*
-   * Image transforms — each maps a 0→a rectangle to the face
-   * parallelogram.  The image corners land on the polygon vertices
-   * so the clip-path cuts away nothing and leaves no gap.
+   * Image transforms: map (0,0)→(a,a) source rect to face parallelogram.
+   * Image corners MUST land exactly on polygon vertices.
    *
-   * Left face:  (0,0)→left  (a,0)→mid    (0,a)→bl    (a,a)→bot
-   * Right face: (0,0)→mid   (a,0)→right  (0,a)→br    (a,a)→bot
-   * Top face:   (0,0)→left  (a,0)→mid    (0,a)→top   (a,a)→right
+   * Left  (north): (0,0)→left  (a,0)→mid   (0,a)→bl   (a,a)→bot
+   * Right (east):  (0,0)→right (a,0)→mid   (0,a)→br   (a,a)→bot
+   * Top   (up):    (0,0)→top   (a,0)→right (0,a)→left  (a,a)→mid
    */
   const leftTx  = `matrix(${da} 0.5 0 1 ${V.left[0]} ${V.left[1]})`
-  const rightTx = `matrix(${da} -0.5 0 1 ${V.mid[0]} ${V.mid[1]})`
-  const topTx   = `matrix(${da} 0.5 ${da} -0.5 ${V.left[0]} ${V.left[1]})`
-
-  const imgStyle: React.CSSProperties = { imageRendering: 'pixelated' as const }
+  const rightTx = `matrix(${-da} 0.5 0 1 ${V.right[0]} ${V.right[1]})`
+  const topTx   = `matrix(${da} 0.5 ${-da} 0.5 ${V.top[0]} ${V.top[1]})`
 
   return (
     <svg
@@ -95,7 +90,8 @@ export default function BlockIcon({ block, size = 32 }: Props) {
           href={`${BASE}/${block.north}.png`}
           width={a} height={a}
           transform={leftTx}
-          style={imgStyle}
+          imageRendering="pixelated"
+          style={{ imageRendering: 'pixelated' as const }}
         />
         <polygon points={leftPoly} fill="rgba(0,0,0,0.15)" />
       </g>
@@ -106,7 +102,8 @@ export default function BlockIcon({ block, size = 32 }: Props) {
           href={`${BASE}/${block.east}.png`}
           width={a} height={a}
           transform={rightTx}
-          style={imgStyle}
+          imageRendering="pixelated"
+          style={{ imageRendering: 'pixelated' as const }}
         />
         <polygon points={rightPoly} fill="rgba(0,0,0,0.30)" />
       </g>
@@ -117,7 +114,8 @@ export default function BlockIcon({ block, size = 32 }: Props) {
           href={`${BASE}/${block.up}.png`}
           width={a} height={a}
           transform={topTx}
-          style={imgStyle}
+          imageRendering="pixelated"
+          style={{ imageRendering: 'pixelated' as const }}
         />
       </g>
     </svg>
