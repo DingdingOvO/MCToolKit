@@ -4,11 +4,18 @@ export interface Item {
   name: Record<string, string>
 }
 
+export interface BlockFaces {
+  up: string
+  down: string
+  north: string
+  south: string
+  east: string
+  west: string
+}
+
 export interface Block {
   id: string
-  up: string
-  north: string
-  east: string
+  faces: BlockFaces
   name: Record<string, string>
 }
 

@@ -1,7 +1,58 @@
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useMemo, useCallback, useRef, useEffect } from 'react'
 import type { Item } from '../types'
 import { useLang } from '../components/LangContext'
 import { t } from '../i18n'
+
+/* IntersectionObserver stagger — same pattern as Blocks */
+function useStaggerReveal(dep: unknown) {
+  const ref = useRef<HTMLDivElement>(null)
+  const [visible, setVisible] = useState<Set<string>>(new Set())
+  const counter = useRef(0)
+  const pending = useRef<HTMLElement[]>([])
+
+  useEffect(() => {
+    if (!ref.current) return
+    setVisible(new Set())
+    counter.current = 0
+    pending.current = []
+
+    let batchRaf = 0
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            pending.current.push(entry.target as HTMLElement)
+            observer.unobserve(entry.target as Element)
+          }
+        }
+        if (pending.current.length > 0 && !batchRaf) {
+          batchRaf = requestAnimationFrame(() => {
+            const batch = pending.current.splice(0)
+            batchRaf = 0
+            const next = new Set(visible)
+            for (const el of batch) {
+              const idx = counter.current++
+              el.style.transitionDelay = `${Math.min(idx * 3, 800)}ms`
+              next.add(el.dataset.id!)
+            }
+            setVisible(next)
+          })
+        }
+      },
+      { rootMargin: '200px 0px', threshold: 0 }
+    )
+
+    const items = ref.current.querySelectorAll<HTMLElement>('[data-id]')
+    items.forEach(el => observer.observe(el))
+
+    return () => {
+      observer.disconnect()
+      if (batchRaf) cancelAnimationFrame(batchRaf)
+    }
+  }, [dep])
+
+  return { containerRef: ref, visible }
+}
 
 export default function Items() {
   const { lang } = useLang()
@@ -10,7 +61,6 @@ export default function Items() {
   const [selected, setSelected] = useState<Item | null>(null)
   const [items, setItems] = useState<Item[]>([])
 
-  // lazy load data
   useMemo(() => {
     import('../data/items.json').then(m => setItems(m.default as Item[]))
   }, [])
@@ -32,9 +82,10 @@ export default function Items() {
     a.click()
   }, [])
 
+  const { containerRef, visible } = useStaggerReveal(search)
+
   return (
     <div className='max-w-5xl mx-auto px-5 py-4'>
-      {/* Toolbar */}
       <div className='flex items-center gap-3 mb-4'>
         <div className='relative flex-1 max-w-sm'>
           <svg className='absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-gray-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
@@ -49,7 +100,7 @@ export default function Items() {
           />
         </div>
         <span className='text-xs text-gray-300 tabular-nums'>
-          {s.itemCount.replace('{count}', String(filtered.length)).replace('{total}', String(items.length || 703))}
+          {s.itemCount.replace('{count}', String(filtered.length)).replace('{total}', String(items.length || 0))}
         </span>
         {search && filtered.length > 0 && (
           <button
@@ -61,34 +112,36 @@ export default function Items() {
         )}
       </div>
 
-      {/* Grid */}
       {!items.length ? (
         <div className='text-center py-20 text-sm text-gray-300'>...</div>
       ) : (
-        <div className='grid grid-cols-[repeat(auto-fill,minmax(72px,1fr))] gap-1.5'>
-          {filtered.map(item => (
-            <button
-              key={item.id}
-              onClick={() => setSelected(selected?.id === item.id ? null : item)}
-              className={`flex flex-col items-center gap-0.5 p-1.5 rounded-lg transition-colors hover:bg-gray-100 ${
-                selected?.id === item.id ? 'bg-gray-100 ring-1 ring-blue-400' : ''
-              }`}
-            >
-              <img
-                src={`/MCToolKit/textures/${item.texture}`}
-                alt={item.name[lang]}
-                className='item-icon w-8 h-8'
-                loading='lazy'
-              />
-              <span className='text-[9px] text-gray-400 leading-tight text-center line-clamp-2 w-full'>
-                {item.name[lang]}
-              </span>
-            </button>
-          ))}
+        <div ref={containerRef} className='grid grid-cols-[repeat(auto-fill,minmax(80px,1fr))] gap-1'>
+          {filtered.map(item => {
+            const show = visible.has(item.id)
+            return (
+              <button
+                key={item.id}
+                data-id={item.id}
+                onClick={() => setSelected(selected?.id === item.id ? null : item)}
+                className={`stagger-cell flex flex-col items-center gap-0.5 p-1 rounded-lg transition-colors hover:bg-gray-100 ${
+                  selected?.id === item.id ? 'bg-gray-100 ring-1 ring-blue-400' : ''
+                } ${show ? 'stagger-visible' : ''}`}
+              >
+                <img
+                  src={`/MCToolKit/textures/${item.texture}`}
+                  alt={item.name[lang]}
+                  className='item-icon w-10 h-10'
+                  loading='lazy'
+                />
+                <span className='text-[9px] text-gray-400 leading-tight text-center line-clamp-2 w-full'>
+                  {item.name[lang]}
+                </span>
+              </button>
+            )
+          })}
         </div>
       )}
 
-      {/* Detail */}
       {selected && (
         <div className='fixed inset-0 z-[100] flex items-center justify-center bg-black/20 backdrop-blur-sm' onClick={() => setSelected(null)}>
           <div className='bg-white rounded-xl border border-gray-200 p-5 w-64 shadow-xl' onClick={e => e.stopPropagation()}>

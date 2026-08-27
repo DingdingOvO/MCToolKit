@@ -32,8 +32,11 @@ export default function Sounds() {
   const [playing, setPlaying] = useState<string | null>(null)
   const [sounds, setSounds] = useState<Sound[]>([])
   const audioRef = useRef<HTMLAudioElement | null>(null)
+  const listRef = useRef<HTMLDivElement>(null)
+  const [visible, setVisible] = useState<Set<string>>(new Set())
+  const counter = useRef(0)
+  const pending = useRef<HTMLElement[]>([])
 
-  // lazy load data
   useMemo(() => {
     import('../data/sounds.json').then(m => setSounds(m.default as Sound[]))
   }, [])
@@ -57,7 +60,48 @@ export default function Sounds() {
     return list
   }, [search, category, sounds])
 
-  // Audio playback
+  /* IntersectionObserver stagger for list items */
+  useEffect(() => {
+    if (!listRef.current) return
+    setVisible(new Set())
+    counter.current = 0
+    pending.current = []
+
+    let batchRaf = 0
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            pending.current.push(entry.target as HTMLElement)
+            observer.unobserve(entry.target as Element)
+          }
+        }
+        if (pending.current.length > 0 && !batchRaf) {
+          batchRaf = requestAnimationFrame(() => {
+            const batch = pending.current.splice(0)
+            batchRaf = 0
+            const next = new Set(visible)
+            for (const el of batch) {
+              const idx = counter.current++
+              el.style.transitionDelay = `${Math.min(idx * 2, 600)}ms`
+              next.add(el.dataset.id!)
+            }
+            setVisible(next)
+          })
+        }
+      },
+      { rootMargin: '300px 0px', threshold: 0 }
+    )
+
+    const items = listRef.current.querySelectorAll<HTMLElement>('[data-id]')
+    items.forEach(el => observer.observe(el))
+
+    return () => {
+      observer.disconnect()
+      if (batchRaf) cancelAnimationFrame(batchRaf)
+    }
+  }, [search, category])
+
   const play = useCallback((sound: Sound) => {
     const url = `/MCToolKit/${sound.path}`
     if (playing === sound.path) {
@@ -96,7 +140,6 @@ export default function Sounds() {
 
   return (
     <div className='max-w-5xl mx-auto px-5 py-4'>
-      {/* Toolbar */}
       <div className='flex flex-wrap items-center gap-3 mb-4'>
         <div className='relative flex-1 min-w-[180px] max-w-sm'>
           <svg className='absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-gray-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
@@ -126,7 +169,7 @@ export default function Sounds() {
           </svg>
         </div>
         <span className='text-xs text-gray-300 tabular-nums'>
-          {s.soundCount.replace('{count}', String(filtered.length)).replace('{total}', String(sounds.length || 4871))}
+          {s.soundCount.replace('{count}', String(filtered.length)).replace('{total}', String(sounds.length || 0))}
         </span>
         {playing && (
           <button onClick={stop} className='px-3 py-1.5 text-xs text-gray-500 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors'>
@@ -135,20 +178,21 @@ export default function Sounds() {
         )}
       </div>
 
-      {/* Sound List */}
       {!sounds.length ? (
         <div className='text-center py-20 text-sm text-gray-300'>...</div>
       ) : (
-        <div className='space-y-0.5'>
+        <div ref={listRef} className='space-y-0.5'>
           {filtered.map(sound => {
             const isPlaying = playing === sound.path
             const displayPath = sound.path.replace('sounds/', '')
+            const show = visible.has(sound.path)
             return (
               <div
                 key={sound.path}
-                className={`flex items-center gap-2 px-3 py-1.5 rounded-lg transition-colors group ${
+                data-id={sound.path}
+                className={`stagger-cell flex items-center gap-2 px-3 py-1.5 rounded-lg transition-colors group ${
                   isPlaying ? 'bg-blue-50' : 'hover:bg-gray-50'
-                }`}
+                } ${show ? 'stagger-visible' : ''}`}
               >
                 <button
                   onClick={() => play(sound)}

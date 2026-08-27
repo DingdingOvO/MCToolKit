@@ -5,8 +5,24 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 }
 
+/* Pixel art crisp rendering */
+.pixel-art,
 .item-icon {
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
+}
+
+/* ============ IntersectionObserver Stagger ============ */
+/* Items start invisible, transition in when .stagger-visible is added */
+.stagger-cell {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+  /* transition-delay is set via inline style by the observer */
+}
+
+.stagger-cell.stagger-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
