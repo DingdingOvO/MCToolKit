@@ -64,11 +64,11 @@ export default function BlockIcon({ block, size = 32 }: Props) {
    * Image corners MUST land exactly on polygon vertices.
    *
    * Left  (north): (0,0)→left  (a,0)→mid   (0,a)→bl   (a,a)→bot
-   * Right (east):  (0,0)→right (a,0)→mid   (0,a)→br   (a,a)→bot
+   * Right (east):  (0,0)→mid   (a,0)→right (0,a)→bot   (a,a)→br
    * Top   (up):    (0,0)→top   (a,0)→right (0,a)→left  (a,a)→mid
    */
   const leftTx  = `matrix(${da} 0.5 0 1 ${V.left[0]} ${V.left[1]})`
-  const rightTx = `matrix(${-da} 0.5 0 1 ${V.right[0]} ${V.right[1]})`
+  const rightTx = `matrix(${da} -0.5 0 1 ${V.mid[0]} ${V.mid[1]})`
   const topTx   = `matrix(${da} 0.5 ${-da} 0.5 ${V.top[0]} ${V.top[1]})`
 
   return (
