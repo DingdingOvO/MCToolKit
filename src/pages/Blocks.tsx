@@ -3,6 +3,7 @@ import type { Block } from '../types'
 import { useLang } from '../components/LangContext'
 import { t } from '../i18n'
 import BlockIcon from '../components/BlockIcon'
+import RotatableBlock from '../components/RotatableBlock'
 
 const BASE = '/MCToolKit/textures/block'
 const FACE_KEYS = ['up', 'down', 'north', 'south', 'east', 'west'] as const
@@ -164,13 +165,13 @@ function BlockDetailModal({
         style={{ width: 400 }}
         onClick={e => e.stopPropagation()}
       >
-        {/* Header + large icon */}
+        {/* Header + rotatable 3D block */}
         <div className='px-5 pt-5 pb-4 flex gap-4 items-start'>
           <div
-            className='bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center shrink-0'
-            style={{ width: 72, height: 72 }}
+            className='bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center shrink-0 overflow-hidden'
+            style={{ width: 100, height: 100, perspective: 400 }}
           >
-            <BlockIcon block={block} size={56} />
+            <RotatableBlock block={block} size={64} />
           </div>
           <div className='min-w-0 flex-1 pt-0.5'>
             <h3 className='text-sm font-semibold text-gray-900 truncate'>
