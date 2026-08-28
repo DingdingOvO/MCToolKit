@@ -100,7 +100,7 @@ export default function Sounds() {
       observer.disconnect()
       if (batchRaf) cancelAnimationFrame(batchRaf)
     }
-  }, [search, category])
+  }, [search, category, sounds.length])
 
   const play = useCallback((sound: Sound) => {
     const url = `/MCToolKit/${sound.path}`

@@ -29,7 +29,7 @@ function downloadTex(path: string, name: string) {
 }
 
 /* IntersectionObserver stagger */
-function useStaggerReveal(dep: unknown) {
+function useStaggerReveal(...deps: unknown[]) {
   const ref = useRef<HTMLDivElement>(null)
   const [visible, setVisible] = useState<Set<string>>(new Set())
   const counter = useRef(0)
@@ -74,7 +74,7 @@ function useStaggerReveal(dep: unknown) {
       observer.disconnect()
       if (batchRaf) cancelAnimationFrame(batchRaf)
     }
-  }, [dep])
+  }, deps)
 
   return { containerRef: ref, visible }
 }
@@ -123,7 +123,7 @@ export default function Blocks() {
     return faces
   }, [lang])
 
-  const { containerRef, visible } = useStaggerReveal(search)
+  const { containerRef, visible } = useStaggerReveal(search, blocks.length)
 
   return (
     <div className='max-w-5xl mx-auto px-5 py-4'>
