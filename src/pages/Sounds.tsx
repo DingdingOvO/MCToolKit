@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef, useCallback, useEffect } from 'react'
+import { useState, useMemo, useCallback, useRef, useEffect } from 'react'
 import type { Sound } from '../types'
 import { useLang } from '../components/LangContext'
 import { t } from '../i18n'
@@ -32,10 +32,6 @@ export default function Sounds() {
   const [playing, setPlaying] = useState<string | null>(null)
   const [sounds, setSounds] = useState<Sound[]>([])
   const audioRef = useRef<HTMLAudioElement | null>(null)
-  const listRef = useRef<HTMLDivElement>(null)
-  const [visible, setVisible] = useState<Set<string>>(new Set())
-  const counter = useRef(0)
-  const pending = useRef<HTMLElement[]>([])
 
   useMemo(() => {
     import('../data/sounds.json').then(m => setSounds(m.default as Sound[]))
@@ -59,48 +55,6 @@ export default function Sounds() {
     }
     return list
   }, [search, category, sounds])
-
-  /* IntersectionObserver stagger for list items */
-  useEffect(() => {
-    if (!listRef.current) return
-    setVisible(new Set())
-    counter.current = 0
-    pending.current = []
-
-    let batchRaf = 0
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            pending.current.push(entry.target as HTMLElement)
-            observer.unobserve(entry.target as Element)
-          }
-        }
-        if (pending.current.length > 0 && !batchRaf) {
-          batchRaf = requestAnimationFrame(() => {
-            const batch = pending.current.splice(0)
-            batchRaf = 0
-            const next = new Set(visible)
-            for (const el of batch) {
-              const idx = counter.current++
-              el.style.transitionDelay = `${Math.min(idx * 2, 600)}ms`
-              next.add(el.dataset.id!)
-            }
-            setVisible(next)
-          })
-        }
-      },
-      { rootMargin: '300px 0px', threshold: 0 }
-    )
-
-    const items = listRef.current.querySelectorAll<HTMLElement>('[data-id]')
-    items.forEach(el => observer.observe(el))
-
-    return () => {
-      observer.disconnect()
-      if (batchRaf) cancelAnimationFrame(batchRaf)
-    }
-  }, [search, category, sounds.length])
 
   const play = useCallback((sound: Sound) => {
     const url = `/MCToolKit/${sound.path}`
@@ -181,18 +135,17 @@ export default function Sounds() {
       {!sounds.length ? (
         <div className='text-center py-20 text-sm text-gray-300'>...</div>
       ) : (
-        <div ref={listRef} className='space-y-0.5'>
-          {filtered.map(sound => {
+        <div className='space-y-0.5'>
+          {filtered.map((sound, i) => {
             const isPlaying = playing === sound.path
             const displayPath = sound.path.replace('sounds/', '')
-            const show = visible.has(sound.path)
             return (
               <div
                 key={sound.path}
-                data-id={sound.path}
                 className={`stagger-cell flex items-center gap-2 px-3 py-1.5 rounded-lg transition-colors group ${
                   isPlaying ? 'bg-blue-50' : 'hover:bg-gray-50'
-                } ${show ? 'stagger-visible' : ''}`}
+                }`}
+                style={{ '--i': Math.min(i, 200) } as React.CSSProperties}
               >
                 <button
                   onClick={() => play(sound)}

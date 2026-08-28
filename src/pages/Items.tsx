@@ -1,58 +1,7 @@
-import { useState, useMemo, useCallback, useRef, useEffect } from 'react'
+import { useState, useMemo, useCallback } from 'react'
 import type { Item } from '../types'
 import { useLang } from '../components/LangContext'
 import { t } from '../i18n'
-
-/* IntersectionObserver stagger — same pattern as Blocks */
-function useStaggerReveal(...deps: unknown[]) {
-  const ref = useRef<HTMLDivElement>(null)
-  const [visible, setVisible] = useState<Set<string>>(new Set())
-  const counter = useRef(0)
-  const pending = useRef<HTMLElement[]>([])
-
-  useEffect(() => {
-    if (!ref.current) return
-    setVisible(new Set())
-    counter.current = 0
-    pending.current = []
-
-    let batchRaf = 0
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            pending.current.push(entry.target as HTMLElement)
-            observer.unobserve(entry.target as Element)
-          }
-        }
-        if (pending.current.length > 0 && !batchRaf) {
-          batchRaf = requestAnimationFrame(() => {
-            const batch = pending.current.splice(0)
-            batchRaf = 0
-            const next = new Set(visible)
-            for (const el of batch) {
-              const idx = counter.current++
-              el.style.transitionDelay = `${Math.min(idx * 3, 800)}ms`
-              next.add(el.dataset.id!)
-            }
-            setVisible(next)
-          })
-        }
-      },
-      { rootMargin: '200px 0px', threshold: 0 }
-    )
-
-    const items = ref.current.querySelectorAll<HTMLElement>('[data-id]')
-    items.forEach(el => observer.observe(el))
-
-    return () => {
-      observer.disconnect()
-      if (batchRaf) cancelAnimationFrame(batchRaf)
-    }
-  }, deps)
-
-  return { containerRef: ref, visible }
-}
 
 export default function Items() {
   const { lang } = useLang()
@@ -81,8 +30,6 @@ export default function Items() {
     a.download = `${item.id}.png`
     a.click()
   }, [])
-
-  const { containerRef, visible } = useStaggerReveal(search, items.length)
 
   return (
     <div className='max-w-5xl mx-auto px-5 py-4'>
@@ -115,30 +62,27 @@ export default function Items() {
       {!items.length ? (
         <div className='text-center py-20 text-sm text-gray-300'>...</div>
       ) : (
-        <div ref={containerRef} className='grid grid-cols-[repeat(auto-fill,minmax(80px,1fr))] gap-1'>
-          {filtered.map(item => {
-            const show = visible.has(item.id)
-            return (
-              <button
-                key={item.id}
-                data-id={item.id}
-                onClick={() => setSelected(selected?.id === item.id ? null : item)}
-                className={`stagger-cell flex flex-col items-center gap-0.5 p-1 rounded-lg transition-colors hover:bg-gray-100 ${
-                  selected?.id === item.id ? 'bg-gray-100 ring-1 ring-blue-400' : ''
-                } ${show ? 'stagger-visible' : ''}`}
-              >
-                <img
-                  src={`/MCToolKit/textures/${item.texture}`}
-                  alt={item.name[lang]}
-                  className='item-icon w-10 h-10'
-                  loading='lazy'
-                />
-                <span className='text-[9px] text-gray-400 leading-tight text-center line-clamp-2 w-full'>
-                  {item.name[lang]}
-                </span>
-              </button>
-            )
-          })}
+        <div className='grid grid-cols-[repeat(auto-fill,minmax(72px,1fr))] gap-1'>
+          {filtered.map((item, i) => (
+            <button
+              key={item.id}
+              onClick={() => setSelected(selected?.id === item.id ? null : item)}
+              className={`stagger-cell flex flex-col items-center gap-0.5 p-1 rounded transition-colors hover:bg-gray-100 ${
+                selected?.id === item.id ? 'bg-gray-100 ring-1 ring-blue-400' : ''
+              }`}
+              style={{ '--i': Math.min(i, 300) } as React.CSSProperties}
+            >
+              <img
+                src={`/MCToolKit/textures/${item.texture}`}
+                alt={item.name[lang]}
+                className='item-icon w-10 h-10'
+                loading='lazy'
+              />
+              <span className='text-[9px] text-gray-400 leading-tight text-center line-clamp-2 w-full'>
+                {item.name[lang]}
+              </span>
+            </button>
+          ))}
         </div>
       )}
 

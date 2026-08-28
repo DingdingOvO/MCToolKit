@@ -13,16 +13,15 @@ body {
   image-rendering: crisp-edges;
 }
 
-/* ============ IntersectionObserver Stagger ============ */
-/* Items start invisible, transition in when .stagger-visible is added */
-.stagger-cell {
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
-  /* transition-delay is set via inline style by the observer */
+/* ============ Fast CSS-only stagger ============ */
+@keyframes cellIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-.stagger-cell.stagger-visible {
-  opacity: 1;
-  transform: translateY(0);
+.stagger-cell {
+  opacity: 0;
+  animation: cellIn 0.18s ease-out forwards;
+  animation-delay: calc(var(--i, 0) * 1ms);
+  will-change: opacity, transform;
 }

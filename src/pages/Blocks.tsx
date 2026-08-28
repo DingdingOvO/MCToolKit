@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useRef, useEffect } from 'react'
+import { useState, useMemo, useCallback } from 'react'
 import type { Block } from '../types'
 import { useLang } from '../components/LangContext'
 import { t } from '../i18n'
@@ -28,62 +28,7 @@ function downloadTex(path: string, name: string) {
   a.click()
 }
 
-/* IntersectionObserver stagger */
-function useStaggerReveal(...deps: unknown[]) {
-  const ref = useRef<HTMLDivElement>(null)
-  const [visible, setVisible] = useState<Set<string>>(new Set())
-  const counter = useRef(0)
-  const pending = useRef<HTMLElement[]>([])
-
-  useEffect(() => {
-    if (!ref.current) return
-    setVisible(new Set())
-    counter.current = 0
-    pending.current = []
-
-    let batchRaf = 0
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            pending.current.push(entry.target as HTMLElement)
-            observer.unobserve(entry.target as Element)
-          }
-        }
-        if (pending.current.length > 0 && !batchRaf) {
-          batchRaf = requestAnimationFrame(() => {
-            const batch = pending.current.splice(0)
-            batchRaf = 0
-            const next = new Set(visible)
-            for (const el of batch) {
-              const idx = counter.current++
-              el.style.transitionDelay = `${Math.min(idx * 3, 800)}ms`
-              next.add(el.dataset.id!)
-            }
-            setVisible(next)
-          })
-        }
-      },
-      { rootMargin: '200px 0px', threshold: 0 }
-    )
-
-    const items = ref.current.querySelectorAll<HTMLElement>('[data-id]')
-    items.forEach(el => observer.observe(el))
-
-    return () => {
-      observer.disconnect()
-      if (batchRaf) cancelAnimationFrame(batchRaf)
-    }
-  }, deps)
-
-  return { containerRef: ref, visible }
-}
-
-/* ============================================================ */
-/* Blocks page                                                  */
-/* ============================================================ */
-
-const ICON_SIZE = 48
+const ICON_SIZE = 36
 
 export default function Blocks() {
   const { lang } = useLang()
@@ -123,8 +68,6 @@ export default function Blocks() {
     return faces
   }, [lang])
 
-  const { containerRef, visible } = useStaggerReveal(search, blocks.length)
-
   return (
     <div className='max-w-5xl mx-auto px-5 py-4'>
       {/* Search bar */}
@@ -154,29 +97,26 @@ export default function Blocks() {
         )}
       </div>
 
-      {/* Block grid */}
+      {/* Block grid — pure CSS stagger via --i */}
       {!blocks.length ? (
         <div className='text-center py-20 text-sm text-gray-300'>...</div>
       ) : (
-        <div ref={containerRef} className='grid grid-cols-[repeat(auto-fill,minmax(88px,1fr))] gap-1.5'>
-          {filtered.map(block => {
-            const show = visible.has(block.id)
-            return (
-              <button
-                key={block.id}
-                data-id={block.id}
-                onClick={() => setSelected(selected?.id === block.id ? null : block)}
-                className={`stagger-cell flex flex-col items-center gap-1 p-1.5 rounded-lg transition-colors hover:bg-gray-100 ${
-                  selected?.id === block.id ? 'bg-gray-100 ring-1 ring-blue-400' : ''
-                } ${show ? 'stagger-visible' : ''}`}
-              >
-                <BlockIcon block={block} size={ICON_SIZE} />
-                <span className='text-[10px] text-gray-400 leading-tight text-center line-clamp-2 w-full'>
-                  {block.name[lang] || block.id}
-                </span>
-              </button>
-            )
-          })}
+        <div className='grid grid-cols-[repeat(auto-fill,minmax(72px,1fr))] gap-1'>
+          {filtered.map((block, i) => (
+            <button
+              key={block.id}
+              onClick={() => setSelected(selected?.id === block.id ? null : block)}
+              className={`stagger-cell flex flex-col items-center gap-0.5 p-1 rounded transition-colors hover:bg-gray-100 ${
+                selected?.id === block.id ? 'bg-gray-100 ring-1 ring-blue-400' : ''
+              }`}
+              style={{ '--i': Math.min(i, 300) } as React.CSSProperties}
+            >
+              <BlockIcon block={block} size={ICON_SIZE} />
+              <span className='text-[9px] text-gray-400 leading-tight text-center line-clamp-2 w-full'>
+                {block.name[lang] || block.id}
+              </span>
+            </button>
+          ))}
         </div>
       )}
 
@@ -221,14 +161,16 @@ function BlockDetailModal({
     >
       <div
         className='bg-white rounded-2xl border border-gray-200 shadow-2xl overflow-hidden'
-        style={{ width: 420 }}
+        style={{ width: 400 }}
         onClick={e => e.stopPropagation()}
       >
         {/* Header + large icon */}
         <div className='px-5 pt-5 pb-4 flex gap-4 items-start'>
-          <div className='bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center shrink-0'
-            style={{ width: 80, height: 80 }}>
-            <BlockIcon block={block} size={64} />
+          <div
+            className='bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center shrink-0'
+            style={{ width: 72, height: 72 }}
+          >
+            <BlockIcon block={block} size={56} />
           </div>
           <div className='min-w-0 flex-1 pt-0.5'>
             <h3 className='text-sm font-semibold text-gray-900 truncate'>
