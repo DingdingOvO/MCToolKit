@@ -1,9 +1,10 @@
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useEffect, useMemo, useCallback } from 'react'
 import type { Block } from '../types'
 import { useLang } from '../components/LangContext'
 import { t } from '../i18n'
 import BlockIcon from '../components/BlockIcon'
 import RotatableBlock from '../components/RotatableBlock'
+import { preloadTextures } from '../lib/blockRenderer'
 
 const BASE = '/MCToolKit/textures/block'
 const FACE_KEYS = ['up', 'down', 'north', 'south', 'east', 'west'] as const
@@ -29,7 +30,7 @@ function downloadTex(path: string, name: string) {
   a.click()
 }
 
-const ICON_SIZE = 36
+const ICON_E = 16  // edge length; icon = 32×32px
 
 export default function Blocks() {
   const { lang } = useLang()
@@ -38,8 +39,22 @@ export default function Blocks() {
   const [selected, setSelected] = useState<Block | null>(null)
   const [blocks, setBlocks] = useState<Block[]>([])
 
-  useMemo(() => {
-    import('../data/blocks.json').then(m => setBlocks(m.default as Block[]))
+  useEffect(() => {
+    import('../data/blocks.json').then(m => {
+      const data = m.default as Block[]
+      setBlocks(data)
+      // Preload all unique textures in background
+      const texSet = new Set<string>()
+      for (const b of data) {
+        texSet.add(b.faces.up)
+        texSet.add(b.faces.north)
+        texSet.add(b.faces.east)
+        texSet.add(b.faces.down)
+        texSet.add(b.faces.south)
+        texSet.add(b.faces.west)
+      }
+      preloadTextures([...texSet])
+    })
   }, [])
 
   const filtered = useMemo(() => {
@@ -102,7 +117,7 @@ export default function Blocks() {
       {!blocks.length ? (
         <div className='text-center py-20 text-sm text-gray-300'>...</div>
       ) : (
-        <div className='grid grid-cols-[repeat(auto-fill,minmax(72px,1fr))] gap-1'>
+        <div className='grid grid-cols-[repeat(auto-fill,minmax(48px,1fr))] gap-1'>
           {filtered.map((block, i) => (
             <button
               key={block.id}
@@ -112,7 +127,7 @@ export default function Blocks() {
               }`}
               style={{ '--i': Math.min(i, 300) } as React.CSSProperties}
             >
-              <BlockIcon block={block} size={ICON_SIZE} />
+              <BlockIcon block={block} e={ICON_E} />
               <span className='text-[9px] text-gray-400 leading-tight text-center line-clamp-2 w-full'>
                 {block.name[lang] || block.id}
               </span>
@@ -169,7 +184,7 @@ function BlockDetailModal({
         <div className='px-5 pt-5 pb-4 flex gap-4 items-start'>
           <div
             className='bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center shrink-0 overflow-hidden'
-            style={{ width: 100, height: 100, perspective: 400 }}
+            style={{ width: 100, height: 100 }}
           >
             <RotatableBlock block={block} size={64} />
           </div>
